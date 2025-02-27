@@ -1,0 +1,136 @@
+/* 🌟 Top Bar */
+.top-bar {
+    background-color: #0b1235;
+    font-size: 14px;
+  }
+  
+  .top-bar .social-icons .icon {
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* 🌟 Navbar */
+  .navbar-container {
+    background-color: white;
+    padding: 10px 0;
+  }
+  
+  .logo-img {
+    max-height: 50px;
+  }
+  
+  .courses-btn {
+    background-color: white;
+    border: 1px solid #ccc;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-form {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .apply-btn {
+    background-color: #0056ff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  /* 🌟 Responsive Navbar */
+  @media (max-width: 992px) {
+    .search-form {
+      display: none !important;
+    }
+    .apply-btn {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
+  /* 🌟 Banner */
+  .banner-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #eef3ff, white);
+  }
+  
+  .banner-content {
+    max-width: 600px;
+  }
+  
+  .banner-content h3 {
+    color: #555;
+    font-weight: 400;
+  }
+  
+  .banner-content h1 {
+    color: #0b1235;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .banner-content p {
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .contact-btn {
+    background-color: #0056ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  /* 🌟 Responsive Banner */
+  .banner-image img {
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .enroll-now {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 992px) {
+    .banner-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px;
+    }
+    .banner-content {
+      max-width: 100%;
+    }
+    .banner-content h1 {
+      font-size: 2rem;
+    }
+    .banner-image img {
+      max-width: 350px;
+    }
+    .enroll-now {
+      display: none;
+    }
+  }
+  
