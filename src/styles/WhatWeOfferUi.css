@@ -5,6 +5,7 @@
     background-color: #9FAAB7; /* Square background color */
     border-radius: 25px; /* Optional: rounding the corners of the square */
     overflow: hidden; /* Ensures the circle stays within the square */
+    margin: 0 auto;
   }
   
   .scooped-ball {
