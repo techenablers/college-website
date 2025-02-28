@@ -1,0 +1,4 @@
+/* Background Gradient to Match the Image */
+.offerings-section {
+    background: linear-gradient(90deg, #1d2b64, #3a506b);
+  }
