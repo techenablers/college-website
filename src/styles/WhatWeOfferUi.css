@@ -1,0 +1,60 @@
+.scooped-square {
+    position: relative;
+    width: 150px; /* Set the size of the square */
+    height: 150px; /* Set the size of the square */
+    background-color: #9FAAB7; /* Square background color */
+    border-radius: 25px; /* Optional: rounding the corners of the square */
+    overflow: hidden; /* Ensures the circle stays within the square */
+  }
+  
+  .scooped-ball {
+    position: relative;
+    bottom: 35px; /* Ball's top positioned to create the scooped effect */
+    left: 50%; /* Horizontally center the ball */
+    transform: translateX(-50%); /* Center the ball perfectly */
+    width: 70px; /* Ball's diameter = 2 * radius (80px) */
+    height: 65px; /* Ball's diameter = 2 * radius (80px) */
+    background-color: white; /* Ball color */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for the ball */
+  }
+
+  .scooped-blue-circle {
+    position: relative;
+    top: 25px; /* Place the blue circle below the scooped ball with a 2mm clearance (2px) */
+    left: 50%; /* Horizontally center the blue circle */
+    transform: translateX(-50%); /* Center the blue circle perfectly */
+    width: 60px; /* Full ball diameter */
+    height: 60px; /* Full ball diameter */
+    background-color: blue; /* Blue color */
+    border-radius: 50%; /* Make it circular */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Shadow for the blue ball */
+    z-index: 1;
+  }
+  
+ 
+  /* Ensure that the positioning of elements stays the same on all screen sizes */
+  @media (max-width: 768px) {
+    /* No changes needed for the blue circle */
+    .scooped-square {
+      /* No changes to square size */
+      width: 200px;
+      height: 200px;
+    }
+  
+    .scooped-ball {
+      /* No changes to ball size and position */
+      width: 100px;
+      height: 100px;
+      top: -55px;
+    }
+  
+    .scooped-blue-circle {
+      /* No changes to blue circle */
+      top: 30px;
+      left: 50%;
+      width: 90px;
+      height: 90px;
+    }
+  }
+  

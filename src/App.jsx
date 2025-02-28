@@ -6,7 +6,7 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-      <div className="container mt-4">
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
