@@ -1,0 +1,33 @@
+.course-content {
+  background-color: #f3f7fb;
+  align-items: center;
+  text-align: center;
+}
+
+.course-header {
+  display: inline-block;
+  height: 26px;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  padding: 0 15px;
+  line-height: 26px;
+}
+
+.course-headding {
+  font-family:  Hind, sans-serif;
+  font-size: 30PX;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000000;
+  line-height: 1.35;
+}
+
+.view-all-course-btn{
+  position: relative;
+  top: 30px;
+  width: auto;
+  padding: 8px 25px;
+  color: #fff;
+  background-color: #0540F2;
+  border: none;
+}
