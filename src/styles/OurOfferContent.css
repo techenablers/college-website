@@ -1,6 +1,14 @@
 .what-we-offer-content{
-    display: "flex";
-    flex-direction: "column";
-    justify-content: "center";
-    align-items: "center";
+    width: 100%;
+    background: linear-gradient(to top, #DBEDFF 25%, #ffffff 65%);
+    height: auto;
+}
+
+.what-we-offer-header{
+    height: 26px;
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    padding: 0 15px;
+    line-height: 26px;
+    margin-top: 20px;
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import pitcher1 from "../../../src/assets/mimi-thian--VHQ0cw2euA-unsplash.svg";
 import pitcher2 from "../../../src/assets/priscilla-du-preez-ggeZ9oyI-PE-unsplash.svg";
