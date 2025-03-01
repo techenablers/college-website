@@ -12,12 +12,12 @@ const Home = () => {
   return <div>
   <Header />
   <Banner />
+  <AboutUniversity/>
   <ExploreOurCourses/>
   <OurOfferContent/>
   <OurFacilities/>
   <Footer/>
   <Offerings />
-  <AboutUniversity />
 </div>
 };
 
