@@ -1,6 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Offerings.css";
+import deskrop from "../../../src/assets/Icon.svg"
+import art from "../../../src/assets/art.svg"
+import man from "../../../src/assets/man.svg"
+
 
 const Offerings = () => {
   return (
@@ -9,14 +13,14 @@ const Offerings = () => {
         <h2 className="fw-bold">What we are offering ?</h2>
         <p className="lead">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore veniam...
+          <br/>eiusmod tempor incididunt ut labore veniam...
         </p>
 
         <div className="row mt-5">
           {/* Commerce Stream */}
           <div className="col-md-4">
             <div className="p-4">
-              <i className="bi bi-laptop fs-1 mb-3"></i>
+              <img src={deskrop} />
               <h4 className="fw-bold">Commerce Stream</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
@@ -28,7 +32,7 @@ const Offerings = () => {
           {/* Arts Stream */}
           <div className="col-md-4">
             <div className="p-4">
-              <i className="bi bi-palette fs-1 mb-3"></i>
+            <img src={art} />
               <h4 className="fw-bold">Arts Stream</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur dolorili adipiscing
@@ -40,7 +44,7 @@ const Offerings = () => {
           {/* Science Stream */}
           <div className="col-md-4">
             <div className="p-4">
-              <i className="bi bi-gear fs-1 mb-3"></i>
+            <img src={man} />
               <h4 className="fw-bold">Science Stream</h4>
               <p>
                 Lorem ipsum dolor sit amet, consectetur dolorili adipiscing

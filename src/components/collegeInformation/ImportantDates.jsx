@@ -1,0 +1,53 @@
+    import React from 'react'
+
+function ImportantDates() {
+
+    const notice = [
+        {
+            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+            
+        },
+        {
+            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+            
+        },
+        {
+            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+            
+        },
+        {
+            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+            
+        },
+        {
+            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+            
+        },
+        {
+            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+            
+        },
+       ]
+
+  return (
+    <div style={{width:'auto', maxWidth:'350PX', height:'400PX', backgroundColor:'#ffffff',overflowY:'auto'}}>
+    <div className='d-flex justify-content-between align-items-center'>
+        <h4>Notice Board</h4>
+        <p>see All</p>
+    </div>
+    <hr/>
+    {notice.map((val,indx)=>(
+        <>
+        <div key={indx} className='d-flex justify-content-center align-items-center'>
+         
+            <p>{val.info}</p>
+            
+        </div>
+        <hr/>   
+        </>
+    ))}
+</div>
+  )
+}
+
+export default ImportantDates
