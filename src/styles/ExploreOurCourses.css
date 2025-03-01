@@ -1,7 +1,9 @@
 .course-content {
+  display: flex;
+  flex-direction: column;
   background-color: #f3f7fb;
   align-items: center;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .course-header {
@@ -20,6 +22,7 @@
   margin-bottom: 5px;
   color: #000000;
   line-height: 1.35;
+  text-align: center;
 }
 
 .view-all-course-btn{
@@ -31,3 +34,39 @@
   background-color: #0540F2;
   border: none;
 }
+
+/* Styling the container to center the content */
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around; /* Distribute space evenly around items */
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0px 20px; /* Corrected padding value */
+}
+
+
+/* Make sure the tab content is also centered */
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* min-height: 300px; */ /* You can adjust this based on your needs */
+}
+
+/* Optional: Add some padding to each course component */
+.tab-pane {
+  padding: 20px;
+  text-align: center;
+}
+
+

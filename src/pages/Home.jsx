@@ -11,20 +11,18 @@ import "../styles/Home.css";
 
 
 const Home = () => {
-  return (
-    <div className="home-container">
-      <Header />
-      <div className="main-content">
-          <Banner />
-          <ExploreOurCourses/>
-          <OurOfferContent/>
-          <OurFacilities/>
-          <Footer/>
-          <Offerings />
-          <AboutUniversity />
-      </div>
-    </div>
-  );
+  return (<div className="home-container">
+  <Header />
+  <div className="main-content">
+  <Banner />
+  <Offerings />
+  <AboutUniversity/>
+  <ExploreOurCourses/>
+  <OurOfferContent/>
+  <OurFacilities/>
+  <Footer/>
+  </div>
+  </div>)
 };
 
 export default Home;
