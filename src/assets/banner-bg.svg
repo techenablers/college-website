@@ -1,0 +1,23 @@
+<svg width="1920" height="829" viewBox="0 0 1920 829" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="829" fill="#F3F7FB"/>
+<mask id="mask0_1_2191" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="829">
+<rect width="1920" height="829" fill="#F7F7F7"/>
+</mask>
+<g mask="url(#mask0_1_2191)">
+<circle cx="-24" cy="105" r="687" fill="url(#paint0_radial_1_2191)" fill-opacity="0.65"/>
+<g opacity="0.2" filter="url(#filter0_f_1_2191)">
+<circle cx="1876" cy="205" r="687" fill="#0B0E2A"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_1_2191" x="-811" y="-2482" width="5374" height="5374" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="1000" result="effect1_foregroundBlur_1_2191"/>
+</filter>
+<radialGradient id="paint0_radial_1_2191" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60.4803 -140.471) rotate(47.0791) scale(683.476)">
+<stop stop-color="#0D5EF4"/>
+<stop offset="1" stop-color="#FDFDFD" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
