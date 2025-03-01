@@ -12,13 +12,13 @@ const Home = () => {
   return <div>
   <Header />
   <Banner />
+  <Offerings />
   <AboutUniversity/>
   <ExploreOurCourses/>
   <OurOfferContent/>
   <OurFacilities/>
   <Footer/>
-  <Offerings />
-</div>
+  </div>
 };
 
 export default Home;
