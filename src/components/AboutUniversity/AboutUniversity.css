@@ -1,0 +1,9 @@
+.about-university {
+    background: #f9f9f9; /* Light background for contrast */
+  }
+  
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+  }
