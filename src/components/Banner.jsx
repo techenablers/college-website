@@ -1,22 +1,33 @@
-import React from "react";
-import { Button } from "react-bootstrap";
+import React from 'react';
+import { Button } from 'react-bootstrap';
+import '../styles/Banner.css';
+import enrollNow from '../assets/enroll-now.svg';
+import courses from '../assets/courses.svg';
 
 const Banner = () => {
   return (
-    <div className="banner-container">
-      <div className="banner-content">
-        <h3>Make Sustainable Futures,</h3>
+    <div className="banner">
+      {/* Left Content Section */}
+      <div className="banner-left">
+        <h2>Make Sustainable Futures,</h2>
         <h1>Best Digital Online Education!</h1>
         <p>
-          Through our initiatives, we aim to bridge the educational gap, improve learning outcomes, 
-          and foster a love for lifelong learning.
+          Through our initiatives, we aim to bridge educational gaps, improve learning outcomes, and foster a love for lifelong learning. 
         </p>
-        <Button className="contact-btn">Contact Us</Button>
+        <Button className="cta-button">CONTACT US</Button>
       </div>
-      <div className="banner-image">
-        <img src="https://www.onlinemanipal.com/wp-content/uploads/2024/07/home-banner-better-future-desk.jpg" alt="Student" />
+
+      {/* Fixed Enroll Now Button */}
+      <div className="enroll-now">
+        <a href="#enroll">
+          <img src={enrollNow} alt="Enroll Now" />
+        </a>
       </div>
-      <div className="enroll-now d-none d-md-block">ENROLL NOW</div>
+      <div className="our-courses">
+        <a href="#courses">
+          <img src={courses} alt="Our Courses" />
+        </a>
+      </div>
     </div>
   );
 };

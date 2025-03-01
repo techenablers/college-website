@@ -7,6 +7,8 @@ import Footer from "../components/footer/Footer";
 import OurFacilities from "../components/ourFacilities/OurFacilities";
 import Offerings from "../components/Offerings/offerings";
 import AboutUniversity from "../components/AboutUniversity/AboutUniversity";
+import "../styles/Home.css";
+
 
 const Home = () => {
   return (<div className="home-container">
