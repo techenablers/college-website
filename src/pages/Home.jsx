@@ -9,8 +9,9 @@ import Offerings from "../components/Offerings/offerings";
 import AboutUniversity from "../components/AboutUniversity/AboutUniversity";
 
 const Home = () => {
-  return <div>
+  return (<div className="home-container">
   <Header />
+  <div className="main-content">
   <Banner />
   <Offerings />
   <AboutUniversity/>
@@ -19,6 +20,7 @@ const Home = () => {
   <OurFacilities/>
   <Footer/>
   </div>
+  </div>)
 };
 
 export default Home;
