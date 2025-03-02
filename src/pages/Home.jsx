@@ -10,6 +10,7 @@ import AboutUniversity from "../components/AboutUniversity/AboutUniversity";
 import "../styles/Home.css";
 import Announcement from "../components/Announcement";
 import Information from "../components/collegeInformation/Information";
+import TransformEducation from "../components/TransformEducation";
 
 const Home = () => {
   return (<div className="home-container">
@@ -20,6 +21,7 @@ const Home = () => {
   <Information/>
   <Offerings />
   <AboutUniversity/>
+  <TransformEducation/>
   <ExploreOurCourses/>
   <OurOfferContent/>
   <OurFacilities/>
