@@ -30,9 +30,9 @@ function ImportantDates() {
        ]
 
   return (
-    <div style={{width:'auto', maxWidth:'350PX', height:'400PX', backgroundColor:'#ffffff',overflowY:'auto'}}>
+    <div style={{width:'auto', maxWidth:'350PX', height:'400PX', backgroundColor:'#ffffff',overflowY:'auto', borderRadius: "5px", padding: "25px",scrollbarWidth: "thin"}} >
     <div className='d-flex justify-content-between align-items-center'>
-        <h4>Notice Board</h4>
+        <h4>Important Dates</h4>
         <p>see All</p>
     </div>
     <hr/>
