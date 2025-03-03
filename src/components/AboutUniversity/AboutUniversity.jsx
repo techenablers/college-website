@@ -18,11 +18,6 @@ const AboutUniversity = () => {
                     className="d-block w-100 rounded"
                     alt="House 1"
                   />
-                  <div className="carousel-caption text-start">
-                    <h5>$450,000</h5>
-                    <p>Tringsiling House</p>
-                    <p>📍 1187 Lake Forest City, TN</p>
-                  </div>
                 </div>
                 <div className="carousel-item">
                   <img
