@@ -1,8 +1,8 @@
 import React from "react";
 import Ramesh from "../../src/assets/im.svg";
-import pro from "../../src/assets/Prof.svg";
-import Nisha from "../../src/assets/Nisha.svg";
 import vector20 from "../assets/Vector20.svg";
+import image2 from "../assets/image2.svg";
+import image3 from "../assets/image3.svg";
 
 function OurCoreMember() {
   return (
@@ -41,80 +41,79 @@ function OurCoreMember() {
       </p>
 
       <h5>Our Core Members</h5>
+      <div className="d-flex justify-content-center align-items-center" style={{flexWrap: "wrap", gap: "50px", width: "100%", position: "relative", padding: "0 15px"}}>
+      <div
+        className="card"
+        style={{
+          width: "16rem",
+          height: "auto",
+          position: "relative", // Ensure we can position the vector image absolutely
+        }}
+      >
+        <img src={Ramesh} className="card-img-top" alt="Ramesh" />
 
-      <div className="d-flex justify-content-between align-item-center" style={{ gap: "80px" }}>
-        <div
-          className="card"
-          style={{
-            width: "16rem",
-            height: "auto",
-            position: "relative", // Ensure we can position the vector image absolutely
-          }}
-        >
-          <img src={Ramesh} className="card-img-top" alt="Ramesh" />
-
-          <div className="card-body-container " style={{ height: "50px" }}>
-            <img
-              src={vector20}
-              className="card-img-top"
-              alt="Vector20"
-              style={{
-                position: "relative",
-                bottom: "45px", // Position it 20px above the bottom edge of the card
-                width: "16rem",
-                zIndex: 1, // Ensure it appears on top of the Ramesh image
-              }}
-            />
-          </div>
+        <div className="card-body-container " style={{height:"50px"}}>
+          <img
+            src={vector20}
+            className="card-img-top"
+            alt="Vector20"
+            style={{
+              position: "relative",
+              bottom: "45px", // Position it 20px above the bottom edge of the card
+              width: "16rem",
+              zIndex: 1, // Ensure it appears on top of the Ramesh image
+            }}
+          />
         </div>
-        <div
-          className="card"
-          style={{
-            width: "16rem",
-            height: "auto",
-            position: "relative", // Ensure we can position the vector image absolutely
-          }}
-        >
-          <img src={pro} className="card-img-top" alt="Ramesh" />
+      </div>
+      <div
+        className="card"
+        style={{
+          width: "16rem",
+          height: "auto",
+          position: "relative", // Ensure we can position the vector image absolutely
+        }}
+      >
+        <img src={image2} className="card-img-top" alt="Ramesh" />
 
-          <div className="card-body-container " style={{ height: "50px" }}>
-            <img
-              src={vector20}
-              className="card-img-top"
-              alt="Vector20"
-              style={{
-                position: "relative",
-                bottom: "45px", // Position it 20px above the bottom edge of the card
-                width: "16rem",
-                zIndex: 1, // Ensure it appears on top of the Ramesh image
-              }}
-            />
-          </div>
+        <div className="card-body-container " style={{height:"50px"}}>
+          <img
+            src={vector20}
+            className="card-img-top"
+            alt="Vector20"
+            style={{
+              position: "relative",
+              bottom: "45px", // Position it 20px above the bottom edge of the card
+              width: "16rem",
+              zIndex: 1, // Ensure it appears on top of the Ramesh image
+            }}
+          />
         </div>
-        <div
-          className="card"
-          style={{
-            width: "16rem",
-            height: "auto",
-            position: "relative", // Ensure we can position the vector image absolutely
-          }}
-        >
-          <img src={Nisha} className="card-img-top" alt="Ramesh" />
+      </div>
+      <div
+        className="card"
+        style={{
+          width: "16rem",
+          height: "auto",
+          position: "relative", // Ensure we can position the vector image absolutely
+        }}
+      >
+        <img src={image3} className="card-img-top" alt="Ramesh" />
 
-          <div className="card-body-container " style={{ height: "50px" }}>
-            <img
-              src={vector20}
-              className="card-img-top"
-              alt="Vector20"
-              style={{
-                position: "relative",
-                bottom: "45px", // Position it 20px above the bottom edge of the card
-                width: "16rem",
-                zIndex: 1, // Ensure it appears on top of the Ramesh image
-              }}
-            />
-          </div>
+        <div className="card-body-container" style={{height:"50px"}}>
+          <img
+            src={vector20}
+            className="card-img-top"
+            alt="Vector20"
+            style={{
+              position: "relative",
+              bottom: "45px", // Position it 20px above the bottom edge of the card
+              width: "16rem",
+              zIndex: 1, // Ensure it appears on top of the Ramesh image
+            }}
+          />
         </div>
+      </div>
       </div>
     </div>
   );
