@@ -50,17 +50,16 @@ function OurCoreMember() {
       >
         <img src={Ramesh} className="card-img-top" alt="Ramesh" />
 
-        <div className="card-body " style={{height:"50px"}}>
+        <div className="card-body-container " style={{height:"50px"}}>
           <img
             src={vector20}
             className="card-img-top"
             alt="Vector20"
             style={{
               position: "relative",
-              bottom: "-20px", // Position it 20px above the bottom edge of the card
+              bottom: "45px", // Position it 20px above the bottom edge of the card
               width: "16rem",
               zIndex: 1, // Ensure it appears on top of the Ramesh image
-              right:"2px"
             }}
           />
         </div>
