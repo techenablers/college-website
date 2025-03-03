@@ -5,7 +5,7 @@ import "../../styles/OurOfferContent.css";
 
 function OurOfferContent() {
   return (
-    <div className="d-flex flex-column justify-content-center align-items-center text-center what-we-offer-content">
+    <div className="d-flex flex-column justify-content-center align-items-center text-center what-we-offer-content" style={{ marginTop: "50px"}}>
       <p className="d-inline-block what-we-offer-header">
         <span>
           <i

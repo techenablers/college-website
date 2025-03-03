@@ -8,17 +8,17 @@ import OurFacilities from "../components/ourFacilities/OurFacilities";
 import Offerings from "../components/Offerings/offerings";
 import AboutUniversity from "../components/AboutUniversity/AboutUniversity";
 import "../styles/Home.css";
-import Announcement from "../components/Announcement";
 import Information from "../components/collegeInformation/Information";
 import TransformEducation from "../components/TransformEducation";
 import OurCoreMember from "../components/OurCoreMember";
+import Flash from "../components/Flash";
 
 const Home = () => {
   return (<div className="home-container">
   <Header />
   <div className="main-content">
   <Banner />
-  <Announcement/>
+  <Flash/>
   <Information/>
   <Offerings />
   <AboutUniversity/>
