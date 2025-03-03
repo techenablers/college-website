@@ -51,7 +51,7 @@ function NoticeBoard() {
     >
       <div className="d-flex justify-content-between align-items-center">
         <h4>Notice Board</h4>
-        <p>see All</p>
+        <p>See All</p>
       </div>
       <hr />
       {notice.map((val, indx) => (
