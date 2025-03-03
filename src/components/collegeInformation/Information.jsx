@@ -7,14 +7,14 @@ import "../../../src/styles/information.css";
 function Information() {
   return (
     <div
-      className="d-flex justify-content-around align-items-center information-content"
+      className="d-flex align-items-center information-content gap-5"
       style={{ paddingTop: "60px", paddingBottom: "60px", width: "100%" }}
     >
-      <div style={{ marginBottom: "20px" }}>
+      <div style={{ margin: "20px"}}>
         <NoticeBoard />
       </div>
-      <div className="d-flex flex-column " style={{ marginBottom: "20px" }}>
-        <div style={{}}>
+      <div className="d-flex flex-column gap-5" style={{ margin: "20px" }}>
+        <div>
           <QuickLink />
         </div>
         <div>

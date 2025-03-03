@@ -39,12 +39,11 @@ function NoticeBoard() {
   return (
     <div
       style={{
-        width: "600px",
-        height: "600PX",
+        height: "700PX",
         backgroundColor: "#ffffff",
         overflowY: "auto",
         padding: "25px",
-        borderRadius: "30px",
+        borderRadius: "5px",
          scrollbarWidth: "thin"
       }}
     >
