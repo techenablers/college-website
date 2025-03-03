@@ -78,8 +78,8 @@ const Header = () => {
             clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35px, 40px 0)", // Clip the top-left corner only
           }}
         >
-          <div className="social-icons d-flex align-items-end justify-content-center">
-            <span className="me-2">Follow Us</span>
+          <div className="social-icons d-flex align-items-end justify-content-center" style={{padding: "5px"}}>
+            <span className="me-2"><b>Follow Us</b></span>
             <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube />{" "}
             <FaSkype />
           </div>
