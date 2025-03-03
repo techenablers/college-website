@@ -39,12 +39,14 @@ function NoticeBoard() {
   return (
     <div
       style={{
-        height: "700PX",
+        height: "700px",
         backgroundColor: "#ffffff",
         overflowY: "auto",
         padding: "25px",
         borderRadius: "5px",
-         scrollbarWidth: "thin"
+         scrollbarWidth: "thin",
+         WebkitScrollbar: "thin",
+         maxWidth:'600px',
       }}
     >
       <div className="d-flex justify-content-between align-items-center">

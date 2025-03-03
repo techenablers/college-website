@@ -7,7 +7,7 @@ import "../../../src/styles/information.css";
 function Information() {
   return (
     <div
-      className="d-flex align-items-center information-content gap-5"
+      className="d-flex align-items-center justify-content-center information-content gap-5"
       style={{ paddingTop: "60px", paddingBottom: "60px", width: "100%" }}
     >
       <div style={{ margin: "20px"}}>
