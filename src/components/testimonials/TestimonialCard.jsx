@@ -1,37 +1,37 @@
-// import React from "react";
-import student from "../../../src/assets/Ellipse 1202.svg"; // Assuming you have a path to this image
+/* eslint-disable no-unused-vars */
+import React from "react";
 
 function TestimonialCard() {
   const testimonialInformation = [
     {
-      profile: student, // Direct reference to the profile image
+     
       name: "Ronald Richards",
       content:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.",
     },
     {
-      profile: student, // Direct reference to the profile image
+      
       name: "Wade Warren",
       content:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.",
     },
     {
-      profile: student, // Direct reference to the profile image
+     
       name: "Jacob Jones",
       content:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.",
     },
   ];
 
   return (
     <div className="d-flex justify-content-center align-items-center">
       {testimonialInformation.map((val, index) => (
-        <div style={{margin:'20px'}} key={index}> 
+        <div className="" style={{ margin: "20px" }} key={index}>
           <div
             key={index}
             className="card"
             style={{
-              width: "350px ", // Fixed width for the card
+              width: "300px ", // Fixed width for the card
               height: "250px", // Auto height based on content
               borderRadius: "25px",
               border: "none",
@@ -44,13 +44,6 @@ function TestimonialCard() {
               <div className="d-flex align-items-center mb-3">
                 {" "}
                 {/* Added margin to space out the name and image */}
-                <img
-                  src={val.profile}
-                  alt="Profile Icon"
-                  width={50} // Increased image size
-                  height={50} // Increased image size
-                  style={{ borderRadius: "50%", marginRight: "15px" }} // Make image circular
-                />
                 <h6 style={{ fontWeight: "600", fontSize: "16px" }}>
                   {val.name}
                 </h6>
@@ -60,6 +53,7 @@ function TestimonialCard() {
                   fontSize: "14px",
                   color: "#555",
                   marginBottom: "15px",
+                  textAlign: "start",
                 }}
               >
                 {val.content}
