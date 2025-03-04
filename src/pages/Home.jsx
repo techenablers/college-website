@@ -12,6 +12,7 @@ import Information from "../components/collegeInformation/Information";
 import TransformEducation from "../components/TransformEducation";
 import OurCoreMember from "../components/OurCoreMember";
 import Flash from "../components/Flash";
+import EducationSection from "../components/EducationSection/educationSection";
 
 const Home = () => {
   return (<div className="home-container">
@@ -22,7 +23,8 @@ const Home = () => {
   <Information/>
   <Offerings />
   <AboutUniversity/>
-  <TransformEducation/>
+  <EducationSection />
+  {/* <TransformEducation/> */}
   <OurCoreMember/>
   <ExploreOurCourses/>
   <OurOfferContent/>
