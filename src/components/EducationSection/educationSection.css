@@ -13,11 +13,11 @@
   margin-top: 20px;
 }
 
-.card-body {
+/* .card-body {
   display: flex;
   flex-direction: row;
   gap: 10px;
-}
+} */
 
 .feature-card {
   border: none;
