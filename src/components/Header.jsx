@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+  /* eslint-disable no-unused-vars */
 import React from "react";
 // import {
 //   Navbar,
@@ -14,7 +14,7 @@ import {
   FaLinkedinIn,
   FaYoutube,
   FaSkype,
-  // FaSearch,
+  FaSearch,
 } from "react-icons/fa";
 import "../styles/Header.css";
 import logo from "../assets/logo.svg";
@@ -78,8 +78,13 @@ const Header = () => {
             clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35px, 40px 0)", // Clip the top-left corner only
           }}
         >
-          <div className="social-icons d-flex align-items-end justify-content-center" style={{padding: "5px"}}>
-            <span className="me-2"><b>Follow Us</b></span>
+          <div
+            className="social-icons d-flex align-items-end justify-content-center"
+            style={{ padding: "5px" }}
+          >
+            <span className="me-2">
+              <b>Follow Us</b>
+            </span>
             <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube />{" "}
             <FaSkype />
           </div>
@@ -102,7 +107,11 @@ const Header = () => {
 
           <nav className="navbar" style={{ position: "relative", top: "5px" }}>
             <div className="container d-flex justify-content-between">
-              <a className="navbar-brand" href="#" style={{ marginRight: "100px" }}>
+              <a
+                className="navbar-brand"
+                href="#"
+                style={{ marginRight: "100px" }}
+              >
                 <img src={logo} alt="DR.K.S. JR COLLEGE" className="logo" />
               </a>
 
@@ -111,22 +120,29 @@ const Header = () => {
                   Home
                 </a>
                 <a className="nav-link" href="#">
-                  Features
+                  About
                 </a>
                 <a className="nav-link" href="#">
-                  Pricing
+                  Admission
                 </a>
                 <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
+                  Student&apos;s Corner
+                </a>
+                <a className="nav-link disabled" aria-disabled="true">
+                  Contact
                 </a>
 
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Username"
+                  placeholder="Search for Our Programmes..."
                   aria-label="Username"
                   aria-describedby="basic-addon1"
                 ></input>
+
+               {/*  <div className="search-icon">
+                  <FaSearch />
+                </div> */}
                 <button className="apply-now" type="submit">
                   Apply Now
                 </button>

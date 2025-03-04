@@ -3,7 +3,7 @@ import React from "react";
 
 function ContactInfo() {
   return (
-    <div className="d-flex justify-content-around align-items-center" style={{padding:'0rem 10rem'}}>
+    <div className="d-flex justify-content-around align-items-center" style={{padding:'0.5rem 10rem',color:"#ffffff"}}>
       <div
         className="contact-item"
         style={{
