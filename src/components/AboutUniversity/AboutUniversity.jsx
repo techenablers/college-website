@@ -2,6 +2,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutUniversity.css";
 import carousel from "../../assets/corosal.svg"
+import AboutUniversityImage from "../../assets/AboutUniversity.svg"
 
 const AboutUniversity = () => {
   return (
@@ -14,7 +15,7 @@ const AboutUniversity = () => {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    src={carousel}
+                    src={AboutUniversityImage}
                     className="d-block w-100 rounded"
                     alt="House 1"
                   />
@@ -48,16 +49,7 @@ const AboutUniversity = () => {
           {/* Text Section */}
           <div className="col-md-6">
             <h6 className="text-primary fw-bold">ABOUT OUR UNIVERSITY</h6>
-            <h2 className="fw-bold">Welcome to Edura University.</h2>
-            <p>
-              Collaboratively simplify user-friendly networks after principle-centered
-              coordinate effective methods of empowerment. Distributed niche markets
-              pursue market positioning web-readiness after resource-sucking
-              applications.
-            </p>
-            <p>
-            About Data Systems Research Foundation (DSRF) & Dr. RKS College
-            </p>
+            <h2 className="fw-bold">About Data Systems Research Foundation (DSRF) & Dr. RKS College</h2>
             <p>
             Established in 1983, Data Systems Research Foundation (DSRF) is a prestigious non-profit educational trust founded by DSS Systems and Software Technology Ltd., Pune, a well-respected name in the software industry. Affiliated with the Savitribai Phule Pune University, DSRF provides high-quality education that blends academic knowledge with real-world applications. The institute is committed to fostering a professional outlook in students through a practical and industry-relevant curriculum. With a mission to bridge the gap between education and employment, DSRF has successfully trained and mentored over 2,500 students, helping them achieve their career aspirations. The foundation also extends financial support through programs like the Earn & Learn Scheme for students below the poverty line, Scholarships, and special concessions for women to ensure that education remains accessible to all.
             </p>
