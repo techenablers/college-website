@@ -1,0 +1,62 @@
+.our-facility-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    padding: 0 120px;
+    justify-content: center; /* Ensures alignment */
+  }
+  
+  .our-facility-img {
+    flex: 1 1 45%;
+    width: 45%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .our-campus-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20%;
+    height: 170px;
+    background-color: #020e22;
+    z-index: 1;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+  }
+  
+  /* Mobile view - Shrinking the images but keeping 2 per row */
+  @media screen and (max-width: 640px) {
+    .our-facility-main {
+      padding: 10px !important;
+      gap: 10px !important;
+    }
+  
+    .our-facility-img {
+      width: 48% !important; /* Keep 2 images per row */
+      flex: 1 1 48% !important;
+      height: 150px !important; /* Reduce height */
+      border: 1px solid red !important;
+    }
+  
+    .our-campus-header {
+      width: 60% !important; /* Slightly larger header for readability */
+      height: 100px !important;
+      font-size: 12px !important;
+      padding: 5px !important;
+    }
+  }
+  
