@@ -13,7 +13,7 @@ function Resources() {
         fontSize:'14PX'
       }}
     >
-      <h4>Resources</h4>
+      <h5>Resources</h5>
       <DashDesign />
       <ul
         style={{

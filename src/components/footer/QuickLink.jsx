@@ -13,7 +13,7 @@ function QuickLink() {
         fontSize:'14px'
       }}
     >
-      <h4>Quick Link</h4>
+      <h5>Quick Link</h5>
       <DashDesign />
       <ul
         style={{

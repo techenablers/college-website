@@ -33,7 +33,8 @@ const Header = () => {
             <span className="me-2">
               <b>Follow Us</b>
             </span>
-            <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube /> <FaSkype />
+            <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube />{" "}
+            <FaSkype />
           </div>
         </div>
 
@@ -49,16 +50,47 @@ const Header = () => {
             borderTopLeftRadius: "60px",
           }}
         >
-          <nav className="navbar navbar-expand-lg navbar-light" style={{ position: "relative", top: "5px" }}>
+          <nav
+            className="navbar navbar-expand-lg navbar-light"
+            style={{ position: "relative", top: "5px" }}
+          >
             <div className="container">
               <a className="navbar-brand" href="#">
                 <img src={logo} alt="DR.K.S. JR COLLEGE" className="logo" />
               </a>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
                 <span className="navbar-toggler-icon"></span>
               </button>
+              {/* our course */}
+                {/* <button
+                  style={{
+                    backgroundColor: "#fff",
+                    color: "black",
+                    padding: "10px 20px",
+                    border: "1px solid black",
+                    cursor: "pointer",
+                    borderRadius: "10px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "20px", 
+                  }}
+                >
+                  <i className="fa fa-th-large" style={{ fontSize: "16px" }}></i>
+                  Our Courses
+                </button> */}
               <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav d-flex flex-row" style={{marginLeft:'60px', marginRight:'10px' }}>
+                <ul
+                  className="navbar-nav d-flex flex-row"
+                  style={{ marginLeft: "60px", marginRight: "10px" }}
+                >
                   <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">
                       Home
@@ -91,9 +123,13 @@ const Header = () => {
                     className="form-control me-2"
                     placeholder="Search for Our Programmes..."
                     aria-label="Search"
-                    style={{width:'250px'}}
+                    style={{ width: "250px" }}
                   />
-                  <button className="btn btn-outline-primary" type="submit" style={{width:'150px'}}>
+                  <button
+                    className="btn btn-outline-primary"
+                    type="submit"
+                    style={{ width: "150px" }}
+                  >
                     Apply Now
                   </button>
                 </form>

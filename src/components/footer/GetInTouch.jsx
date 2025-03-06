@@ -13,7 +13,7 @@ function GetInTouch() {
         fontSize:'14px'
       }}
     >
-      <h4>Get In Touch</h4>
+      <h5>Get In Touch</h5>
       <DashDesign />
       <p
         style={{
