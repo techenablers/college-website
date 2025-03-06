@@ -6,40 +6,38 @@ import "../../../src/styles/OurOfferContent.css";
 
 function EduraCourseinfo() {
   return (
-    <div className="d-flex ">
-      <span
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-        }}
-      >
+    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+      {/* First Section */}
+      <span className="d-flex flex-column align-items-center mb-4 mb-md-0 text-center">
         <WhatWeOfferUi />
         <h5>Choose Any Courses</h5>
         <p>
           Standards in leadership skills synergize optimal <br /> expertise
-          rather than innovative leadership <br /> skills and better learning.{" "}
+          rather than innovative leadership <br /> skills and better learning.
         </p>
       </span>
-      {/* <ScoopeContent/> */}
-      <img src={arrow} alt="My SVG Icon" width={150} height={100} />
-      <span>
+      
+      <img src={arrow} alt="My SVG Icon" width={150} height={100} className="my-3 my-md-0" />
+
+      {/* Second Section */}
+      <span className="d-flex flex-column align-items-center mb-4 mb-md-0 text-center">
         <WhatWeOfferUi />
         <h5>Choose Any Courses</h5>
         <p>
           Standards in leadership skills synergize optimal <br /> expertise
-          rather than innovative leadership <br /> skills and better learning.{" "}
+          rather than innovative leadership <br /> skills and better learning.
         </p>
       </span>
 
-      <img src={arrow} alt="My SVG Icon" width={150} height={100} />
-      <span>
+      <img src={arrow} alt="My SVG Icon" width={150} height={100} className="my-3 my-md-0" />
+
+      {/* Third Section */}
+      <span className="d-flex flex-column align-items-center text-center">
         <WhatWeOfferUi />
         <h5>Choose Any Courses</h5>
         <p>
           Standards in leadership skills synergize optimal <br /> expertise
-          rather than innovative leadership <br /> skills and better learning.{" "}
+          rather than innovative leadership <br /> skills and better learning.
         </p>
       </span>
     </div>

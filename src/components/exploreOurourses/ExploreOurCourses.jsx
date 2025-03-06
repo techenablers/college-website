@@ -1,5 +1,6 @@
 // import React from 'react'
 import "../../../src/styles/ExploreOurCourses.css";
+import NewTabContainer from "./couseTab/NewTabContainer";
 import TabContainer from "./couseTab/TabContainer";
 
 function ExploreOurCourses() {
@@ -19,7 +20,8 @@ function ExploreOurCourses() {
         Find the Right Program For Your <br /> Career Goals.
       </p>
       <div>
-        <TabContainer/>
+        {/* <TabContainer/> */}
+        <NewTabContainer />
       </div>
       <button className=" view-all-course-btn">All course Details</button>
     </div>

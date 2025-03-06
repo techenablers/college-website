@@ -1,9 +1,10 @@
-// import React from "react";
+/* eslint-disable no-unused-vars */
+import React from "react";
 import TestimonialCard from "./TestimonialCard";
 
 function TestimonialsContent() {
   return (
-    <div>
+    <div className="container">
       <p
         className="d-inline-block"
         style={{
@@ -12,7 +13,7 @@ function TestimonialsContent() {
           borderRadius: "10px",
           padding: "0 15px",
           lineHeight: "26px",
-          marginTop: "20px", // Added margin for better spacing
+          marginTop: "20px",
         }}
       >
         <span style={{ marginRight: "8px" }}>
@@ -25,16 +26,17 @@ function TestimonialsContent() {
         </span>
       </p>
 
-      <h5> What Our Student Say</h5>
+      <h5>What Our Students Say</h5>
 
       <TestimonialCard />
-      <span className="d-flex justify-content-center pb-4">
-        <buttons
+      
+      <div className="d-flex justify-content-center pb-4">
+        <button
           style={{
             backgroundColor: "#0540F2",
             color: "white",
             padding: "12px 20px",
-            display: "inlineFlex",
+            display: "inline-flex",
             cursor: "pointer",
             border: "none",
             borderRadius: "15px",
@@ -42,9 +44,9 @@ function TestimonialsContent() {
             right: "5px",
           }}
         >
-          <i className="fa fa-angle-left" style={{ fontSize: "30PX" }}></i>
-        </buttons>
-        <buttons
+          <i className="fa fa-angle-left" style={{ fontSize: "30px" }}></i>
+        </button>
+        <button
           style={{
             backgroundColor: "#0540F2",
             color: "white",
@@ -54,9 +56,9 @@ function TestimonialsContent() {
             borderRadius: "15px",
           }}
         >
-          <i className="fa fa-angle-right" style={{ fontSize: "30PX" }}></i>
-        </buttons>
-      </span>
+          <i className="fa fa-angle-right" style={{ fontSize: "30px" }}></i>
+        </button>
+      </div>
     </div>
   );
 }
