@@ -93,7 +93,7 @@ const Header = () => {
                     aria-label="Search"
                     style={{width:'250px'}}
                   />
-                  <button className="btn btn-outline-success" type="submit" style={{width:'150px'}}>
+                  <button className="btn btn-outline-primary" type="submit" style={{width:'150px'}}>
                     Apply Now
                   </button>
                 </form>
