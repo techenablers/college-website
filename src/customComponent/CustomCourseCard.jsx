@@ -1,10 +1,8 @@
 // import React from 'react'
-import myIcon from "../../src/assets/image.svg";
+// import myIcon from "../../src/assets/image.svg";
 
 // eslint-disable-next-line react/prop-types
 function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
-    console.log('1',imageSrc, title, description);
-    console.log('i am coming');
     
     
  return (
@@ -33,7 +31,7 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
         </span>
 
         <span className=" d-flex justify-content-center ">
-          <img src={myIcon} alt="My SVG Icon" width={295} height={210} />
+          <img src={imageSrc} alt="My SVG Icon" width={295} height={210} />
         </span>
         {/* Card Body */}
         <div

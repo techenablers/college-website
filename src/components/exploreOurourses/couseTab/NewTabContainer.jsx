@@ -1,10 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import CustomCourseCard from "../../../customComponent/CustomCourseCard";
-import myIcon from "../../../../src/assets/image.svg";
+import myIcon from "../../../../src/assets/juCollege.svg";
+import ba from "../../../../src/assets/ba.svg";
+import bcom from "../../../../src/assets/bCom.svg";
+import data from "../../../../src/assets/data.svg";
+import iti from "../../../../src/assets/iti.svg";
+import science from "../../../../src/assets/science.svg";
 
 function NewTabContainer() {
-  const coursDetails = [
+  const coursDetails = [  
     {
       id: 1,
       imageSrc: myIcon,
@@ -16,7 +21,7 @@ function NewTabContainer() {
     },
     {
       id: 2,
-      imageSrc: myIcon,
+      imageSrc: data,
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
@@ -25,7 +30,7 @@ function NewTabContainer() {
     },
     {
       id: 3,
-      imageSrc: myIcon,
+      imageSrc: iti,
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
@@ -34,7 +39,7 @@ function NewTabContainer() {
     },
     {
       id: 4,
-      imageSrc: myIcon,
+      imageSrc: science,
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
@@ -43,7 +48,7 @@ function NewTabContainer() {
     },
     {
       id: 5,
-      imageSrc: myIcon,
+      imageSrc: bcom,
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
@@ -52,7 +57,7 @@ function NewTabContainer() {
     },
     {
       id: 6,
-      imageSrc: myIcon,
+      imageSrc: ba,
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
