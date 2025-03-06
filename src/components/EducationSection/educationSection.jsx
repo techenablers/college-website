@@ -4,19 +4,20 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import modren from "../../assets/modren.svg";
 import Placement from "../../assets/placement.svg";
 import expor from "../../assets/expor.svg";
+import educationSectionImage from "../../assets/educationSectionImage.svg"
 import "./EducationSection.css";
 
 const EducationSection = () => {
   return (
     <Container fluid className="education-section py-5">
       <Row className="justify-content-center">
-        <Col lg={5} md={6} className="text-section">
+        <Col lg={5} md={12} className="text-section">
           <h6 className="text-uppercase text-muted">Why Choose Us</h6>
           <h1 className="SemiBold">
             Transform Education Your Life, Change the World
           </h1>
           <Row className="features mt-4">
-            <Col xs={6} className="mb-3">
+            <Col xs={12} sm={6} md={6} className="mb-3">
               <Card className="feature-card">
                 <Card.Body>
                   <img src={Placement} />
@@ -26,7 +27,7 @@ const EducationSection = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={6} className="mb-3">
+            <Col xs={12} sm={6} md={6} className="mb-3">
               <Card className="feature-card">
                 <Card.Body>
                   <img src={modren} />
@@ -34,16 +35,15 @@ const EducationSection = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={6} className="mb-3">
+            <Col xs={12} sm={6} md={6} className="mb-3">
               <Card className="feature-card">
                 <Card.Body>
-                  {/* <i className="icon">👨‍🏫</i> */}
                   <img src={expor} />
                   <Card.Title>Expert Faculty</Card.Title>
                 </Card.Body>
               </Card>
             </Col>
-            <Col xs={6} className="mb-3">
+            <Col xs={12} sm={6} md={6} className="mb-3">
               <Card className="feature-card">
                 <Card.Body>
                   <img src={Placement} />
@@ -54,8 +54,9 @@ const EducationSection = () => {
           </Row>
         </Col>
 
-        <Col lg={5} md={6} className="image-placeholder">
-          <div className="dark-box"></div>
+        <Col lg={5} md={12} className="image-placeholder">
+            <img src={educationSectionImage} />
+
         </Col>
       </Row>
     </Container>
