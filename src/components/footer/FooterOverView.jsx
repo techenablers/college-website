@@ -3,6 +3,7 @@ import CollegeInfoInFooter from "./CollegeInfoInFooter";
 import QuickLink from "./QuickLink";
 import Resources from "./Resources";
 import GetInTouch from "./GetInTouch";
+import "../../styles/FooterContainer.css"
 
 function FooterOverView() {
   return (
@@ -11,7 +12,7 @@ function FooterOverView() {
       style={{ backgroundColor: "#1E2C46", width: "100%", padding: "30px" }}
     >
       <div
-        className="d-flex justify-content-around align-items-top"
+        className="d-flex justify-content-around align-items-start flex-wrap footer-container"
         style={{ gap: "20px" }}
       >
         <CollegeInfoInFooter />

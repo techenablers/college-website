@@ -57,7 +57,6 @@ function NewTabContainer() {
             imageSrc={val.imageSrc}
             title={val.title}
             description={val.description}
-            // footerContent={}
           />
         </div>
       ))}

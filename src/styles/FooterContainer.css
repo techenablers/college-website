@@ -1,0 +1,8 @@
+@media screen and (max-width: 640px) {
+    .footer-container {
+      flex-direction: column !important; /* Stack items vertically */
+      align-items: flex-start !important; /* Center-align items */
+      text-align: center;
+    }
+  }
+  
