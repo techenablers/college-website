@@ -11,6 +11,8 @@ function NewTabContainer() {
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
+        tagInfo:"Junior college",
+        bgColor:'#B128FF'
     },
     {
       id: 2,
@@ -18,6 +20,8 @@ function NewTabContainer() {
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
+        tagInfo:"BSC DataScience",
+        bgColor:'#2864FF'
     },
     {
       id: 3,
@@ -25,6 +29,8 @@ function NewTabContainer() {
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
+        tagInfo:"Bsc Information Technology",
+        bgColor:'#F2277E'
     },
     {
       id: 4,
@@ -32,6 +38,8 @@ function NewTabContainer() {
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
+        tagInfo:"Bachelor of Science",
+        bgColor:'#1EC902'
     },
     {
       id: 5,
@@ -39,6 +47,8 @@ function NewTabContainer() {
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
+        tagInfo:"Bachelor of Commerce",
+        bgColor:'#FE2323'
     },
     {
       id: 6,
@@ -46,6 +56,8 @@ function NewTabContainer() {
       title: "Foundation course to under stand about softwere",
       description:
         "Standards in leadership skills syneze optimal rather than......",
+        tagInfo:"Bachelor of Arts",
+        bgColor:'#FF7B1B'
     },
   ];
 
@@ -57,6 +69,8 @@ function NewTabContainer() {
             imageSrc={val.imageSrc}
             title={val.title}
             description={val.description}
+            tagInfo={val.tagInfo}
+            bgColor={val.bgColor}
           />
         </div>
       ))}

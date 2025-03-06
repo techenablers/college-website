@@ -1,7 +1,7 @@
 // import React from 'react'
 import "../../../src/styles/ExploreOurCourses.css";
 import NewTabContainer from "./couseTab/NewTabContainer";
-import TabContainer from "./couseTab/TabContainer";
+// import TabContainer from "./couseTab/TabContainer";
 
 function ExploreOurCourses() {
   return (

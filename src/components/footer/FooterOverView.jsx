@@ -9,11 +9,11 @@ function FooterOverView() {
   return (
     <div
       className="d-flex flex-column"
-      style={{ backgroundColor: "#1E2C46", width: "100%", padding: "30px" }}
+      style={{ backgroundColor: "#1E2C46", width: "100%", padding: "35px 30px" }}
     >
       <div
         className="d-flex justify-content-around align-items-start flex-wrap footer-container"
-        style={{ gap: "20px" }}
+        // style={{ gap: "20px" }}
       >
         <CollegeInfoInFooter />
         <QuickLink />

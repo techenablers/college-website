@@ -30,12 +30,12 @@ function TestimonialsContent() {
 
       <TestimonialCard />
       
-      <div className="d-flex justify-content-center pb-4">
+      <div className="d-flex justify-content-center pb-4" style={{ gap: "15px" }}>
         <button
           style={{
             backgroundColor: "#0540F2",
             color: "white",
-            padding: "12px 20px",
+            padding: "10px 15px",
             display: "inline-flex",
             cursor: "pointer",
             border: "none",
@@ -50,7 +50,7 @@ function TestimonialsContent() {
           style={{
             backgroundColor: "#0540F2",
             color: "white",
-            padding: "12px 20px",
+            padding: "10px 15px",
             border: "none",
             cursor: "pointer",
             borderRadius: "15px",
