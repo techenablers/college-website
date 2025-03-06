@@ -33,7 +33,7 @@ function CollegeInfoInFooter() {
         compelling alignments
       </span>
 
-      <div style={{paddingTop:'10PX'}}>
+      <div style={{paddingTop:'10PX',marginTop:'5px'}}>
         <h5>Follow Us On:</h5>
         <div style={{ display: "flex", gap: "10px" }}>
           {Object.keys(icons).map((key) => (
