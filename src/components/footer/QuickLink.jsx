@@ -3,18 +3,34 @@ import DashDesign from "./DashDesign";
 
 function QuickLink() {
   return (
-    <div  style={{color:"#ffffff"}}>
-      {" "}
-      <h4> Quick Link</h4>
+    <div
+      style={{
+        color: "#ffffff",
+        textAlign: "left",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start", // Ensures alignment to the start
+      }}
+    >
+      <h4>Quick Link</h4>
       <DashDesign />
-      <ul>
-        <li>Life Coach</li>
-        <li>Business Coach</li>
-        <li>Life Couch</li>
-        <li>Health Couch</li>
-        <li>Development</li>
-        <li>Wev Development</li>
-        <li>SEO Optimize</li>
+      <ul
+        style={{
+          paddingLeft: "20px", // Ensures proper indentation for bullet points
+          margin: 0, // Removes default margin
+        }}
+      >
+        {[
+          "Life Coach",
+          "Business Coach",
+          "Life Couch",
+          "Health Couch",
+          "Development",
+          "Web Development",
+          "SEO Optimize",
+        ].map((item, index) => (
+          <li key={index} style={{ padding: "5px 0" }}>{item}</li>
+        ))}
       </ul>
     </div>
   );

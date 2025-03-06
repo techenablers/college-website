@@ -3,18 +3,34 @@ import DashDesign from "./DashDesign";
 
 function Resources() {
   return (
-    <div  style={{color:"#ffffff"}}>
-      {" "}
-      <h4> Resorce</h4>
+    <div
+      style={{
+        color: "#ffffff",
+        textAlign: "left",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "flex-start", // Ensures left alignment
+      }}
+    >
+      <h4>Resources</h4>
       <DashDesign />
-      <ul>
-        <li>Cumunity </li>
-        <li>Sports</li>
-        <li>Video Guides</li>
-        <li>Health Couch</li>
-        <li>Documentation </li>
-        <li>Security</li>
-        <li>Templet</li>
+      <ul
+        style={{
+          paddingLeft: "20px", // Ensures proper indentation for bullet points
+          margin: 0, // Removes default margin
+        }}
+      >
+        {[
+          "Community",
+          "Sports",
+          "Video Guides",
+          "Health Couch",
+          "Documentation",
+          "Security",
+          "Template",
+        ].map((item, index) => (
+          <li key={index} style={{ padding: "5px 0" }}>{item}</li>
+        ))}
       </ul>
     </div>
   );

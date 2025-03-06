@@ -5,7 +5,7 @@
     width: 100%;
     position: relative;
     padding: 0 120px;
-    justify-content: center; /* Ensures alignment */
+    justify-content: center;
   }
   
   .our-facility-img {
@@ -40,6 +40,13 @@
   
   /* Mobile view - Shrinking the images but keeping 2 per row */
   @media screen and (max-width: 640px) {
+
+    .our-facility-main {
+        padding: 0 20px;  /* Reduce padding for smaller screens */
+    }
+    .our-facility-img {
+        width: 100%; /* Make each image full-width in a single column */
+    }
     .our-facility-main {
       padding: 10px !important;
       gap: 10px !important;
@@ -48,7 +55,7 @@
     .our-facility-img {
       width: 48% !important; /* Keep 2 images per row */
       flex: 1 1 48% !important;
-      height: 150px !important; /* Reduce height */
+     /*  height: 150px !important; */ /* Reduce height */
       border: 1px solid red !important;
     }
   
