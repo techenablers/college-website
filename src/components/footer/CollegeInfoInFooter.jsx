@@ -22,10 +22,10 @@ function CollegeInfoInFooter() {
 
   return (
     <div
-      className="d-flex flex-column"
+      className="d-flex flex-column align-item-start justify-content-around"
      style={{color:"#ffffff"}}
     >
-      <img src={logo} width={250} height={75} alt="college logo" />
+      <img src={logo} width={250} height={75} alt="college logo" style={{paddingBottom:'10px'}} />
 
       <span>
         Continually optimize backward manufactured <br />
@@ -33,7 +33,7 @@ function CollegeInfoInFooter() {
         compelling alignments
       </span>
 
-      <div>
+      <div style={{paddingTop:'10PX'}}>
         <h5>Follow Us On:</h5>
         <div style={{ display: "flex", gap: "10px" }}>
           {Object.keys(icons).map((key) => (

@@ -9,7 +9,7 @@ function ContactInfo() {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
+          alignItems: "center", 
         }}
       >
         <strong>Call us any time:</strong>

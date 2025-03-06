@@ -1,7 +1,6 @@
 // import React from "react";
 import ContactInfo from "./ContactInfo";
 import FooterOverView from "./FooterOverView";
-import QuickLink from "./QuickLink";
 
 function Footer() {
   return (
