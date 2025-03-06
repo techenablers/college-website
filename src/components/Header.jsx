@@ -1,20 +1,11 @@
-  /* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
 import React from "react";
-// import {
-//   Navbar,
-//   Nav,
-//   Container,
-//   Button,
-//   Form,
-//   InputGroup,
-// } from "react-bootstrap";
 import {
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
   FaYoutube,
   FaSkype,
-  FaSearch,
 } from "react-icons/fa";
 import "../styles/Header.css";
 import logo from "../assets/logo.svg";
@@ -22,52 +13,9 @@ import logo from "../assets/logo.svg";
 const Header = () => {
   return (
     <>
-      {/* Top Bar */}
-      {/* <div className="top-bar d-flex justify-content-between align-items-center px-4 py-2">
-        <div className="contact-info">
-          <span>256 214 203 215</span> | <span>info@edura.com</span>
-        </div>
-        <div className="social-icons d-flex align-items-center">
-          <span className="me-2">Follow Us</span>
-          <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube /> <FaSkype />
-        </div>
-      </div>
- */}
-      {/* Main Navbar */}
-      {/* <Navbar expand="lg" className="main-navbar py-3">
-        <Container className="d-flex align-items-center justify-content-between">
-          <Navbar.Brand href="#">
-            <img src={logo} alt="DR.K.S. JR COLLEGE" className="logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav" className="justify-content-center">
-            <Nav className="nav-links">
-              <Nav.Link href="#">HOME</Nav.Link>
-              <Nav.Link href="#">ABOUT</Nav.Link>
-              <Nav.Link href="#">ADMISSIONS</Nav.Link>
-              <Nav.Link href="#">STUDENT'S CORNER</Nav.Link>
-              <Nav.Link href="#">CONTACT</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-          <div className="d-flex align-items-center gap-3">
-            <InputGroup className="search-bar">
-              <Form.Control
-                type="search"
-                placeholder="Search For Our Programmes..."
-                aria-label="Search"
-                className="search-input"
-              />
-              <div className="search-icon">
-                <FaSearch />
-              </div>
-            </InputGroup>
-            <Button className="apply-now">APPLY NOW</Button>
-          </div>
-        </Container>
-      </Navbar> */}
-
-      <div className="top-bar d-flex  px-4 py-2">
+      <div className="top-bar d-flex px-4 py-2 justify-content-between">
         <div
+          className="social-bar"
           style={{
             width: "30%",
             height: "35px",
@@ -75,7 +23,7 @@ const Header = () => {
             position: "absolute",
             right: "0",
             top: "0",
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35px, 40px 0)", // Clip the top-left corner only
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35px, 40px 0)",
           }}
         >
           <div
@@ -85,12 +33,12 @@ const Header = () => {
             <span className="me-2">
               <b>Follow Us</b>
             </span>
-            <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube />{" "}
-            <FaSkype />
+            <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube /> <FaSkype />
           </div>
         </div>
+
         <div
-          className=""
+          className="navbar-container"
           style={{
             width: "90%",
             height: "65px",
@@ -101,51 +49,53 @@ const Header = () => {
             borderTopLeftRadius: "60px",
           }}
         >
-          {/* <Navbar expand="lg" className=" py-3">
-            <Container className="d-flex align-items-center justify-content-between"></Container>
-          </Navbar> */}
-
-          <nav className="navbar" style={{ position: "relative", top: "5px" }}>
-            <div className="container d-flex justify-content-between">
-              <a
-                className="navbar-brand"
-                href="#"
-                style={{ marginRight: "100px" }}
-              >
+          <nav className="navbar navbar-expand-lg navbar-light" style={{ position: "relative", top: "5px" }}>
+            <div className="container-fluid">
+              <a className="navbar-brand" href="#">
                 <img src={logo} alt="DR.K.S. JR COLLEGE" className="logo" />
               </a>
-
-              <div className="navbar-nav d-flex flex-row">
-                <a className="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-                <a className="nav-link" href="#">
-                  About
-                </a>
-                <a className="nav-link" href="#">
-                  Admission
-                </a>
-                <a className="nav-link disabled" aria-disabled="true">
-                  Student&apos;s Corner
-                </a>
-                <a className="nav-link disabled" aria-disabled="true">
-                  Contact
-                </a>
-
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Search for Our Programmes..."
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                ></input>
-
-               {/*  <div className="search-icon">
-                  <FaSearch />
-                </div> */}
-                <button className="apply-now" type="submit">
-                  Apply Now
-                </button>
+              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav d-flex flex-row ms-auto">
+                  <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="#">
+                      Home
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      About
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="#">
+                      Admission
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link disabled" aria-disabled="true">
+                      Student&apos;s Corner
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link disabled" aria-disabled="true">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+                <form className="d-flex">
+                  <input
+                    type="text"
+                    className="form-control me-2"
+                    placeholder="Search for Our Programmes..."
+                    aria-label="Search"
+                  />
+                  <button className="btn btn-outline-success" type="submit">
+                    Apply Now
+                  </button>
+                </form>
               </div>
             </div>
           </nav>

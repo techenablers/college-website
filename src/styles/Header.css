@@ -1,4 +1,4 @@
-/* Header styling */
+
 .top-bar {
   background-color: #0b0c26;
   color: white;
@@ -24,24 +24,7 @@
   color: white;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
-}
-
-.social-icons svg:hover {
-  color: #ff3b3b;
-}
-
-.main-navbar {
-  background-color: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  position: fixed;
-  top: 30px;
-  left: 0;
-  z-index: 999;
+  text-align: center;
 }
 
 /* Logo settings */
@@ -50,7 +33,7 @@
   width: auto;
 }
 
-/* Navbar styling */
+/* HERE THE HOME  ABOUT  ADDIMITION CONTETN */
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -76,27 +59,27 @@
   color: #ff3b3b;
 }
 
-.search-container {
+/* .search-container {
   display: flex;
   align-items: center;
   flex-grow: 0;
   justify-content: flex-end;
   gap: 15px;
-}
+} */
 
-.search-bar {
+/* .search-bar {
   display: flex;
   align-items: center;
-  width: 250px; /* Set width for consistency */
+  width: 250px; 
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
+ */
 .search-input {
-  padding: 10px 15px; /* Adjust padding for medium size */
-  font-size: 14px; /* Medium font size */
-  width: 100%; /* Take full width of container */
-  height: 40px; /* Ensure consistent height */
+  padding: 10px 15px;
+  font-size: 14px; 
+  width: 100%; 
+  height: 40px; 
   border: none;
 }
 
