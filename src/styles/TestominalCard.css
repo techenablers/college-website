@@ -1,0 +1,49 @@
+/* Base styles for the testimonial cards */
+.testimonial-card {
+    margin: 20px;
+    width: 300px; /* Static width for each card */
+    flex: 1 1 300px; /* Cards can wrap in a row if space is available */
+  }
+  
+  /* Media Query for Tablets and Smaller Screens */
+  @media (max-width: 768px) {
+    .testimonial-card {
+      width: 250px; /* Cards will take full width on medium screens like tablets */
+      max-width: 300px; /* Limit the maximum width for better layout */
+      margin: 10px auto; /* Center cards with spacing between them */
+    }
+  
+    .card {
+      padding: 15px; /* Add more padding for better readability on smaller screens */
+    }
+  
+    h6 {
+      font-size: 14px; /* Adjust heading font size */
+    }
+  
+    p {
+      font-size: 12px; /* Adjust paragraph font size */
+    }
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media (max-width: 480px) {
+    .testimonial-card {
+      width: 100%; /* Cards take up full width on small screens */
+      max-width: 100%; /* Cards will stretch to fill the container */
+      margin: 10px; /* Ensure space between cards */
+    }
+  
+    .card {
+      padding: 10px; /* Reduce padding for very small screens */
+    }
+  
+    h6 {
+      font-size: 12px; /* Further reduce font size for smaller screens */
+    }
+  
+    p {
+      font-size: 10px; /* Reduce paragraph font size on small screens */
+    }
+  }
+  
