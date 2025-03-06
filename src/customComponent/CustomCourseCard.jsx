@@ -2,7 +2,7 @@
 import myIcon from "../../src/assets/image.svg";
 
 // eslint-disable-next-line react/prop-types
-function CustomCourseCard({ imageSrc, title, description /* footerContent */ }) {
+function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
     console.log('1',imageSrc, title, description);
     console.log('i am coming');
     
@@ -22,14 +22,14 @@ function CustomCourseCard({ imageSrc, title, description /* footerContent */ }) 
           className="badge position-absolute"
           style={{
             textAlign: "center",
-            backgroundColor: "#B128FF",
-            color: "#ffffff",
+            backgroundColor: bgColor,
+            color: '#ffffff',
             top: "25px",
             left: "20px",
             fontSize: "12px",
           }}
         >
-          Primary
+          {tagInfo}
         </span>
 
         <span className=" d-flex justify-content-center ">
