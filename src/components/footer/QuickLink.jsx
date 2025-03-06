@@ -10,6 +10,7 @@ function QuickLink() {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start", // Ensures alignment to the start
+        fontSize:'14px'
       }}
     >
       <h4>Quick Link</h4>

@@ -23,7 +23,7 @@ function CollegeInfoInFooter() {
   return (
     <div
       className="d-flex flex-column align-items-start justify-content-around"
-     style={{color:"#ffffff"}}
+     style={{color:"#ffffff", fontSize:'14px'}}
     >
       <img src={logo} width={250} height={75} alt="college logo" style={{paddingBottom:'10px'}} />
 

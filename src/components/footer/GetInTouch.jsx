@@ -10,6 +10,7 @@ function GetInTouch() {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start", // Ensures left alignment
+        fontSize:'14px'
       }}
     >
       <h4>Get In Touch</h4>

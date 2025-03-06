@@ -10,6 +10,7 @@ function Resources() {
         display: "flex",
         flexDirection: "column",
         alignItems: "flex-start", // Ensures left alignment
+        fontSize:'14PX'
       }}
     >
       <h4>Resources</h4>
