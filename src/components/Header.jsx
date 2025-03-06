@@ -50,7 +50,7 @@ const Header = () => {
           }}
         >
           <nav className="navbar navbar-expand-lg navbar-light" style={{ position: "relative", top: "5px" }}>
-            <div className="container-fluid">
+            <div className="container">
               <a className="navbar-brand" href="#">
                 <img src={logo} alt="DR.K.S. JR COLLEGE" className="logo" />
               </a>
@@ -58,7 +58,7 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav d-flex flex-row ms-auto">
+              <ul className="navbar-nav d-flex flex-row" style={{marginLeft:'60px', marginRight:'10px' }}>
                   <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="#">
                       Home
@@ -91,8 +91,9 @@ const Header = () => {
                     className="form-control me-2"
                     placeholder="Search for Our Programmes..."
                     aria-label="Search"
+                    style={{width:'250px'}}
                   />
-                  <button className="btn btn-outline-success" type="submit">
+                  <button className="btn btn-outline-success" type="submit" style={{width:'150px'}}>
                     Apply Now
                   </button>
                 </form>

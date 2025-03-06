@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
@@ -9,7 +10,6 @@ import Offerings from "../components/Offerings/offerings";
 import AboutUniversity from "../components/AboutUniversity/AboutUniversity";
 import "../styles/Home.css";
 import Information from "../components/collegeInformation/Information";
-import TransformEducation from "../components/TransformEducation";
 import OurCoreMember from "../components/OurCoreMember";
 import Flash from "../components/Flash";
 import EducationSection from "../components/EducationSection/educationSection";
