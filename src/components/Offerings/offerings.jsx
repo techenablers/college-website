@@ -1,84 +1,65 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
-import "../../styles/TestominalCard.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Offerings.css";
+import deskrop from "../../../src/assets/Icon.svg";
+import art from "../../../src/assets/art.svg";
+import man from "../../../src/assets/man.svg";
 
-function TestimonialCard() {
-  const testimonialInformation = [
-    {
-      name: "Pramod Barke",
-      content:
-        "Excellent classes, teachers are very sincere and friendly and give attention to every student.",
-    },
-    {
-      name: "Wade Warren",
-      content: "All teachers are enthusiastic and ready to help.",
-    },
-    {
-      name: "Shubham Pathare",
-      content:
-        "My sincere appreciation and gratitude to my teachers for their efforts in imparting quality education.",
-    },
-  ];
-
+const Offerings = () => {
   return (
-    <div className="d-flex flex-wrap justify-content-center">
-      {testimonialInformation.map((val, index) => (
-        <div
-          className="testimonial-card"
-          key={index}
-          style={{
-            margin: "20px",
-            width: "300px", // Fixed width for the card
-            flex: "1 1 300px", // Ensures the cards can wrap if needed
-          }}
-        >
-          <div
-            className="card"
-            style={{
-              height: "250px", // Auto height based on content
-              borderRadius: "25px",
-              border: "none",
-              padding: "10px 20px", // Increased padding for better spacing
-              boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)", // Added shadow for a better look
-              marginBottom: "20px", // Space between cards
-              width: "300px",
-            }}
-          >
-            <div className="card-body d-flex flex-column justify-content-between">
-              <div className="d-flex flex-column justify-content-start align-items-start mb-3">
-                <h6 style={{ fontWeight: "600", fontSize: "16px" }}>
-                  {val.name}
-                </h6>
+    <section className="offerings-section text-white py-5">
+      <div className="container text-center">
+        <h2 className="fw-bold">What we are offering ?</h2>
+        <p className="lead">
+          Your future starts here with our student-centered learning, <br />
+          career-oriented programs, and an inspiring academic <br />{" "}
+          environment.
+        </p>
 
-                <p
-                  style={{
-                    fontSize: "14px",
-                    color: "#555",
-                    // marginBottom: "15px",
-                    marginTop: "25px",
-                    textAlign: "start",
-                  }}
-                >
-                  {val.content}
-                </p>
-              </div>
+        <div className="row mt-5">
+          {/* Commerce Stream */}
+          <div className="col-md-4">
+            <div className="p-4">
+              <img src={deskrop} />
+              <h4 className="fw-bold">Commerce Stream</h4>
+              <p>
+                Commerce education that blends <br />
+                theory, real-world applications, and <br />
+                career-oriented training for future <br />
+                success. .
+              </p>
+            </div>
+          </div>
 
-              <div className="">
-                <span className="text-start d-block">
-                  {" "}
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-secondary"></i>{" "}
-                </span>
-              </div>
+          {/* Arts Stream */}
+          <div className="col-md-4">
+            <div className="p-4">
+              <img src={art} />
+              <h4 className="fw-bold">Arts Stream</h4>
+              <p>
+                Nurture your passion for culture,
+                <br /> history, and creativity with our expert-led <br />
+                Arts courses.
+              </p>
+            </div>
+          </div>
+
+          {/* Science Stream */}
+          <div className="col-md-4">
+            <div className="p-4">
+              <img src={man} />
+              <h4 className="fw-bold">Science Stream</h4>
+              <p>
+                Gain expertise in information technology <br />
+                and data science for limitless <br />
+                opportunities.
+              </p>
             </div>
           </div>
         </div>
-      ))}
-    </div>
+      </div>
+    </section>
   );
-}
+};
 
-export default TestimonialCard;
+export default Offerings;
