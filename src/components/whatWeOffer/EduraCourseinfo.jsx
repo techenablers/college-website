@@ -3,9 +3,9 @@ import React from "react";
 import arrow from "../../../src/assets/Vector.svg";
 import WhatWeOfferUi from "./WhatWeOfferUi";
 import "../../../src/styles/OurOfferContent.css";
-import aa from "../../assets/aa.svg"
-import bb from "../../assets/bb.svg"
-import cc from "../../assets/cc.svg"
+import aa from "../../assets/data.svg"
+import bb from "../../assets/iti.svg"
+import cc from "../../assets/science.svg"
 
 function EduraCourseinfo() {
   return (
