@@ -2,10 +2,11 @@
     position: relative;
     width: 150px; /* Set the size of the square */
     height: 150px; /* Set the size of the square */
-    background-color: #9FAAB7; /* Square background color */
+    /* background-color: #9FAAB7; */ /* Square background color */
     border-radius: 25px; /* Optional: rounding the corners of the square */
     overflow: hidden; /* Ensures the circle stays within the square */
     margin: 0 auto;
+    /* background: url("../assets/ba.svg") */
   }
   
   .scooped-ball {
