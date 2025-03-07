@@ -7,17 +7,16 @@ function TestimonialCard() {
     {
       name: "Ronald Richards",
       content:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.",
+        "Excellent classes, teachers are very sincere and friendly and give attention to every student.",
     },
     {
       name: "Wade Warren",
-      content:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.",
+      content: "All teachers are enthusiastic and ready to help.",
     },
     {
       name: "Jacob Jones",
       content:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit.",
+        "My sincere appreciation and gratitude to my teachers for their efforts in imparting quality education.",
     },
   ];
 
@@ -45,28 +44,33 @@ function TestimonialCard() {
               width: "300px",
             }}
           >
-            <div className="card-body">
-              <div className="d-flex flex-column justify-content-start align-items-center mb-3">
+            <div className="card-body d-flex flex-column">
+              <div className="d-flex flex-column justify-content-start align-items-start  mb-3">
                 <h6 style={{ fontWeight: "600", fontSize: "16px" }}>
                   {val.name}
                 </h6>
-              </div>
-              <p
-                style={{
-                  fontSize: "14px",
-                  color: "#555",
-                  marginBottom: "15px",
-                  textAlign: "start",
-                }}
-              >
-                {val.content}
-              </p>
 
-              <div className="d-flex justify-content-between">
-                <span>rating comes here</span>
-                <p style={{ fontSize: "12px", color: "#888" }}>
-                  06 August 2024
+                <p
+                  style={{
+                    fontSize: "14px",
+                    color: "#555",
+                    marginTop: "25px",
+                    textAlign: "start",
+                  }}
+                >
+                  {val.content}
                 </p>
+              </div>
+
+              <div className="mt-auto">
+                <span className="text-start d-block">
+                  <i className="fa fa-star text-warning"></i>
+                  <i className="fa fa-star text-warning"></i>
+                  <i className="fa fa-star text-warning"></i>
+                  <i className="fa fa-star text-warning"></i>
+                  <i className="fa fa-star text-secondary"></i>{" "}
+                  {/* Empty star */}
+                </span>
               </div>
             </div>
           </div>
