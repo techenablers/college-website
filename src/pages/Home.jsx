@@ -20,19 +20,19 @@ const Home = () => {
   return (<div className="home-container">
   <Header />
   <div className="main-content">
-  {/* <Banner />
+  <Banner />
   <Flash/>
   <Information/>
   <Offerings />
   <AboutUniversity/>
-  <EducationSection /> */}
+  <EducationSection />
   {/* <TransformEducation/> */}
-  {/* <OurCoreMember/>
+  <OurCoreMember/>
   <ExploreOurCourses/>
   <OurOfferContent/>
-  <OurFacilities/> */}
+  <OurFacilities/>
   {/* <Contact/> */}
-  <Events/>
+  {/* <Events/> */}
   <Footer/>
   </div>
   </div>)

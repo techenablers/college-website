@@ -5,16 +5,16 @@ import "../../styles/TestominalCard.css";
 function TestimonialCard() {
   const testimonialInformation = [
     {
-      name: "Ronald Richards",
+      name: "Pramod Barke",
       content:
         "Excellent classes, teachers are very sincere and friendly and give attention to every student.",
     },
     {
-      name: "Wade Warren",
+      name: "Payal Uppal",
       content: "All teachers are enthusiastic and ready to help.",
     },
     {
-      name: "Jacob Jones",
+      name: "Shubham Pathare",
       content:
         "My sincere appreciation and gratitude to my teachers for their efforts in imparting quality education.",
     },
