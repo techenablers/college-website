@@ -13,7 +13,7 @@ function NewTabContainer() {
     {
       id: 1,
       imageSrc: myIcon,
-      title: "Foundation course to under stand about softwere",
+      title: "Arts Commerce and Science 11th and 12th",
       description:
         "Standards in leadership skills syneze optimal rather than......",
         tagInfo:"Junior college",
@@ -22,7 +22,7 @@ function NewTabContainer() {
     {
       id: 2,
       imageSrc: data,
-      title: "Foundation course to under stand about softwere",
+      title: "Bachelor of Science Data Science",
       description:
         "Standards in leadership skills syneze optimal rather than......",
         tagInfo:"BSC DataScience",
@@ -31,7 +31,7 @@ function NewTabContainer() {
     {
       id: 3,
       imageSrc: iti,
-      title: "Foundation course to under stand about softwere",
+      title: "Bachelor of Science Information Technology",
       description:
         "Standards in leadership skills syneze optimal rather than......",
         tagInfo:"Bsc Information Technology",
@@ -40,7 +40,7 @@ function NewTabContainer() {
     {
       id: 4,
       imageSrc: science,
-      title: "Foundation course to under stand about softwere",
+      title: "Bachelor of Science",
       description:
         "Standards in leadership skills syneze optimal rather than......",
         tagInfo:"Bachelor of Science",
@@ -49,7 +49,7 @@ function NewTabContainer() {
     {
       id: 5,
       imageSrc: bcom,
-      title: "Foundation course to under stand about softwere",
+      title: "Bachelor of Commerce",
       description:
         "Standards in leadership skills syneze optimal rather than......",
         tagInfo:"Bachelor of Commerce",
@@ -58,7 +58,7 @@ function NewTabContainer() {
     {
       id: 6,
       imageSrc: ba,
-      title: "Foundation course to under stand about softwere",
+      title: "Bachelor of Arts",
       description:
         "Standards in leadership skills syneze optimal rather than......",
         tagInfo:"Bachelor of Arts",

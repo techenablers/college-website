@@ -13,6 +13,7 @@ import Information from "../components/collegeInformation/Information";
 import OurCoreMember from "../components/OurCoreMember";
 import Flash from "../components/Flash";
 import EducationSection from "../components/EducationSection/educationSection";
+import Contact from "./Contact";
 
 const Home = () => {
   return (<div className="home-container">
@@ -29,6 +30,7 @@ const Home = () => {
   <ExploreOurCourses/>
   <OurOfferContent/>
   <OurFacilities/>
+  {/* <Contact/> */}
   <Footer/>
   </div>
   </div>)

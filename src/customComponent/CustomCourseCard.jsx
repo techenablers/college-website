@@ -2,10 +2,8 @@
 // import myIcon from "../../src/assets/image.svg";
 
 // eslint-disable-next-line react/prop-types
-function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
-    
-    
- return (
+function CustomCourseCard({ imageSrc, title, description, bgColor, tagInfo }) {
+  return (
     <div className="container mt-5">
       <div
         className="card"
@@ -21,7 +19,7 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
           style={{
             textAlign: "center",
             backgroundColor: bgColor,
-            color: '#ffffff',
+            color: "#ffffff",
             top: "25px",
             left: "20px",
             fontSize: "12px",
@@ -55,7 +53,7 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
                 style={{ fontSize: "20px" }}
               ></i>
             </span>{" "}
-            B-Tech
+            {tagInfo}
           </h6>
 
           <p
@@ -67,7 +65,7 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
               marginBottom: "5px",
             }}
           >
-            Foundation course to under stand about softwere
+            {title}
           </p>
           <p
             className=""
@@ -78,15 +76,12 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
               marginBottom: "5px",
             }}
           >
-            Standards in leadership skills syneze optimal rather than......
-            <span>(Read more)</span>
+            {description}
+            <span>(......Read more)</span>
           </p>
         </div>
         {/* Card Footer */}
-        <div
-          className="d-flex justify-content-between"
-          style={{ padding: "5px 10px" }}
-        >
+        <div className="d-flex text-right" style={{ padding: "5px 10px" }}>
           <span
             style={{
               fontSize: "14px",
@@ -95,18 +90,11 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
               fontWeight: "700",
             }}
           >
-            Duraction: 4years
-          </span>
-          <span
-            style={{
-              fontSize: "14px",
-              fontFamily: "Inter, sans-serif",
-              color: "#534B4F",
-              fontWeight: "700",
-            }}
-          >
-            {" "}
-            23 subjects
+            <i
+              className="fa-regular fa-clock"
+              style={{ marginRight: "5px" ,color:'#0D5EF4'}}
+            ></i>
+            Duration: 4years
           </span>
         </div>
       </div>
@@ -114,4 +102,4 @@ function CustomCourseCard({ imageSrc, title, description, bgColor , tagInfo}) {
   );
 }
 
-export default CustomCourseCard
+export default CustomCourseCard;
