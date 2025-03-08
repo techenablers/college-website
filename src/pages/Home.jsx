@@ -16,6 +16,7 @@ import EducationSection from "../components/EducationSection/educationSection";
 import Contact from "./Contact";
 import Events from "../components/events/Events";
 import About from "./About";
+import LeadersDesk from "../components/LeadersDesk";
 
 const Home = () => {
   return (<div className="home-container">
@@ -34,7 +35,8 @@ const Home = () => {
   <OurFacilities/> */}
   {/* <Contact/> */}
   {/* <Events/> */}
-  <About/>
+  {/* <About/> */}
+  <LeadersDesk/>
   <Footer/>
   </div>
   </div>)
