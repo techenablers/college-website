@@ -1,65 +1,65 @@
 import React, { useState } from "react";
-import "../../../../src/styles/ExploreOurCourses.css"
-import Course1 from "./Course1";
-import Course2 from "./Course2";
-import Course3 from "./Course3";
-import Course4 from "./Course4";
-import Course5 from "./Course5";
-import Course6 from "./Course6";
-import Course7 from "./Course7";
+import "../../styles/ExploreOurCourses.css"
+import AllPhotos from "./AllPhotos";
+import GuestLuctures from "./GuestLuctures";
+import IndependenceDay from "./IndependenceDay";
+import CookingCompetition from "./CookingCompetition";
+import AmbedkarJayanti from "./AmbedkarJayanti";
+import GaneshFestival from "./GaneshFestival";
+import VotersDay from "./VotersDay";
 
 // Wrapping each course component with React.memo
-const MemoizedCourse1 = React.memo(Course1);
-const MemoizedCourse2 = React.memo(Course2);
-const MemoizedCourse3 = React.memo(Course3);
-const MemoizedCourse4 = React.memo(Course4);
-const MemoizedCourse5 = React.memo(Course5);
-const MemoizedCourse6 = React.memo(Course6);
-const MemoizedCourse7 = React.memo(Course7);
+const MemoizedAllPhotos = React.memo(AllPhotos);
+const MemoizedGuestLuctures = React.memo(GuestLuctures);
+const MemoizedIndependenceDay = React.memo(IndependenceDay);
+const MemoizedCookingCompetition = React.memo(CookingCompetition);
+const MemoizedAmbedkarJayanti = React.memo(AmbedkarJayanti);
+const MemoizedGaneshFestival = React.memo(GaneshFestival);
+const MemoizedVotersDay= React.memo(VotersDay);
 
 function TabContainer() {
   const tabs = [
     {
       id: "tab1",
-      label: "Developer",
+      label: "App Photos",
       iconsClass: "",
-      component: <MemoizedCourse1 />,
+      component: <MemoizedAllPhotos />,
     },
     {
       id: "tab2",
-      label: "UI Designer",
+      label: "Guest Luctures",
       iconsClass: "",
-      component: <MemoizedCourse2 />,
+      component: <MemoizedGuestLuctures />,
     },
     {
       id: "tab3",
-      label: "Project Manager",
+      label: "Independence Day",
       iconsClass: "",
-      component: <MemoizedCourse3 />,
+      component: <MemoizedIndependenceDay />,
     },
     {
       id: "tab4",
-      label: "Designer",
+      label: "Cooking Competition",
       iconsClass: "",
-      component: <MemoizedCourse4 />,
+      component: <MemoizedCookingCompetition/>,
     },
     {
       id: "tab5",
-      label: "Accountant",
+      label: "Ambedkar Jayanti",
       iconsClass: "",
-      component: <MemoizedCourse5 />,
+      component: <MemoizedAmbedkarJayanti/>,
     },
     {
       id: "tab6",
-      label: "Human Resource",
-      iconsClass: "fa fa-user-plus",
-      component: <MemoizedCourse6 />,
+      label: "Ganesh Festival",
+      iconsClass: "",
+      component: <MemoizedGaneshFestival/>,
     },
     {
       id: "tab7",
-      label: "Marketing",
+      label: "Voter’s Day",
       iconsClass: "",
-      component: <MemoizedCourse7 />,
+      component: <MemoizedVotersDay />,
     },
   ];
 

@@ -1,8 +1,8 @@
 // import React from 'react'
-import myIcon from "../../../../src/assets/image.svg";
-import CustomCourseCard from "../../../customComponent/CustomCourseCard";
+import myIcon from "../../assets/image.svg";
+import CustomCourseCard from "../../customComponent/CustomCourseCard";
 
-function Course7() {
+function GaneshFestival() {
   const coursDetails = [
     {
       id: 1,
@@ -32,18 +32,11 @@ function Course7() {
       description:
         "Standards in leadership skills syneze optimal rather than......",
     },
-    {
-      id: 5,
-      imageSrc: myIcon,
-      title: "Foundation course to under stand about softwere",
-      description:
-        "Standards in leadership skills syneze optimal rather than......",
-    },
    
   ];
   return (
     <div className='d-flex flex-wrap'>
-    {coursDetails?.map((val)=>(
+  {/*   {coursDetails?.map((val)=>(
         <div key={val.id}>
         <CustomCourseCard
         imageSrc={val.imageSrc}
@@ -52,9 +45,11 @@ function Course7() {
         // footerContent={}
         />
         </div>
-    ))}
+    ))} */}
+               <p>i am event6</p>
+
 </div>
   )
 }
 
-export default Course7
+export default GaneshFestival

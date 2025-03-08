@@ -1,8 +1,9 @@
 // import React from 'react'
-import myIcon from "../../../../src/assets/image.svg";
-import CustomCourseCard from "../../../customComponent/CustomCourseCard";
+import myIcon from "../../assets/image.svg";
+import CustomCourseCard from "../../customComponent/CustomCourseCard";
 
-function Course6() {
+
+function IndependenceDay() {
   const coursDetails = [
     {
       id: 1,
@@ -36,7 +37,7 @@ function Course6() {
   ];
   return (
     <div className='d-flex flex-wrap'>
-    {coursDetails?.map((val)=>(
+   {/*  {coursDetails?.map((val)=>(
         <div key={val.id}>
         <CustomCourseCard
         imageSrc={val.imageSrc}
@@ -45,9 +46,11 @@ function Course6() {
         // footerContent={}
         />
         </div>
-    ))}
+    ))} */}
+               <p>i am event3</p>
+
 </div>
   )
 }
 
-export default Course6
+export default IndependenceDay

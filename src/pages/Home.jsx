@@ -14,23 +14,25 @@ import OurCoreMember from "../components/OurCoreMember";
 import Flash from "../components/Flash";
 import EducationSection from "../components/EducationSection/educationSection";
 import Contact from "./Contact";
+import Events from "../components/events/Events";
 
 const Home = () => {
   return (<div className="home-container">
   <Header />
   <div className="main-content">
-  <Banner />
+  {/* <Banner />
   <Flash/>
   <Information/>
   <Offerings />
   <AboutUniversity/>
-  <EducationSection />
+  <EducationSection /> */}
   {/* <TransformEducation/> */}
-  <OurCoreMember/>
+  {/* <OurCoreMember/>
   <ExploreOurCourses/>
   <OurOfferContent/>
-  <OurFacilities/>
+  <OurFacilities/> */}
   {/* <Contact/> */}
+  <Events/>
   <Footer/>
   </div>
   </div>)
