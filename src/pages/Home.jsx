@@ -15,24 +15,26 @@ import Flash from "../components/Flash";
 import EducationSection from "../components/EducationSection/educationSection";
 import Contact from "./Contact";
 import Events from "../components/events/Events";
+import About from "./About";
 
 const Home = () => {
   return (<div className="home-container">
   <Header />
   <div className="main-content">
-  <Banner />
+  {/* <Banner />
   <Flash/>
   <Information/>
   <Offerings />
   <AboutUniversity/>
-  <EducationSection />
+  <EducationSection /> */}
   {/* <TransformEducation/> */}
-  <OurCoreMember/>
+  {/* <OurCoreMember/>
   <ExploreOurCourses/>
   <OurOfferContent/>
-  <OurFacilities/>
+  <OurFacilities/> */}
   {/* <Contact/> */}
   {/* <Events/> */}
+  <About/>
   <Footer/>
   </div>
   </div>)
