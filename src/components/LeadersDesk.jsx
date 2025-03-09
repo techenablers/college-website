@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Ramesh from "../assets/im.svg";
 import image2 from "../assets/image2.svg";

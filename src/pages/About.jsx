@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -127,8 +128,8 @@ const About = () => {
           <span>Our Achievements</span>
           <h6>Best Education we are offering</h6>
           <div className="d-flex" style={{gap:'10px'}}>
-            <div class="card">
-              <div class="card-body" style={{padding:'50px 20px'}}>
+            <div className="card">
+              <div className="card-body" style={{padding:'50px 20px'}}>
                 <img
                   style={{
                     width: "40px",
@@ -145,8 +146,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body" style={{padding:'50px 20px'}}>
+            <div className="card">
+              <div className="card-body" style={{padding:'50px 20px'}}>
                 <img
                   style={{
                     width: "40px",
@@ -164,8 +165,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div class="card">
-              <div class="card-body" style={{padding:'50px 20px'}}>
+            <div className="card">
+              <div className="card-body" style={{padding:'50px 20px'}}>
                 <img
                   style={{
                     width: "40px",
