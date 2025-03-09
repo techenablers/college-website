@@ -1,8 +1,29 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import fax from "../assets/fax.svg";
 
 const About = () => {
+  const vissonAndMission = [
+    {
+      id: 1,
+      srcImg: fax,
+      content:
+        "To be a leading institute in higher education, excelling in technology, management, and research.",
+    },
+    {
+      id: 1,
+      srcImg: fax,
+      content:
+        "To nurture industry-ready professionals with a strong foundation in technical, leadership, and ethical values.",
+    },
+    {
+      id: 1,
+      srcImg: fax,
+      content: "To promote research, innovation, and skill-based learning.",
+    },
+  ];
+
   return (
     <div>
       <div
@@ -127,9 +148,9 @@ const About = () => {
         <div className="text-center my-4">
           <span>Our Achievements</span>
           <h6>Best Education we are offering</h6>
-          <div className="d-flex" style={{gap:'10px'}}>
+          <div className="d-flex" style={{ gap: "10px" }}>
             <div className="card">
-              <div className="card-body" style={{padding:'50px 20px'}}>
+              <div className="card-body" style={{ padding: "50px 20px" }}>
                 <img
                   style={{
                     width: "40px",
@@ -147,7 +168,7 @@ const About = () => {
               </div>
             </div>
             <div className="card">
-              <div className="card-body" style={{padding:'50px 20px'}}>
+              <div className="card-body" style={{ padding: "50px 20px" }}>
                 <img
                   style={{
                     width: "40px",
@@ -166,7 +187,7 @@ const About = () => {
               </div>
             </div>
             <div className="card">
-              <div className="card-body" style={{padding:'50px 20px'}}>
+              <div className="card-body" style={{ padding: "50px 20px" }}>
                 <img
                   style={{
                     width: "40px",
@@ -213,67 +234,55 @@ const About = () => {
           <div className="col-md-6">
             <span>Our Vision</span>
             <h4>Know more about our Vision</h4>
-            <p>
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications. Collaboratively simplify user
-              friendly networks after principle centered coordinate effective
-              methods of empowerment distributed niche markets pursue market
-              positioning web-readiness after resource sucking applications.
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications. Collaboratively simplify user
-              friendly networks after principle centered coordinate effective
-              methods of empowerment distributed niche markets pursue market
-              positioning web-readiness after resource sucking applications.
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications. Collaboratively simplify user
-              friendly networks after principle centered coordinate effective
-              methods of empowerment distributed niche markets pursue market
-              positioning web-readiness after resource sucking applications.
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications.
-            </p>
+            <div className="container my-5">
+              {vissonAndMission.map((item) => (
+                <div key={item.id} className="d-flex align-items-center my-4">
+                  <img
+                    src={item.srcImg}
+                    alt="Description"
+                    className="img-fluid"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      objectFit: "cover",
+                      marginRight: "15px",
+                    }}
+                  />
+                  <div>
+                    <h6>Vision & Mission</h6>
+                    <p className="mb-0">{item.content}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         <div className="row align-items-center mb-4">
           <div className="col-md-6">
-            <span>Our Vision</span>
-            <h4>Know more about our Vision</h4>
-            <p>
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications. Collaboratively simplify user
-              friendly networks after principle centered coordinate effective
-              methods of empowerment distributed niche markets pursue market
-              positioning web-readiness after resource sucking applications.
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications. Collaboratively simplify user
-              friendly networks after principle centered coordinate effective
-              methods of empowerment distributed niche markets pursue market
-              positioning web-readiness after resource sucking applications.
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications. Collaboratively simplify user
-              friendly networks after principle centered coordinate effective
-              methods of empowerment distributed niche markets pursue market
-              positioning web-readiness after resource sucking applications.
-              Collaboratively simplify user friendly networks after principle
-              centered coordinate effective methods of empowerment distributed
-              niche markets pursue market positioning web-readiness after
-              resource sucking applications.
-            </p>
+            <span>Vision</span>
+            <h4>Shaping Tomorrow’s Leaders</h4>
+            <div className="container my-5">
+              {vissonAndMission.map((item) => (
+                <div key={item.id} className="d-flex align-items-center my-4">
+                  <img
+                    src={item.srcImg}
+                    alt="Description"
+                    className="img-fluid"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      objectFit: "cover",
+                      marginRight: "15px",
+                    }}
+                  />
+                  <div>
+                    <h6>Vision & Mission</h6>
+                    <p className="mb-0">{item.content}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="col-md-6">
             <div
