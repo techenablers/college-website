@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
-import fax from "../assets/fax.svg";
+/* import fax from "../assets/fax.svg";
 import location from "../assets/location.svg";
 import map from "../assets/map.svg";
-import phoneCall from "../assets/phoneCall.svg";
+import phoneCall from "../assets/phoneCall.svg"; */
 
 function ContactDetails() {
   const contactInDeatil = [
