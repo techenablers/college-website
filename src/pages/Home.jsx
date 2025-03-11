@@ -41,11 +41,11 @@ const Home = () => {
         {/* <Contact/> */}
         {/* <Events/> */}
         {/* <About/> */}
-        {/* <LeadersDesk/> */}
+        <LeadersDesk />
         {/* <Infrastructure/> */}
         {/* <Career /> */}
         {/* <Placement/> */}
-        <CoursesDetails />
+        {/* <CoursesDetails /> */}
         <Footer />
       </div>
     </div>
