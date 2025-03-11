@@ -11,15 +11,17 @@ const Contact = () => {
         style={{
           backgroundColor: "#F7F8FD",
           width: "100%",
-          height: "300px",
-          marginTop: "100px",
+          height: "150px",
           display: "flex",
+          position: "relative",
+          top: "100px",
           justifyContent: "center",
+          alignItems: "center"
         }}
       >
         <h4 style={{ color: "#000" }}>Contact Page</h4>
       </div>
-      <div style={{ textAlign: "center", marginTop: "5px" }}>
+      <div style={{ textAlign: "center", position: "relative", top: "120px"  }}>
         <img
           src={map}
           style={{
@@ -34,10 +36,10 @@ const Contact = () => {
         className="d-flex flex-wrap justify-content-center align-item-center"
         style={{ gap: "40px", paddingBottom:'150px' }}
       >
-        <div>
+        <div style={{ marginTop: "150px"}}>
           <ContactDetails />
         </div>
-        <div>
+        <div style={{    position: "relative", marginTop: "80px" }}>
           <EnquiryForm />
         </div>
       </div>
