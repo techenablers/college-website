@@ -24,31 +24,34 @@ function ContactDetails() {
       header: "EMAIL ID",
       details: "info@rkscollegekharadi.com dsrfpune@gmail.com / dsrf@dss.co.in",
     },
-    { icon: "fa-solid fa-user", header: "FAX", details: "020 - 27012728" },
+    { icon: "fa-solid fa-user", 
+      header: "FAX", 
+      details: "020 - 27012728" 
+    },
   ];
 
   return (
-    <div>
+    <div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
       {contactInDeatil.map((val, index) => (
         <div
           key={index}
-          className="d-flex justify-content-between align-item-center"
           style={{
-            width: "320px",
-            height: "90px",
+            display: "flex",
+            width: "420px",
+            height: "100px",
             border: "1px solid black",
             boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)", // Strong dropped shadow
-            marginTop: "15px",
             borderRadius: "5px",
             padding: "10px",
+            alignItems: "center"
           }}
         >
             <div>
               <i className={val.icon}></i>
             </div>
-            <div>
+            <div style={{display: "flex", flexDirection:"column", paddingTop: "10px", marginLeft: "10px",}}>
               <h6>{val.header}</h6>
-              <p>{val.details}</p>
+              <p style={{fontSize: "14px", wordWrap: "break-word" , overflowWrap: "break-word", textAlign: "left"}}>{val.details}</p>
             </div>
         </div>
       ))}
