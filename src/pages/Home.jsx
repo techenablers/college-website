@@ -35,10 +35,10 @@ const Home = () => {
   <OurOfferContent/>
   <OurFacilities/> */}
   {/* <Contact/> */}
-  {/* <Events/> */}
+  <Events/>
   {/* <About/> */}
   {/* <LeadersDesk/> */}
-  <Infrastructure/>
+  {/* <Infrastructure/> */}
   <Footer/>
   </div>
   </div>)
