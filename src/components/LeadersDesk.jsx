@@ -79,7 +79,7 @@ function LeadersDesk() {
         }}
       >
         <img src={book} style={{ position: "inherit", left: "20px" }} />
-        <h4 style={{ color: "#000" }}>Placement</h4>
+        <h4 style={{ color: "#000" }}>Leaders Desk</h4>
       </div>
 
       {leadersData.map((leader) => (
@@ -110,7 +110,7 @@ function LeadersDesk() {
 
           {/* Content Section */}
           <div className="col-12 col-md-6">
-            <h4>{leader.content.name}</h4>
+            <h4 style={{color:'#0540F2'}}>{leader.content.name}</h4>
             <h6 className="text-muted">~ {leader.content.position}</h6>
             <img
               src={inverted}
