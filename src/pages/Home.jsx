@@ -18,30 +18,38 @@ import Events from "../components/events/Events";
 import About from "./About";
 import LeadersDesk from "../components/LeadersDesk";
 import Infrastructure from "../components/Infrastructure";
+import Career from "../components/careers/Career";
+import Placement from "../components/Placement";
+import CoursesDetails from "../components/CoursesDetails";
 
 const Home = () => {
-  return (<div className="home-container">
-  <Header />
-  <div className="main-content">
-  {/* <Banner />
+  return (
+    <div className="home-container">
+      <Header />
+      <div className="main-content">
+        {/* <Banner />
   <Flash/>
   <Information/>
   <Offerings />
   <AboutUniversity/>
   <EducationSection /> */}
-  {/* <TransformEducation/> */}
-  {/* <OurCoreMember/>
+        {/* <TransformEducation/> */}
+        {/* <OurCoreMember/>
   <ExploreOurCourses/>
   <OurOfferContent/>
   <OurFacilities/> */}
-  {/* <Contact/> */}
-  <Events/>
-  {/* <About/> */}
-  {/* <LeadersDesk/> */}
-  {/* <Infrastructure/> */}
-  <Footer/>
-  </div>
-  </div>)
+        {/* <Contact/> */}
+        {/* <Events/> */}
+        {/* <About/> */}
+        <LeadersDesk />
+        {/* <Infrastructure/> */}
+        {/* <Career /> */}
+        {/* <Placement/> */}
+        {/* <CoursesDetails /> */}
+        <Footer />
+      </div>
+    </div>
+  );
 };
 
 export default Home;
