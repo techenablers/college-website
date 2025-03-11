@@ -21,6 +21,7 @@ import Infrastructure from "../components/Infrastructure";
 import Career from "../components/careers/Career";
 import Placement from "../components/Placement";
 import CoursesDetails from "../components/CoursesDetails";
+import StudentWelfare from "../components/StudentWelfare";
 
 const Home = () => {
   return (
@@ -41,7 +42,8 @@ const Home = () => {
         {/* <Contact/> */}
         {/* <Events/> */}
         {/* <About/> */}
-        <LeadersDesk />
+        {/* <LeadersDesk /> */}
+        {<StudentWelfare/>}
         {/* <Infrastructure/> */}
         {/* <Career /> */}
         {/* <Placement/> */}
