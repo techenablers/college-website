@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Layout from "../components/layouts/Layouts";
 import Banner from "../components/Banner";
 import ExploreOurCourses from "../components/exploreOurourses/ExploreOurCourses";
 import OurOfferContent from "../components/whatWeOffer/OurOfferContent";
@@ -15,20 +14,18 @@ import EducationSection from "../components/EducationSection/educationSection";
 
 const Home = () => {
   return (
-    <Layout>
-      <div className="home-content">
-        <Banner />
-        <Flash />
-        <Information />
-        <Offerings />
-        <AboutUniversity />
-        <EducationSection />
-        <OurCoreMember />
-        <ExploreOurCourses />
-        <OurOfferContent />
-        <OurFacilities />
-      </div>
-    </Layout>
+    <div className="home-content">
+      <Banner />
+      <Flash />
+      <Information />
+      <Offerings />
+      <AboutUniversity />
+      <EducationSection />
+      <OurCoreMember />
+      <ExploreOurCourses />
+      <OurOfferContent />
+      <OurFacilities />
+    </div>
   );
 };
 
