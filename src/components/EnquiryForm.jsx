@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,8 +21,8 @@ const EnquiryForm = () => {
            with your details, <br />and we will contact you soon.
         </p>
         <form>
-          <div className="row mb-3">
-            <div className="col-md-6">
+          <div className="row ">
+            <div className="col-md-6 mb-3">
               <input
                 type="text"
                 className="form-control"
@@ -29,7 +30,7 @@ const EnquiryForm = () => {
                 placeholder="Enter your name"
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mb-3">
               <input
                 type="email"
                 className="form-control"
@@ -39,8 +40,8 @@ const EnquiryForm = () => {
             </div>
           </div>
 
-          <div className="row mb-3">
-            <div className="col-md-6">
+          <div className="row ">
+            <div className="col-md-6 mb-3">
               <select className="form-select" id="course">
                 <option value="">Choose a course</option>
                 <option value="web">Web Development</option>
@@ -48,7 +49,7 @@ const EnquiryForm = () => {
                 <option value="design">UI/UX Design</option>
               </select>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 mb-3">
               <input
                 type="tel"
                 className="form-control"
