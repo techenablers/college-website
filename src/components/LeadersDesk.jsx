@@ -6,6 +6,9 @@ import image3 from "../assets/image3.svg";
 import inverted from "../assets/inverted.svg";
 import book from "../assets/book.svg";
 import leaderImg from "../assets/leaderImg.svg";
+// import satran from "../assets/SATRAN.svg";
+// import bulb from "../assets/bulb.svg";
+// import setsquare from "../assets/setsquare.svg";
 
 const leadersData = [
   {
@@ -66,7 +69,7 @@ const leadersData = [
 
 function LeadersDesk() {
   return (
-    <div className="container-fluid " style={{ marginTop: "100px" }}>
+    <div className="" style={{ marginTop: "100px" }}>
       <div
         style={{
           backgroundColor: "#F7F8FD",
@@ -78,8 +81,11 @@ function LeadersDesk() {
           alignItems: "center",
         }}
       >
+        {/* <img src={satran} /> */}
         <img src={book} style={{ position: "inherit", left: "20px" }} />
         <h4 style={{ color: "#000" }}>Leaders Desk</h4>
+        {/* <img src={bulb} /> */}
+        {/* <img src={setsquare} /> */}
       </div>
 
       {leadersData.map((leader) => (
@@ -94,23 +100,54 @@ function LeadersDesk() {
           }}
         >
           {/* Image Section */}
-          <div className="col-12 col-md-4 text-start">
+          <div
+            className="col-12 col-md-4 text-start"
+            style={{ position: "relative" }}
+          >
             <img
               src={leaderImg}
-              style={{ color:"#D7D5D5",width: "150px", height: "90px",left:'50px',position:'relative' }}
+              style={{
+                color: "#D7D5D5",
+                width: "150px",
+                height: "90px",
+                left: "50px",
+                position: "relative",
+              }}
               alt="Leader"
             />
+           
+           {/*  <div
+              style={{
+                position: "absolute",
+                // top: "40px",
+                // left: "100px",
+                bottom: "15px",
+                right: "0px",
+                width: "60%",
+                height: "80%",
+                backgroundColor: "#D7D5D5", 
+                transform: "rotate(10deg)", 
+                borderRadius: "8px", 
+                zIndex: 0, 
+              }}
+            ></div> */}
+
             <img
               src={leader.img}
               alt="Leader"
               className="img-fluid rounded"
-              style={{ maxWidth: "100%", height: "auto" }}
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                position: "relative",
+                zIndex: 1,
+              }}
             />
           </div>
 
           {/* Content Section */}
           <div className="col-12 col-md-6">
-            <h4 style={{color:'#0540F2'}}>{leader.content.name}</h4>
+            <h3 style={{ color: "#0540F2" }}>{leader.content.name}</h3>
             <h6 className="text-muted">~ {leader.content.position}</h6>
             <img
               src={inverted}
@@ -122,7 +159,11 @@ function LeadersDesk() {
 
             {/* Dynamic Description Rendering */}
             {Object.values(leader.content.description).map((desc, index) => (
-              <p key={index} className="text-justify mb-3" style={{textAlign:'justify', wordSpacing:'2px'}}>
+              <p
+                key={index}
+                className="text-justify mb-3"
+                style={{ textAlign: "justify", wordSpacing: "2px" }}
+              >
                 {desc}
               </p>
             ))}
