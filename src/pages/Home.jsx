@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Layout from "../components/Layout"; // Import the Layout
+import Layout from "../components/layouts/Layouts";
 import Banner from "../components/Banner";
 import ExploreOurCourses from "../components/exploreOurourses/ExploreOurCourses";
 import OurOfferContent from "../components/whatWeOffer/OurOfferContent";

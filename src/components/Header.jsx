@@ -112,9 +112,9 @@ const Header = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true">
+                    <Link to="/Student's-Corner" className="nav-link">
                       Student&apos;s Corner
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/contact" className="nav-link">

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Layout from "./components/layouts/Layouts";
+import StudentWelfare from "./components/StudentWelfare";
 
 const App = () => {
   return (
@@ -30,6 +31,14 @@ const App = () => {
         element={
           <Layout>
             <Contact />
+          </Layout>
+        }
+      />
+      <Route
+        path="/Student's-Corner"
+        element={
+          <Layout>
+            < StudentWelfare/>
           </Layout>
         }
       />

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -62,7 +63,7 @@ const StudentWelfare = () => {
               <h4>Zero-Tolerance Policy</h4>
               <p>
                 We enforce a strict no-ragging policy, ensuring a safe campus
-                where harassment is never tolerated, protecting every student's
+                where harassment is never tolerated, protecting every students
                 well-being.
               </p>
             </div>
