@@ -6,12 +6,12 @@ import ContactDetails from "../components/ContactDetails";
 
 const Contact = () => {
   return (
-    <div>
+    <div >
       <div
         style={{
           backgroundColor: "#F7F8FD",
           width: "100%",
-          height: "150px",
+          height: "300px",
           display: "flex",
           position: "relative",
           top: "100px",
