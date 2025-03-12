@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React from 'react';
-import Header from './Header';  // Example Header component
-import Footer from './Footer';  // Example Footer component
-import './Layout.css';         // Layout-specific styles
+import Header from '../Header';  
+import Footer from '../footer/Footer'; 
+import '../../styles/Layout.css';         
 
 const Layout = ({ children }) => {
   return (
