@@ -1,15 +1,4 @@
-/* Full viewport height container */
-.home-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh; /* Ensure the container takes full height of the viewport */
-    overflow: hidden;
-  }
-  
-  /* Ensuring the main content area can scroll */
-  .main-content {
-    flex-grow: 1;
-    overflow-y: auto; /* Allows scrolling for content */
+  .home-content {
+    min-height: 100%; /* Ensure content stretches to enable scrolling */
   }
   

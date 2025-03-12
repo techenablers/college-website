@@ -1,0 +1,12 @@
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable scrolling for the whole layout */
+  }
+  
+  .content-wrapper {
+    flex: 1; /* Ensures content takes the remaining space */
+    overflow-y: auto; /* Content scrolls within the layout */
+  }
+  

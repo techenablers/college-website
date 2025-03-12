@@ -9,6 +9,7 @@ import {
 } from "react-icons/fa";
 import "../styles/Header.css";
 import logo from "../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -70,7 +71,7 @@ const Header = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               {/* our course */}
-                {/* <button
+              {/* <button
                   style={{
                     backgroundColor: "#fff",
                     color: "black",
@@ -92,14 +93,18 @@ const Header = () => {
                   style={{ marginLeft: "60px", marginRight: "10px" }}
                 >
                   <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">
+                    <Link
+                      to="/"
+                      className="nav-link active"
+                      aria-current="page"
+                    >
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <Link to="/about" className="nav-link">
                       About
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="#">
@@ -112,9 +117,9 @@ const Header = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link disabled" aria-disabled="true">
+                    <Link to="/contact" className="nav-link">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <form className="d-flex">
