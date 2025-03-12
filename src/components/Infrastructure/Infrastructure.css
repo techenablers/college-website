@@ -1,0 +1,57 @@
+.br {
+    border-radius: 40px;
+}
+
+.bt {
+    border-radius: 40px 40px 0px 0px;
+}
+
+.link-out {
+    border-radius: 10px;
+    border: 1px solid #E3DBD8;
+    padding: 5px;
+}
+
+.link-out:hover {
+    background-color: #0540F2;
+}
+
+.other-infra {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -45px;
+    padding: 15px;
+    width: 85%;
+    border-radius: 15px;
+}
+
+.other-infra > div {
+    text-align: left;
+}
+
+.other-infra > div > p {
+    margin-bottom: 0px !important;
+}
+
+.computer-lab {
+    background-color: rgb(5, 64, 242);
+    border-radius: 50px;
+    color: white;
+}
+
+.rowGap {
+    row-gap: 40px;
+}
+
+.computer-lab-direction {
+    flex-direction: row;
+}
+
+@media (max-width: 767px) {
+    .computer-lab-direction {
+        flex-direction: column-reverse;
+    }
+}

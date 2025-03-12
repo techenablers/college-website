@@ -17,7 +17,7 @@ import Contact from "./Contact";
 import Events from "../components/events/Events";
 import About from "./About";
 import LeadersDesk from "../components/LeadersDesk";
-import Infrastructure from "../components/Infrastructure";
+import Infrastructure from "../components/Infrastructure/Infrastructure";
 import Career from "../components/careers/Career";
 import Placement from "../components/Placement";
 import CoursesDetails from "../components/CoursesDetails";
@@ -41,8 +41,8 @@ const Home = () => {
         {/* <Contact/> */}
         {/* <Events/> */}
         {/* <About/> */}
-        <LeadersDesk />
-        {/* <Infrastructure/> */}
+        {/* <LeadersDesk /> */}
+        <Infrastructure/>
         {/* <Career /> */}
         {/* <Placement/> */}
         {/* <CoursesDetails /> */}
