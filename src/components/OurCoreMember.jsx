@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Ramesh from "../../src/assets/im.svg";
 import vector20 from "../assets/Vector20.svg";
@@ -5,6 +6,11 @@ import image2 from "../assets/image2.svg";
 import image3 from "../assets/image3.svg";
 
 function OurCoreMember() {
+
+  const handleClick = ()=>{
+    console.log('i am clicked');
+    
+  }
   return (
     <div
       className=""
@@ -109,6 +115,8 @@ function OurCoreMember() {
               borderRadius: "5px",
               zIndex: 3, // Ensure the button appears above the image and text
             }}
+
+            onClick={handleClick}
           >
             See More
           </button>
