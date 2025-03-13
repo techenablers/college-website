@@ -1,9 +1,9 @@
-/* eslint-disable no-unused-vars */
+  /* eslint-disable no-unused-vars */
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import modren from "../../assets/modren.svg";
 import Placement from "../../assets/placement.svg";
-import Affiliations from "../../assets/Affiliations.svg";
+// import Affiliations from "../../assets/Affiliations.svg";
 import expor from "../../assets/expor.svg";
 import educationSectionImage from "../../assets/educationSectionImage.svg";
 import "./EducationSection.css";
@@ -27,7 +27,7 @@ const EducationSection = () => {
             <Col xs={12} sm={6} md={6} className="mb-3">
               <Card className="feature-card">
                 <Card.Body>
-                  <img src={Affiliations} width={45} height={45} />
+                  <img src={modren} width={45} height={45} />
                   <Card.Title className="SemiBold">
                     Accreditation & Affiliations
                   </Card.Title>
@@ -72,7 +72,7 @@ const EducationSection = () => {
 export default EducationSection;
 
 const featuresData = [
-  { img: Affiliations, title: "Accreditation & Affiliations" },
+  { img: modren, title: "Accreditation & Affiliations" },
   { img: modren, title: "Modern Campus & Infrastructure" },
   { img: expor, title: "Expert Faculty" },
   { img: Placement, title: "Placement Assistance" },
