@@ -16,7 +16,7 @@
 .feature-card .card-body {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .features .mb-3 {

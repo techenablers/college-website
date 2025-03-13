@@ -60,7 +60,7 @@ function CustomCourseCard({ imageSrc, title, description, bgColor, tagInfo }) {
             className=""
             style={{
               fontFamily: "sans-serif",
-              fontSize: "18PX",
+              fontSize: "16PX",
               fontWeight: "600",
               marginBottom: "5px",
             }}
@@ -71,9 +71,10 @@ function CustomCourseCard({ imageSrc, title, description, bgColor, tagInfo }) {
             className=""
             style={{
               fontFamily: "sans-serif",
-              fontSize: "16PX",
+              fontSize: "13PX",
               fontWeight: "400",
               marginBottom: "5px",
+               textAlign: "justify"
             }}
           >
             {description}
@@ -81,7 +82,7 @@ function CustomCourseCard({ imageSrc, title, description, bgColor, tagInfo }) {
           </p>
         </div>
         {/* Card Footer */}
-        <div className="d-flex text-right" style={{ padding: "5px 10px" }}>
+        <div className="d-flex text-right mb-1" style={{ padding: "5px 10px" }}>
           <span
             style={{
               fontSize: "14px",

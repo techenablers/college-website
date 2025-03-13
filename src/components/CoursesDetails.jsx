@@ -89,7 +89,7 @@ function CoursesDetails() {
                     state of the art leadership after professional manufactured
                     products. Distinctively enhance future-proof e-services
                     whereas functionalized partnerships. Quickly streamline
-                    focused paradigms via orthogonal "outside the box" thinking.
+                    focused paradigms via orthogonal `outside the box` thinking.
                     Rapidiously administrate 2.0 total linkage for
                     cross-platform channels.
                   </p>

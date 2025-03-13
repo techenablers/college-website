@@ -90,7 +90,7 @@ function Infrastructure() {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  bottom:"-25px"
+                  bottom: "-25px",
                 }}
               >
                 <div>
