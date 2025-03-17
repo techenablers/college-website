@@ -12,11 +12,18 @@ import OurCoreMember from "../components/OurCoreMember";
 import Flash from "../components/Flash";
 import EducationSection from "../components/EducationSection/educationSection";
 
+// import Placement from "../components/Placement";
+import Events from "../components/events/Events";
+// import LeadersDesk from "../components/LeadersDesk";
+// import Infrastructure from "../components/Infrastructure";
+// import Career from "../components/careers/Career";
+// import CoursesDetails from "../components/CoursesDetails";
+
 const Home = () => {
   return (
     <div className="home-content">
-      <Banner />
-      <Flash />
+      {/* <Banner />/ */}
+      {/* <Flash />
       <Information />
       <Offerings />
       <AboutUniversity />
@@ -24,7 +31,16 @@ const Home = () => {
       <OurCoreMember />
       <ExploreOurCourses />
       <OurOfferContent />
-      <OurFacilities />
+      <OurFacilities /> */}
+
+
+
+      {/* <Placement/> */}
+      <Events/>
+      {/* <LeadersDesk/> */}
+      {/* <Infrastructure/> */}
+      {/* <Career/> */}
+      {/* <CoursesDetails/> */}
     </div>
   );
 };
