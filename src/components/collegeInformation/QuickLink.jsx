@@ -17,12 +17,12 @@ function QuickLink() {
     <div className="container">
       <h4>Quick Link</h4>
       {/* Vector and Arrows */}
-      <div className="" style={{ marginBottom:'10px' }}>
+      <div className="d-flex align-items-center">
+        <img src={Vector} style={{ position: "relative", width: "auto" }} />
         <img
-          src={Vector}
-          style={{ position: "relative", width: "auto"}}
+          src={leftapply}
+          style={{ position: "relative", bottom: "15px", left: "6px" }}
         />
-        <img src={leftapply} style={{ position: "relative", bottom: "15px",left:'6px' }} />
         <img
           src={rightapply}
           style={{ position: "relative", bottom: "15px", left: "12px" }}
@@ -30,10 +30,13 @@ function QuickLink() {
       </div>
 
       {/* Quick Links */}
-      <div className="row g-2" style={{}} >
+      <div className="row g-2" style={{}}>
         {links.map((link) => (
           <div key={link.id} className="col-6 ">
-            <div className="quickLink d-flex justify-content-around align-items-center">
+            <div
+              className="quickLink d-flex justify-content-around align-items-center"
+              style={{ boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)" }}
+            >
               <img src={apply_now} alt="Icon" className="align-middle " />
               <span>
                 <b>{link.text}</b>

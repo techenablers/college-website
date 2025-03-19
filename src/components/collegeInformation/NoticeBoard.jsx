@@ -49,6 +49,7 @@ function NoticeBoard() {
         width: "100%", // Makes it responsive
         maxWidth: "90vw", // Limits the width to 90% of the viewport width
         margin: "0 auto", // Centers the content horizontally
+         boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)"
       }}
     >
       <div className="d-flex flex-row justify-content-between align-items-center">

@@ -1,6 +1,15 @@
 .information-content {
     width: 100%;
-    /* background: linear-gradient(to top, #DBEDFF 25%, #ffffff 65%); */
+    background: linear-gradient(180deg, #fff 15%, #E4F0FF 85%) !important;
     min-height: 100vh; /* Ensures gradient covers the viewport height */
     height: auto;
+    row-gap: 3px !important; 
+    padding: 40px 150px !important; 
+    box-sizing: border-box !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .information-content {
+        padding: 50px 100px !important;
+    }
 }
