@@ -5,45 +5,42 @@ import leftapply from "../../assets/left.svg";
 import rightapply from "../../assets/right.svg";
 import "../../styles/QuickLink.css";
 
+const links = [
+  { id: 1, text: "Apply Now" },
+  { id: 2, text: "Answer Key" },
+  { id: 3, text: "Answer Key" },
+  { id: 4, text: "Result" },
+];
+
 function QuickLink() {
   return (
-    <div>
-      <h4> Quick Link</h4>
-      <div className="d-flex flex-row align-items-center gap-3">
-        <img src={Vector} style={{ position: "relative" , width:"200px"}} />
-        <img src={leftapply} style={{ position: "relative" }} />
-        <img src={rightapply} style={{ position: "relative" }} />
+    <div className="container">
+      <h4>Quick Link</h4>
+      {/* Vector and Arrows */}
+      <div className="" style={{ marginBottom:'10px' }}>
+        <img
+          src={Vector}
+          style={{ position: "relative", width: "auto"}}
+        />
+        <img src={leftapply} style={{ position: "relative", bottom: "15px",left:'6px' }} />
+        <img
+          src={rightapply}
+          style={{ position: "relative", bottom: "15px", left: "12px" }}
+        />
       </div>
-      <div>
-        <div className="d-flex justify-content-around lign-items-center ">
-          <div
-            className="quickLink"
-          >
-            <img src={apply_now} alt="Icon" className="align-middle me-2"/>
-            <span><b>Apply Now</b></span>
+
+      {/* Quick Links */}
+      <div className="row g-2" style={{}} >
+        {links.map((link) => (
+          <div key={link.id} className="col-6 ">
+            <div className="quickLink d-flex justify-content-around align-items-center">
+              <img src={apply_now} alt="Icon" className="align-middle " />
+              <span>
+                <b>{link.text}</b>
+              </span>
+            </div>
           </div>
-          <div
-           className="quickLink"
-          >
-            <img src={apply_now} alt="Icon" className="align-middle me-2"/>
-            <span><b>Apply Now</b></span>
-          </div>
-        </div>
-        <div className="d-flex justify-content-around lign-items-center ">
-        <div
-          className="quickLink"
-        >
-        <img src={apply_now} alt="Icon" className="align-middle me-2"/>
-        <span><b>Apply Now</b></span>
-        </div>
-        <div
-          className="quickLink"
-        >
-          <img src={apply_now} alt="Icon" className="align-middle me-2"/>
-          <span><b>Apply Now</b></span>
-        </div>
-        </div>
-       
+        ))}
       </div>
     </div>
   );

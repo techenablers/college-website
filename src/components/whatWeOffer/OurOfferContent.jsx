@@ -17,7 +17,7 @@ function OurOfferContent() {
         </span>
       </p>
       <div style={{ marginTop: "20px", padding: "10px", color: "white" }}>
-        <p
+        <h1
           style={{
             fontFamily: "Hind, sans-serif",
             fontSize: "30px",
@@ -25,8 +25,8 @@ function OurOfferContent() {
             color: "#0F2239",
           }}
         >
-          How Does Edura Work Process?
-        </p>
+          Nurturing Talent, Encouraging Innovation, Transforming Lives
+        </h1>
       </div>
 
       <div

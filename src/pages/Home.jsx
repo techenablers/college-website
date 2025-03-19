@@ -22,8 +22,8 @@ import Events from "../components/events/Events";
 const Home = () => {
   return (
     <div className="home-content">
-      {/* <Banner />/ */}
-      {/* <Flash />
+      <Banner />
+      <Flash />
       <Information />
       <Offerings />
       <AboutUniversity />
@@ -31,16 +31,7 @@ const Home = () => {
       <OurCoreMember />
       <ExploreOurCourses />
       <OurOfferContent />
-      <OurFacilities /> */}
-
-
-
-      {/* <Placement/> */}
-      <Events/>
-      {/* <LeadersDesk/> */}
-      {/* <Infrastructure/> */}
-      {/* <Career/> */}
-      {/* <CoursesDetails/> */}
+      <OurFacilities />
     </div>
   );
 };

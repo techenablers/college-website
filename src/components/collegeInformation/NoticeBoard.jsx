@@ -44,12 +44,14 @@ function NoticeBoard() {
         overflowY: "auto",
         padding: "25px",
         borderRadius: "5px",
-         scrollbarWidth: "thin",
-         WebkitScrollbar: "thin",
-         maxWidth:'600px',
+        scrollbarWidth: "thin",
+        WebkitScrollbar: "thin",
+        width: "100%", // Makes it responsive
+        maxWidth: "90vw", // Limits the width to 90% of the viewport width
+        margin: "0 auto", // Centers the content horizontally
       }}
     >
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex flex-row justify-content-between align-items-center">
         <h4>Notice Board</h4>
         <p>See All</p>
       </div>
@@ -58,11 +60,11 @@ function NoticeBoard() {
         <>
           <div
             key={indx}
-            className="d-flex justify-content-between align-items-center"
+            className="d-flex flex-row justify-content-between align-items-center"
             style={{ margin: 0 }}
           >
             <img src={val.calander} />
-            <p style={{marginLeft:'12px', marginRight:'12px'}}>{val.info}</p>
+            <p style={{ marginLeft: "8px", marginRight: "8px" }}>{val.info}</p>
             <img src={eye} />
           </div>
           <hr />

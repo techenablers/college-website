@@ -2,9 +2,22 @@
 // import myIcon from "../../src/assets/image.svg";
 
 // eslint-disable-next-line react/prop-types
-function CustomCourseCard({ imageSrc, title, description, bgColor, tagInfo }) {
+function CustomCourseCard({ id,imageSrc, title, description, bgColor, tagInfo, onCardClick  }) {
+
+  const handleCardClick = () => {
+    const cardDetails = {
+      id,
+      title,
+      description,
+      tagInfo,
+      bgColor
+    };
+    onCardClick(cardDetails);
+  };
+
+
   return (
-    <div className="container mt-5">
+    <div className="container mt-5"  onClick={handleCardClick}>
       <div
         className="card"
         style={{

@@ -6,6 +6,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Layout from "./components/layouts/Layouts";
 import StudentWelfare from "./components/StudentWelfare";
+import LeadersDesk from "./components/LeadersDesk";
+import CoursesDetails from "./components/CoursesDetails";
 
 const App = () => {
   return (
@@ -39,6 +41,22 @@ const App = () => {
         element={
           <Layout>
             < StudentWelfare/>
+          </Layout>
+        }
+      />
+        <Route
+        path="/core-member-details"
+        element={
+          <Layout>
+            <LeadersDesk />
+          </Layout>
+        }
+      />
+        <Route
+        path="/course-details"
+        element={
+          <Layout>
+            <CoursesDetails />
           </Layout>
         }
       />

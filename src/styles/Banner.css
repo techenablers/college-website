@@ -17,6 +17,19 @@
   margin-top: 100px;
 }
 
+
+@keyframes zoomIn {
+    from {
+      transform: scale(0); 
+      opacity: 0;          
+    }
+    to {
+      transform: scale(1); 
+      opacity: 1;          
+    }
+  }
+
+
 .enroll-now {
   position: fixed;
   right: 0;
@@ -30,6 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  animation: zoomIn 0.7s ease-in-out forwards; 
 }
 
 .enroll-now img {
@@ -38,11 +52,6 @@
   object-fit: contain; /* Ensure the image scales without distortion */
   cursor: pointer;
   transition: transform 0.3s ease;
-}
-
-/* Hover Effect */
-.enroll-now img:hover {
-  transform: scale(1.1);
 }
 
 @media (max-width: 1024px) {

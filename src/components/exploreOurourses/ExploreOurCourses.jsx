@@ -23,7 +23,7 @@ function ExploreOurCourses() {
         {/* <TabContainer/> */}
         <NewTabContainer />
       </div>
-      <button className=" view-all-course-btn">All course Details</button>
+      
     </div>
   );
 }

@@ -4,13 +4,15 @@ import Ramesh from "../../src/assets/im.svg";
 import vector20 from "../assets/Vector20.svg";
 import image2 from "../assets/image2.svg";
 import image3 from "../assets/image3.svg";
+import { useNavigate } from "react-router-dom";
 
 function OurCoreMember() {
+  const navigate = useNavigate();
 
-  const handleClick = ()=>{
-    console.log('i am clicked');
-    
-  }
+  const handleClick = () => {
+    navigate("/core-member-details");
+  };
+
   return (
     <div
       className=""
@@ -115,7 +117,6 @@ function OurCoreMember() {
               borderRadius: "5px",
               zIndex: 3, // Ensure the button appears above the image and text
             }}
-
             onClick={handleClick}
           >
             See More
@@ -162,7 +163,7 @@ function OurCoreMember() {
             <span style={{ fontSize: "16PX" }}>Prof.Dr. M.B. Sonawane</span>
             <span style={{ fontSize: "12PX", color: "#B7B7B7" }}>Director</span>
           </div>
-          
+
           <button
             style={{
               position: "absolute", // Position it relative to the card container
@@ -177,6 +178,7 @@ function OurCoreMember() {
               borderRadius: "5px",
               zIndex: 3, // Ensure the button appears above the image and text
             }}
+            onClick={handleClick}
           >
             See More
           </button>
@@ -220,26 +222,29 @@ function OurCoreMember() {
               }}
             >
               <span style={{ fontSize: "16PX" }}>Prof. Nisha Sonawane</span>
-              <span style={{ fontSize: "12PX", color: "#B7B7B7" }}>Principal</span>
+              <span style={{ fontSize: "12PX", color: "#B7B7B7" }}>
+                Principal
+              </span>
             </div>
-            
-          <button
-            style={{
-              position: "absolute", // Position it relative to the card container
-              bottom: "-20px", // Move it slightly outside the card
-              left: "50%", // Center it horizontally
-              transform: "translateX(-50%)", // Offset to truly center the button
-              padding: "10px 20px",
-              backgroundColor: "#0540F2", // Button color
-              color: "white",
-              fontWeight: "bold",
-              border: "none",
-              borderRadius: "5px",
-              zIndex: 3, // Ensure the button appears above the image and text
-            }}
-          >
-            See More
-          </button> 
+
+            <button
+              style={{
+                position: "absolute", // Position it relative to the card container
+                bottom: "-20px", // Move it slightly outside the card
+                left: "50%", // Center it horizontally
+                transform: "translateX(-50%)", // Offset to truly center the button
+                padding: "10px 20px",
+                backgroundColor: "#0540F2", // Button color
+                color: "white",
+                fontWeight: "bold",
+                border: "none",
+                borderRadius: "5px",
+                zIndex: 3, // Ensure the button appears above the image and text
+              }}
+              onClick={handleClick}
+            >
+              See More
+            </button>
           </div>
         </div>
       </div>

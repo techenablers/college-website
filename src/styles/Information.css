@@ -1,5 +1,6 @@
-.information-content{
+.information-content {
     width: 100%;
-    background: linear-gradient(to top, #D9ECFF 20%, #F0F3FF 80%);
+    /* background: linear-gradient(to top, #DBEDFF 25%, #ffffff 65%); */
+    min-height: 100vh; /* Ensures gradient covers the viewport height */
     height: auto;
 }
