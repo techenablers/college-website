@@ -5,6 +5,7 @@ import pitcher2 from "../../../src/assets/priscilla-du-preez-ggeZ9oyI-PE-unsplas
 import pitcher3 from "../../../src/assets/redd-f-PTRzqc_h1r4-unsplash.svg";
 import pitcher4 from "../../../src/assets/zachary-keimig-nxJgmZfLcJI-unsplash.svg";
 import "../../styles/OurFacilities.css";
+import { useNavigate } from "react-router-dom";
 
 function OurFacilities() {
   // Array of images for each rectangle
@@ -15,6 +16,13 @@ function OurFacilities() {
     { pitcher: pitcher4 },
   ];
 
+  const navigation = useNavigate()
+
+  const handleFacilities =()=>{
+    navigation("/infrastructure")
+
+  }
+
   return (
     <div
       className="d-flex justify-content-center align-items-center our-facility-main"
@@ -22,7 +30,7 @@ function OurFacilities() {
       
       }}
     >
-      <div className="our-campus-header" style={{}}>
+      <div className="our-campus-header" onClick={handleFacilities}>
         <h5>Our Facilities</h5>
         <p>
           Immerse yourself in a conducive learning environment with our

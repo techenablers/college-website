@@ -8,6 +8,7 @@ import Layout from "./components/layouts/Layouts";
 import StudentWelfare from "./components/StudentWelfare";
 import LeadersDesk from "./components/LeadersDesk";
 import CoursesDetails from "./components/CoursesDetails";
+import Infrastructure from "./components/Infrastructure/Infrastructure";
 
 const App = () => {
   return (
@@ -57,6 +58,14 @@ const App = () => {
         element={
           <Layout>
             <CoursesDetails />
+          </Layout>
+        }
+      />
+        <Route
+        path="/infrastructure"
+        element={
+          <Layout>
+            <Infrastructure />
           </Layout>
         }
       />

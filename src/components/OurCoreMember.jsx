@@ -48,7 +48,7 @@ function OurCoreMember() {
         </span>
       </p>
 
-      <h5>Our Core Members</h5>
+      <h5 >Our Core Members</h5>
       <div
         className="d-flex justify-content-center align-items-center"
         style={{
