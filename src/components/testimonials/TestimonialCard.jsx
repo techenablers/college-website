@@ -1,28 +1,14 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "../../styles/TestominalCard.css";
 
-function TestimonialCard() {
-  const testimonialInformation = [
-    {
-      name: "Pramod Barke",
-      content:
-        "Excellent classes, teachers are very sincere and friendly and give attention to every student.",
-    },
-    {
-      name: "Payal Uppal",
-      content: "All teachers are enthusiastic and ready to help.",
-    },
-    {
-      name: "Shubham Pathare",
-      content:
-        "My sincere appreciation and gratitude to my teachers for their efforts in imparting quality education.",
-    },
-  ];
+function TestimonialCard({testimonials}) {
+ 
 
   return (
     <div className="d-flex flex-wrap justify-content-center">
-      {testimonialInformation.map((val, index) => (
+      {testimonials.map((val, index) => (
         <div
           className="testimonial-card"
           key={index}

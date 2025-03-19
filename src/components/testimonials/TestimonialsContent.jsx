@@ -1,8 +1,66 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 
 function TestimonialsContent() {
+  const [startIndex, setStartIndex] = useState(0);
+
+  const testimonialInformation = [
+    {
+      name: "Pramod Barke",
+      content:
+        "Excellent classes, teachers are very sincere and friendly and give attention to every student.",
+    },
+    {
+      name: "Payal Uppal",
+      content: "All teachers are enthusiastic and ready to help.",
+    },
+    {
+      name: "Shubham Pathare",
+      content:
+        "My sincere appreciation and gratitude to my teachers for their efforts in imparting quality education.",
+    },
+    /* new added */
+
+    {
+      name: "Rohan Wadmare",
+      content:
+        "I feel great studying at Dr. RKS Jr. college and getting opportunity and support from my teachers and mentors.",
+    },
+    {
+      name: "Atharv Deshmukh",
+      content:
+        "Teachers are very caring and take great efforts for students’ well being.",
+    },
+    {
+      name: "Rohan Wadmare",
+      content:
+        "My sincere appreciation and gratitude to my teachers for their efforts in imparting quality education.",
+    },
+    {
+      name: "Shilpa K",
+      content:
+        "Quality education and extra-curricular activities boost self-confidence of students.",
+    },
+    {
+      name: "Raj Sav",
+      content:
+        "I admire the most about our college is the support and guidance which I received from my teacher.",
+    },
+
+  ];
+
+  const handleNext = () => {
+    if (startIndex < testimonialInformation.length - 3) {
+      setStartIndex(startIndex + 1);
+    }
+  };
+
+  const handlePrev = () => {
+    if (startIndex > 0) {
+      setStartIndex(startIndex - 1);
+    }
+  };
   return (
     <div className="container">
       <p
@@ -28,10 +86,12 @@ function TestimonialsContent() {
 
       <h5>What Our Students Say</h5>
 
-      <TestimonialCard />
+      <TestimonialCard testimonials={testimonialInformation.slice(startIndex, startIndex + 3)}/>
       
       <div className="d-flex justify-content-center pb-4" style={{ gap: "15px" }}>
         <button
+          onClick={handlePrev}
+          disabled={startIndex === 0}
           style={{
             backgroundColor: "#0540F2",
             color: "white",
@@ -47,6 +107,8 @@ function TestimonialsContent() {
           <i className="fa fa-angle-left" style={{ fontSize: "30px" }}></i>
         </button>
         <button
+          onClick={handleNext}
+          disabled={startIndex >= testimonialInformation.length - 3}
           style={{
             backgroundColor: "#0540F2",
             color: "white",
