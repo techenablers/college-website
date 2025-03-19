@@ -72,7 +72,7 @@ const AboutUniversity = () => {
             <h2 className="fw-bold">
               About Data Systems Research Foundation (DSRF) & Dr. RKS College
             </h2>
-            <p>
+            <p style={{textAlign:'justify'}}>
               Established in 1983, Data Systems Research Foundation (DSRF) is a
               prestigious non-profit educational trust founded by DSS Systems
               and Software Technology Ltd., Pune, a well-respected name in the
@@ -89,7 +89,7 @@ const AboutUniversity = () => {
               concessions for women to ensure that education remains accessible
               to all.
             </p>
-            <p>
+            <p style={{textAlign:'justify'}}>
               Under the umbrella of DSRF, Dr. RKS College offers Junior and
               Senior College programs in Arts, Commerce, and Science streams,
               catering to students with diverse academic interests. The
