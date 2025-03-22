@@ -1,23 +1,26 @@
 /* Horizontal Banner Styling */
 .horizontal-banner {
-    background-color: black; /* Black background */
-    color: white; /* White text */
-    font-family: Arial, sans-serif; /* Font style */
-    font-size: 14px; /* Font size */
-    display: flex; /* Use flexbox for horizontal layout */
-    align-items: center; /* Vertically center the text */
-    justify-content: center; /* Horizontally center the text */
-    height: 20px; /* Set the banner height */
-    padding: 0 10px; /* Add some padding to the left and right */
-    text-align: center; /* Center the text */
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 0 10px;
+    text-align: center;
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden;
+    width: 100%;  /* Ensures full-width scaling */
+    box-sizing: border-box; /* Avoids overflow issues */
 }
 
 /* If the text overflows, make it scroll */
 .horizontal-banner p {
     margin: 0;
     padding: 0;
+    animation: scrollText 10s linear infinite; /* Smooth scrolling effect */
 }
 
 .horizontal-banner img {
@@ -25,3 +28,30 @@
     margin-right: 10px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .horizontal-banner {
+        font-size: 12px; /* Smaller font size for mobile */
+        height: 24px; /* Slightly taller for better visibility */
+        padding: 0 5px; /* Adjust padding for smaller screens */
+    }
+
+    .horizontal-banner img {
+        height: 16px; /* Resize icon for smaller screens */
+        margin-right: 5px;
+    }
+
+    .horizontal-banner p {
+        animation-duration: 15s; /* Slower scrolling on smaller screens */
+    }
+}
+
+/* Scrolling Animation */
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

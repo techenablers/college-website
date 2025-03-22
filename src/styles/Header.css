@@ -1,4 +1,3 @@
-
 .top-bar {
   background-color: #0b0c26;
   color: white;
@@ -12,7 +11,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  height:100px;
+  height: 100px;
 }
 
 .contact-info {
@@ -59,27 +58,11 @@
   color: #ff3b3b;
 }
 
-/* .search-container {
-  display: flex;
-  align-items: center;
-  flex-grow: 0;
-  justify-content: flex-end;
-  gap: 15px;
-} */
-
-/* .search-bar {
-  display: flex;
-  align-items: center;
-  width: 250px; 
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
- */
 .search-input {
   padding: 10px 15px;
-  font-size: 14px; 
-  width: 100%; 
-  height: 40px; 
+  font-size: 14px;
+  width: 100%;
+  height: 40px;
   border: none;
 }
 
@@ -96,7 +79,7 @@
 }
 
 .search-icon svg {
-  color: #4D5765;
+  color: #4d5765;
 }
 
 .search-input:focus {
@@ -105,7 +88,7 @@
 }
 
 .apply-now {
-  background-color: #0540F2;
+  background-color: #0540f2;
   color: white;
   font-weight: bold;
   border-radius: 5px;
@@ -122,123 +105,123 @@
   background-color: #003f7f;
 }
 
-/* Responsive Fixes */
-
-/* Tablet and Mobile Fixes */
-@media (max-width: 991px) {
-  .main-navbar {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    top: 25px;
-    padding: 8px 15px;  /* Reduced padding for smaller header height */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    width: 100%; /* Ensures navbar stretches to full width */
+    position: relative; /* Aligns it correctly under the `.social-bar` */
   }
 
-  /* Navbar links should align to the center */
-  .navbar-nav {
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    gap: 8px; /* Reduce space between links on smaller screens */
+  .navbar .container {
+    max-width: 100%; /* Prevents container from shrinking */
+    padding: 0 15px; /* Adds padding to avoid content sticking to edges */
   }
 
-  .navbar-nav .nav-link {
-    font-size: 12px;  /* Adjust font size to be smaller */
+  .nav-link {
+    font-size: 14px; /* Slightly reduce font size for better fit */
   }
 
-  /* Force search and Apply Now in one row */
-  .search-container {
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .search-bar {
-    width: 90%;
-    max-width: 300px;
-    text-align: center;
-  }
-
-  .search-input {
-    width: 100%;
-    height: 35px;  /* Reduce height for a more compact input */
-    font-size: 12px;
-  }
-
-  /* Adjust Apply Now Button */
   .apply-now {
-    margin-top: 0;
-    margin-right: 60px;  /* Reduce space between Apply Now and toggle button */
-    font-size: 12px;  /* Smaller font size */
+    width: auto; /* Prevents fixed width from pushing content */
+    padding: 8px 20px;
+  }
+  .nav-item {
+    flex: 1 1 auto; /* Allows items to shrink and wrap when needed */
+    text-align: center; /* Ensures text is centered */
+  }
+  .nav-link {
+    font-size: 14px; /* Slightly smaller text for better fit */
+    padding: 5px 10px; /* Improved spacing */
+  }
+  .form-control {
+    width: 180px !important; /* Reduced input width to prevent overflow */
   }
 
-  /* Keep toggle button on the right */
-  .navbar-toggler {
-    position: absolute;
-    right: 15px;
-    top: 22px;  /* Adjust to slightly lower to match height reduction */
-    transform: none;
-    z-index: 3;
+  .apply-now {
+    width: auto; /* Ensures the button shrinks if necessary */
+    padding: 8px 15px;
   }
 }
 
-/* Mobile Fixes */
-@media (max-width: 576px) {
-  .top-bar {
-    padding: 5px 10px;
-  }
-
-  .contact-info {
-    font-size: 12px;  /* Reduce font size on mobile */
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 12px;  /* Smaller font size on mobile */
-    margin-right: 10px;
-  }
-
-  .search-container {
-    flex-direction: row;
-    align-items: center;
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 60px; /* Align with `.top-bar` height */
     width: 100%;
-    gap: 10px;
-    justify-content: center;
+    z-index: 999; /* Below `.top-bar` */
   }
-
-  .search-bar {
-    width: 90%;
-    max-width: 280px;
+  .container {
+    max-width: 100% !important; /* Full width for mobile */
+    padding: 0 15px; /* Optional: Adjust padding */
   }
-
-  .apply-now {
+  .social-bar {
+    width: 100% !important; /* Full width */
+    height: 25px !important; /* Height as 20px */
+    background-color: #0b0e2a !important;
+    mask: none !important;
+    -webkit-mask: none !important;
+    position: fixed !important; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1001; /* Ensure it's above `.top-bar` */
+  }
+  .logo {
     width: auto;
-    font-size: 11px;
-    padding: 8px 20px;
-    margin-top: 0;
-    margin-right: 40px;  /* Ensure space from toggle */
   }
 
-  .search-input {
-    width: 100%;
-    height: 35px;  /* Reduce height for better mobile appearance */
-    font-size: 12px;
+  .top-bar {
+    background-color: #fff !important;
+    /* height: 100px !important;  */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 0px !important;
   }
 
-  .search-icon {
-    height: 30px;
-    padding: 10px 15px;
-    border-radius: 0 5px 5px 0;
-    border-left: 2px solid #ccc;
+  .navbar-container-fluid {
+    background-color: transparent !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
   }
-
-  /* Keep toggle button on the right */
   .navbar-toggler {
     position: absolute;
     right: 10px;
-    top: 22px;  /* Adjust to fit with compact design */
+    top: 22px;
     transform: none;
     z-index: 3;
+    padding: 2px 4px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-toggler-icon {
+    width: 18px; /* Smaller icon width */
+    height: 18px; /* Smaller icon height */
+  }
+  .navbar {
+    position: relative; /* Ensures it sits naturally below */
+    margin-top: 25px; /* Same height as `.social-bar` */
+    z-index: 1000; /* Lower than `.social-bar` to avoid overlap */
+  }
+  .navbar-nav {
+    flex-direction: column !important; /* Stack nav items vertically */
+    align-items: flex-start !important; /* Align items to the left */
+    padding-left: 15px !important; /* Add slight padding for spacing */
+    gap: 1px; /* Optional: Add spacing between items */
+    margin-left:10px !important;
+    width: 100% !important;
+  }
+
+  .navbar-collapse {
+    width: 100% !important; /* Ensures full width */
+    overflow: hidden; /* Prevents content overflow */
+    text-align: left !important; /* Aligns content to the left */
+    position: absolute; /* Helps position it below the `.navbar` */
+    top: 80%; /* Ensures the menu starts right below */
+    left: 0; /* Aligns to the left */
+    transition: height 0.3s ease;
+    background-color: #fff; /* Retains your original background */
+    z-index: 998; /* Ensures it appears correctly in the stacking order */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow for clarity */
   }
 }

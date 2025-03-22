@@ -14,35 +14,34 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <div className="top-bar d-flex px-4 py-2 justify-content-between">
+      <div className="top-bar d-flex justify-content-between">
         <div
           className="social-bar"
           style={{
-            width: "30%",
+            width: "25%",
             height: "35px",
             backgroundColor: "#FA3A35",
             position: "absolute",
             right: "0",
             top: "0",
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 35px, 40px 0)",
+            mask: "radial-gradient(circle at 0 65%, transparent 35px, #000 36px)",
+            WebkitMask: "radial-gradient(circle at 0 65%, transparent 35px, #000 36px)",
           }}
         >
           <div
-            className="social-icons d-flex align-items-end justify-content-center"
+            className="social-icons d-flex flex-row text-center justify-content-center"
             style={{ padding: "5px" }}
           >
-            <span className="me-2">
-              <b>Follow Us</b>
-            </span>
+            <strong>Follow Us</strong>
             <FaFacebookF /> <FaTwitter /> <FaLinkedinIn /> <FaYoutube />{" "}
             <FaSkype />
           </div>
         </div>
 
         <div
-          className="navbar-container"
+          className="navbar-container-fluid"
           style={{
-            width: "90%",
+            width: "100%",
             height: "65px",
             backgroundColor: "#ffffff",
             position: "absolute",
@@ -70,23 +69,6 @@ const Header = () => {
               >
                 <span className="navbar-toggler-icon"></span>
               </button>
-              {/* our course */}
-              {/* <button
-                  style={{
-                    backgroundColor: "#fff",
-                    color: "black",
-                    padding: "10px 20px",
-                    border: "1px solid black",
-                    cursor: "pointer",
-                    borderRadius: "10px",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "20px", 
-                  }}
-                >
-                  <i className="fa fa-th-large" style={{ fontSize: "16px" }}></i>
-                  Our Courses
-                </button> */}
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul
                   className="navbar-nav d-flex flex-row"
