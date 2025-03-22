@@ -1,0 +1,39 @@
+.contact-info-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    padding: 0.5rem 10rem;
+    color: #ffffff;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centers text for better readability on mobile */
+    margin-bottom: 1rem; /* Adds spacing between sections on smaller screens */
+}
+
+.divider {
+    border-left: 2px solid #ffffff;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .contact-info-container {
+        flex-direction: column; /* Stack items vertically in mobile view */
+        padding: 1rem; /* Reduce padding for better spacing */
+    }
+
+    .divider {
+        border-top: 2px solid #ffffff; /* Change to horizontal divider for mobile */
+        border-left: none;
+        width: 80%; /* Center the divider horizontally */
+        height: 0; /* Removes vertical height */
+        margin: 0.5rem 0; /* Space between each section */
+    }
+}

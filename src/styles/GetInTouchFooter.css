@@ -1,0 +1,55 @@
+.get-in-touch {
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Header with Arrow for Mobile */
+.get-in-touch-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon.open {
+    transform: rotate(180deg); /* Arrow rotation when expanded */
+}
+
+/* Text Visibility */
+.get-in-touch-text {
+    margin: 0;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+    .get-in-touch-text {
+        display: block; /* Always visible in desktop view */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .arrow-icon {
+        display: inline-block; /* Visible only in mobile view */
+    }
+
+    .get-in-touch-text {
+        display: none; /* Hidden by default in mobile */
+    }
+
+    .get-in-touch-text.show {
+        display: block; /* Shown when toggled */
+    }
+}

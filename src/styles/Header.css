@@ -106,6 +106,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
+
   .navbar {
     width: 100%; /* Ensures navbar stretches to full width */
     position: relative; /* Aligns it correctly under the `.social-bar` */

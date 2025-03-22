@@ -1,0 +1,54 @@
+.resources {
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Header with Arrow for Mobile */
+.resources-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon.open {
+    transform: rotate(180deg); /* Arrow rotation when expanded */
+}
+
+/* List Visibility */
+.resources-list {
+    padding-left: 20px;
+    margin: 0;
+}
+
+/* Desktop View */
+@media (min-width: 769px) {
+    .resources-list {
+        display: block; /* Always visible in desktop view */
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .arrow-icon {
+        display: inline-block; /* Visible only in mobile view */
+    }
+
+    .resources-list {
+        display: none; /* Hidden by default in mobile */
+    }
+
+    .resources-list.show {
+        display: block; /* Shown when toggled */
+    }
+}

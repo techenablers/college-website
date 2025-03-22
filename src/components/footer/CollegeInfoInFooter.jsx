@@ -6,6 +6,7 @@ import sky from "../../assets/sky.svg";
 import linin from "../../assets/in.svg";
 import facebook from "../../assets/facebook.svg";
 import twitter from "../../assets/twitter.svg";
+import "../../styles/CollegeInfoInFooter.css"; // For additional styling
 
 function CollegeInfoInFooter() {
   const footerSocialMediaIcons = [
@@ -18,42 +19,31 @@ function CollegeInfoInFooter() {
     },
   ];
 
-  // Flatten the icons for easier mapping
-  const icons = footerSocialMediaIcons[0]; // Since there is only one object in the array
+  const icons = footerSocialMediaIcons[0];
 
   return (
-    <div
-      className="d-flex flex-column align-items-start justify-content-around"
-     style={{color:"#ffffff", fontSize:'14px'}}
-    >
-      <img src={logo} width={250} height={75} alt="college logo" style={{paddingBottom:'10px'}} />
+    <div className="college-footer-container">
+      <img
+        src={logo}
+        className="college-logo"
+        alt="college logo"
+      />
 
-      <span>
+      <span className="college-description">
         Continually optimize backward manufactured <br />
         products whilst communities negotiate life <br />
         compelling alignments
       </span>
 
-      <div style={{paddingTop:'10PX',marginTop:'5px'}}>
+      <div className="social-media-section">
         <h5>Follow Us On:</h5>
-        <div style={{ display: "flex", gap: "10px" }}>
+        <div className="social-icons">
           {Object.keys(icons).map((key) => (
-            <div
-              key={key}
-              style={{
-                backgroundColor: "#1E2C46",
-                width: "40px",
-                height: "40px",
-                borderRadius: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
+            <div className="icon-container" key={key}>
               <img
                 src={icons[key]}
                 alt={key}
-                style={{ width: "20px", height: "20px" }}
+                className="icon-image"
               />
             </div>
           ))}
