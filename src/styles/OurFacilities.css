@@ -1,69 +1,100 @@
 .our-facility-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    position: relative;
-    padding: 0 120px;
-    justify-content: center;
-  }
-  
-  .our-facility-img {
-    flex: 1 1 45%;
-    width: 45%;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 8px;
-    position: relative;
-    transition: all 0.3s ease-in-out; /* Smooth transition */
-  }
-  
-  .our-campus-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20%;
-    height: 170px;
-    background-color: #020e22;
-    z-index: 1;
-    border-radius: 4px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    color: #ffffff;
-  }
-  
-  /* Mobile view - Shrinking the images but keeping 2 per row */
-  @media screen and (max-width: 640px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+  padding: 0 120px;
+  justify-content: center;
+}
 
-    .our-facility-main {
-        padding: 0 20px;  /* Reduce padding for smaller screens */
-    }
-    .our-facility-img {
-        width: 100%; /* Make each image full-width in a single column */
-    }
-    .our-facility-main {
+.our-facility-img {
+  flex: 1 1 45%;
+  width: 45%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-campus-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  height: 170px;
+  background-color: #020e22;
+  z-index: 1;
+  border-radius: 4px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #ffffff;
+}
+
+/* Tablet View - Maintain 2 images per row with reduced size */
+@media screen and (max-width: 1024px) {
+  .our-facility-main {
+      padding: 0 40px;
+      gap: 15px;
+  }
+
+  .our-facility-img {
+      width: 48%;
+      flex: 1 1 48%;
+      height: 250px; /* Slightly reduced height */
+  }
+
+  .our-campus-header {
+      width: 40%;
+      height: 150px;
+  }
+}
+
+/* Mobile View - 2 images per row with smaller dimensions */
+@media screen and (max-width: 640px) {
+  .our-facility-main {
       padding: 10px !important;
       gap: 10px !important;
-    }
-  
-    .our-facility-img {
-      width: 48% !important; /* Keep 2 images per row */
+  }
+
+  .our-facility-img {
+      width: 48% !important;  /* Ensures 2 images per row */
       flex: 1 1 48% !important;
-     /*  height: 150px !important; */ /* Reduce height */
-      border: 1px solid red !important;
-    }
-  
-    .our-campus-header {
-      width: 60% !important; /* Slightly larger header for readability */
+      height: 150px !important; /* Reduce height for smaller screens */
+      border: 1px solid red !important; /* For visibility testing */
+  }
+
+  .our-campus-header {
+      width: 70% !important;
+      height: 120px !important;
+      font-size: 14px !important;
+      padding: 5px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .our-facility-main {
+      padding: 0 5px !important;
+      gap: 8px !important; /* Smaller gap for better layout */
+  }
+
+  .our-facility-img {
+      width: 48% !important;
+      flex: 1 1 48% !important;
+      height: 140px !important;  /* Further reduced height for smaller screens */
+      border: 1px solid red !important; /* For testing visibility */
+  }
+
+  .our-campus-header {
+      width: 80% !important;
       height: 100px !important;
       font-size: 12px !important;
-      padding: 5px !important;
-    }
   }
-  
+}

@@ -20,7 +20,6 @@ function ExploreOurCourses() {
         Find the Right Program For Your <br /> Career Goals.
       </p>
       <div>
-        {/* <TabContainer/> */}
         <NewTabContainer />
       </div>
       

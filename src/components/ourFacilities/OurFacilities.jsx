@@ -1,9 +1,9 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import pitcher1 from "../../../src/assets/mimi-thian--VHQ0cw2euA-unsplash.svg";
-import pitcher2 from "../../../src/assets/priscilla-du-preez-ggeZ9oyI-PE-unsplash.svg";
-import pitcher3 from "../../../src/assets/redd-f-PTRzqc_h1r4-unsplash.svg";
-import pitcher4 from "../../../src/assets/zachary-keimig-nxJgmZfLcJI-unsplash.svg";
+import pitcher1 from "../../../src/assets/library.svg";
+import pitcher2 from "../../../src/assets/computerLab.svg";
+import pitcher3 from "../../../src/assets/Administration.svg";
+import pitcher4 from "../../../src/assets/Classroom.svg";
 import "../../styles/OurFacilities.css";
 import { useNavigate } from "react-router-dom";
 

@@ -3,7 +3,7 @@ import React from "react";
 import arrow from "../../../src/assets/Vector.svg";
 import WhatWeOfferUi from "./WhatWeOfferUi";
 import "../../../src/styles/OurOfferContent.css";
-import aa from "../../assets/data.svg"
+import laptop from "../../assets/laptop.svg"
 import bb from "../../assets/iti.svg"
 import cc from "../../assets/science.svg"
 
@@ -12,7 +12,7 @@ function EduraCourseinfo() {
     <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
       {/* First Section */}
       <span className="d-flex flex-column align-items-center mb-4 mb-md-0 text-center">
-        <WhatWeOfferUi img={aa}/>
+        <WhatWeOfferUi img={laptop}/>
         <h5 className="mt-4">Application Submission</h5>
         <p>
           Once admissions open, students can submit their <br />

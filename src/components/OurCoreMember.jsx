@@ -99,7 +99,7 @@ function OurCoreMember() {
           >
             <span style={{ fontSize: "16px" }}>Dr. Ramesh Kumar Sachdeva</span>
             <span style={{ fontSize: "12px", color: "#B7B7B7" }}>
-              Principal
+              Founder
             </span>
           </div>
 
@@ -109,7 +109,7 @@ function OurCoreMember() {
               bottom: "-20px", // Move it slightly outside the card
               left: "50%", // Center it horizontally
               transform: "translateX(-50%)", // Offset to truly center the button
-              padding: "10px 20px",
+              padding: "8px 20px",
               backgroundColor: "#0540F2", // Button color
               color: "white",
               fontWeight: "bold",
@@ -119,7 +119,7 @@ function OurCoreMember() {
             }}
             onClick={handleClick}
           >
-            See More
+            Read More
           </button>
         </div>
 
@@ -170,7 +170,7 @@ function OurCoreMember() {
               bottom: "-20px", // Move it slightly outside the card
               left: "50%", // Center it horizontally
               transform: "translateX(-50%)", // Offset to truly center the button
-              padding: "10px 20px",
+              padding: "8px 20px",
               backgroundColor: "#0540F2", // Button color
               color: "white",
               fontWeight: "bold",
@@ -180,7 +180,7 @@ function OurCoreMember() {
             }}
             onClick={handleClick}
           >
-            See More
+             Read More
           </button>
         </div>
         <div
@@ -233,7 +233,7 @@ function OurCoreMember() {
                 bottom: "-20px", // Move it slightly outside the card
                 left: "50%", // Center it horizontally
                 transform: "translateX(-50%)", // Offset to truly center the button
-                padding: "10px 20px",
+                padding: "8px 20px",
                 backgroundColor: "#0540F2", // Button color
                 color: "white",
                 fontWeight: "bold",
@@ -243,7 +243,7 @@ function OurCoreMember() {
               }}
               onClick={handleClick}
             >
-              See More
+               Read More
             </button>
           </div>
         </div>

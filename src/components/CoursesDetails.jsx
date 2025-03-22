@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+  /* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CourseForm from "./CourseForm";
@@ -38,9 +38,9 @@ function CoursesDetails() {
             {/* Course Duration - Aligned Closely */}
             <div
               className="d-flex flex-column align-items-start justify-content-center mt-3"
-              style={{ gap: "5px" }} // Ensures minimal spacing
+              style={{ gap: "0px" }} // Ensures minimal spacing
             >
-              <div className="d-flex">
+              <div className="d-flex justify-content-center text-center align-item-center">
                 <i
                   className="fa-regular fa-clock"
                   style={{ color: "#0D5EF4" }}

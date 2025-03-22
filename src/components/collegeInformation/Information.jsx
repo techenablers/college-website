@@ -7,17 +7,19 @@ import "../../../src/styles/information.css";
 
 function Information() {
   return (
-    <div className="row information-content d-flex justify-content-center">
-      <div className="col-12 col-md-6">
-        <NoticeBoard />
-      </div>
-      <div className="col-12 col-md-6 d-flex flex-column gap-3">
-        <span style={{ padding: " 0px 30px" }}>
-          <QuickLink />
-        </span>
-        <span style={{ padding: " 0px 40px" }}>
-          <ImportantDates />
-        </span>
+    <div className="container-fluid p-0">
+      <div className="row information-content d-flex justify-content-center mx-0">
+        <div className="col-12 col-md-6">
+          <NoticeBoard />
+        </div>
+        <div className="col-12 col-md-6 d-flex flex-column gap-3">
+          <span style={{ padding: " 0px 40px" }}>
+            <QuickLink />
+          </span>
+          <span style={{ padding: " 0px 40px" }}>
+            <ImportantDates />
+          </span>
+        </div>
       </div>
     </div>
   );

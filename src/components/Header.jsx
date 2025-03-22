@@ -41,7 +41,7 @@ const Header = () => {
         <div
           className="navbar-container-fluid"
           style={{
-            width: "100%",
+            width: "94%",
             height: "65px",
             backgroundColor: "#ffffff",
             position: "absolute",

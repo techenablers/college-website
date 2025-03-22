@@ -20,6 +20,9 @@ function WhatWeOfferUi({ img }) {
         className="scooped-square"
         style={{
           backgroundImage: `url(${img})`,
+          backgroundSize: "cover", // Ensures the image covers the entire container
+          backgroundPosition: "center", // Centers the image
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="scooped-ball"></div>
