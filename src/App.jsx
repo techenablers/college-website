@@ -41,11 +41,11 @@ const App = () => {
         path="/Student's-Corner"
         element={
           <Layout>
-            < StudentWelfare/>
+            <StudentWelfare />
           </Layout>
         }
       />
-        <Route
+      <Route
         path="/core-member-details"
         element={
           <Layout>
@@ -53,15 +53,15 @@ const App = () => {
           </Layout>
         }
       />
-        <Route
-        path="/course-details"
+      <Route 
+        path="/course-details/:courseId"
         element={
           <Layout>
             <CoursesDetails />
           </Layout>
         }
       />
-        <Route
+      <Route
         path="/infrastructure"
         element={
           <Layout>

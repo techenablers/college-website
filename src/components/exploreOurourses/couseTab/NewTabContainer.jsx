@@ -70,11 +70,7 @@ function NewTabContainer() {
   ];
 
   const handleCardClick = (details) => {
-    console.log("i am clicking the crd");
-    console.log("2", details);
-    // setSelectedCard(details);
-    // navigate(`/course-details/${details.id}`);
-    navigate('/course-details');
+    navigate(`/course-details/${details.id}`);
   };
 
   return (
