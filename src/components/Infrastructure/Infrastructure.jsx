@@ -37,7 +37,7 @@ function Infrastructure() {
   ];
 
   return (
-    <div>
+    <div style={{ position: "relative", top: "30px" }}>
       {/* About Us Section */}
       <div className="bg-light w-100 py-5 d-flex justify-content-center mt-5">
         <h4 className="text-dark">Infrastructure</h4>
