@@ -15,20 +15,8 @@ const links = [
 function QuickLink() {
   return (
     <div className="container">
-      <h4>Quick Link</h4>
       {/* Vector and Arrows */}
-      <div className="d-flex align-items-center">
-        <img src={Vector} style={{ position: "relative", width: "auto" }} />
-        <img
-          src={leftapply}
-          style={{ position: "relative", bottom: "15px", left: "6px" }}
-        />
-        <img
-          src={rightapply}
-          style={{ position: "relative", bottom: "15px", left: "12px" }}
-        />
-      </div>
-
+        <h4 >Quick Link</h4>
       {/* Quick Links */}
       <div className="row g-2" style={{}}>
         {links.map((link) => (

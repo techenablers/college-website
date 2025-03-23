@@ -35,13 +35,13 @@ function FooterOverView() {
         style={{ width: "100%", marginTop: "20px", borderColor: "#ffffff" }}
       />
 
-      {/*   <div
+        <div
         className="d-flex justify-content-between align-items-center"
         style={{ color: "#ffffff", padding: "0px 20px" }}
       >
         <span>Copyright@ DSRF. All Rights Reserved.</span>
         <span>Privacy Policy &nbsp; &nbsp; &nbsp; Terms of Use</span>
-      </div> */}
+      </div>
     </div>
   );
 }

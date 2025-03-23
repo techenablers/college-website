@@ -16,8 +16,8 @@ const leadersData = [
     img: Ramesh,
     reverse: false,
     content: {
-      name: "Dr. Ramesh Kumar Sachdeva",
-      position: "Founder, RK Scollegekharadi",
+      name: "Dr. Ramesh Sachdeva",
+      position: "Founder",
       description: {
         description1:
           "Dr. Ramesh Kumar Sachdeva is a visionary industrialist, educationist, and social reformer who has played a pivotal role in shaping India’s IT landscape. Recognizing the transformative power of technology, he founded DSS Systems in 1976, pioneering software services in Pune when computer technology was still in its infancy. Under his leadership, DSS positioned Pune on the global software services map by 1980. His relentless efforts also led to the establishing of India’s first Software Technology Park in Pune, in collaboration with the Government of India’s Department of Electronics, laying the foundation for the city’s rise as an IT hub.",
@@ -31,7 +31,7 @@ const leadersData = [
     id: 2,
     img: image2,
     content: {
-      name: "Dr. Ramesh Kumar Sachdeva",
+      name: "Prof. Dr. M. B. Sonawane",
       position: "Founder, RK Scollegekharadi",
       description: {
         description1:
@@ -50,8 +50,8 @@ const leadersData = [
     id: 3,
     img: image3,
     content: {
-      name: "Dr. Ramesh Kumar Sachdeva",
-      position: "Founder, RK Scollegekharadi",
+      name: "Prof. Nisha Sonawane",
+      position: "~ Principal",
       description: {
         description1:
           "Prof. Nisha Sonawane is a dedicated academician and administrator with a strong commerce and management education background. She holds degrees in B.Com, M.Com, PGDBM, and MBS from esteemed institutions, including Ness Wadia College of Commerce and Data Systems Research Foundation (DSRF).",
