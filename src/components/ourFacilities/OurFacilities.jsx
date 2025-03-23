@@ -20,7 +20,7 @@ function OurFacilities() {
 
   const handleFacilities =()=>{
     navigation("/infrastructure")
-
+    window.scrollTo({ top: 0, behavior: 'smooth' })  // Reset scroll position to the top
   }
 
   return (
