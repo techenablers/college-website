@@ -30,7 +30,7 @@ const Marketing = () => (
   </div>
 );
 
-function VerticalNavBar() {
+function  VerticalNavBar() {
   const [activeSection, setActiveSection] = useState("All Positions");
 
   // Component Mapping
@@ -52,10 +52,10 @@ function VerticalNavBar() {
   };
 
   return (
-    <div className="d-flex align-items-start gap-0">
+    <div className="d-flex justify-content-around">
       <div
         className="d-flex flex-column align-itam-end p-3 bg-light"
-        style={{ width: "300px", position:'relative' }}
+        style={{ width: "400px", position:'relative' }}
       >
         <ul className="nav flex-column">
           {[
