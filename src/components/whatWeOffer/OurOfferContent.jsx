@@ -35,10 +35,10 @@ function OurOfferContent() {
         aria-label="Basic outlined example"
       >
         <button type="button" className="btn btn-outline-primary">
-          Under Graduate
+        Junior College 
         </button>
         <button type="button" className="btn btn-outline-primary">
-          post Graduate
+        Senior College
         </button>
       </div>
 

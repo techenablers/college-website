@@ -13,12 +13,13 @@ const EnquiryForm = () => {
             height: "3px", // Dash height
             backgroundColor: "#0540F2",
             marginBottom: "10px",
-            marginTop:'10px'
+            marginTop: "10px",
           }}
         ></div>
-        <p className="text-left mb-4" style={{fontSize:'12px'}}>
+        <p className="text-left mb-4" style={{ fontSize: "12px" }}>
           Dear Student, Thank you for your interest. Please fill out the form
-           with your details, <br />and we will contact you soon.
+          with your details, <br />
+          and we will contact you soon.
         </p>
         <form>
           <div className="row ">
@@ -43,10 +44,13 @@ const EnquiryForm = () => {
           <div className="row ">
             <div className="col-md-6 mb-3">
               <select className="form-select" id="course">
-                <option value="">Choose a course</option>
-                <option value="web">Web Development</option>
-                <option value="data">Data Science</option>
-                <option value="design">UI/UX Design</option>
+                <option value="">Junior College XI</option>
+                <option value="web">Junior College XII</option>
+                <option value="data">BSc IT</option>
+                <option value="design">BSc Data Science</option>
+                <option value="design">BCom</option>
+                <option value="design">BA</option>
+                <option value="design">BSc</option>
               </select>
             </div>
             <div className="col-md-6 mb-3">
