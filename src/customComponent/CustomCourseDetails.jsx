@@ -7,18 +7,28 @@ import "../styles/CustomCourseCard.css";
 import CustomePageHeader from "./CustomePageHeader";
 
 function CustomCourseDetails({ selectedCourse }) {
-
+  console.log(selectedCourse.myIcon);
 
   return (
     <div style={{ marginTop: "150px" }}>
       <CustomePageHeader header="Course Details" />
 
       <div className="container py-4">
-        {selectedCourse && (
+      /  {selectedCourse && (
           <>
             <div className="card shadow-sm mb-5">
               <div className="card-body text-center">
-                <div className="course-banner"></div>
+                <div>
+                  <img
+                    src={Object.values(selectedCourse.imgbanner || {})[0]}
+                    alt="Course Icon"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
                 <div className="d-flex flex-column align-items-start justify-content-center mt-3">
                   <div className="d-flex justify-content-center align-items-center mb-3">
                     <i

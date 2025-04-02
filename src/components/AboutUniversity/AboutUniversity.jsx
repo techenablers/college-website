@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutUniversity.css";
@@ -68,11 +69,20 @@ const AboutUniversity = () => {
 
           {/* Text Section */}
           <div className="col-md-6">
-            <h6 className="text-primary fw-bold">ABOUT OUR UNIVERSITY</h6>
+            <p className="course-header">
+              <span>
+                <i
+                  className="fa fa-university"
+                  aria-hidden="true"
+                  style={{ fontSize: "16px" }}
+                ></i>{" "}
+                About Our Institute
+              </span>
+            </p>
             <h2 className="fw-bold">
               About Data Systems Research Foundation (DSRF) & Dr. RKS College
             </h2>
-            <p style={{textAlign:'justify'}}>
+            <p style={{ textAlign: "justify" }}>
               Established in 1983, Data Systems Research Foundation (DSRF) is a
               prestigious non-profit educational trust founded by DSS Systems
               and Software Technology Ltd., Pune, a well-respected name in the
@@ -89,7 +99,7 @@ const AboutUniversity = () => {
               concessions for women to ensure that education remains accessible
               to all.
             </p>
-            <p style={{textAlign:'justify'}}>
+            <p style={{ textAlign: "justify" }}>
               Under the umbrella of DSRF, Dr. RKS College offers Junior and
               Senior College programs in Arts, Commerce, and Science streams,
               catering to students with diverse academic interests. The

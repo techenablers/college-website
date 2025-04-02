@@ -23,8 +23,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20%;
-  height: 170px;
+  width: 25%;
+  height: 200px;
   background-color: #020e22;
   z-index: 1;
   border-radius: 4px;
@@ -36,65 +36,63 @@
   align-items: center;
   padding: 10px;
   color: #ffffff;
+  font-size: 12px;
 }
 
 /* Tablet View - Maintain 2 images per row with reduced size */
 @media screen and (max-width: 1024px) {
   .our-facility-main {
-      padding: 0 40px;
-      gap: 15px;
+    padding: 0 40px;
+    gap: 15px;
   }
 
   .our-facility-img {
-      width: 48%;
-      flex: 1 1 48%;
-      height: 250px; /* Slightly reduced height */
+    width: 48%;
+    flex: 1 1 48%;
+    height: 250px; /* Slightly reduced height */
   }
 
   .our-campus-header {
-      width: 40%;
-      height: 150px;
+    width: 35%;
+    height: 180px;
   }
 }
 
 /* Mobile View - 2 images per row with smaller dimensions */
 @media screen and (max-width: 640px) {
   .our-facility-main {
-      padding: 10px !important;
-      gap: 10px !important;
+    padding: 10px !important;
+    gap: 10px !important;
   }
 
   .our-facility-img {
-      width: 48% !important;  /* Ensures 2 images per row */
-      flex: 1 1 48% !important;
-      height: 150px !important; /* Reduce height for smaller screens */
-      border: 1px solid red !important; /* For visibility testing */
+    width: 48% !important; /* Ensures 2 images per row */
+    flex: 1 1 48% !important;
+    height: 150px !important; /* Reduce height for smaller screens */
+    border: 1px solid red !important; /* For visibility testing */
   }
 
   .our-campus-header {
-      width: 70% !important;
-      height: 120px !important;
-      font-size: 14px !important;
-      padding: 5px !important;
+    width: 60% !important;
+    height: 160px !important;
   }
 }
 
 @media screen and (max-width: 400px) {
   .our-facility-main {
-      padding: 0 5px !important;
-      gap: 8px !important; /* Smaller gap for better layout */
+    padding: 0 5px !important;
+    gap: 8px !important; /* Smaller gap for better layout */
   }
 
   .our-facility-img {
-      width: 48% !important;
-      flex: 1 1 48% !important;
-      height: 140px !important;  /* Further reduced height for smaller screens */
-      border: 1px solid red !important; /* For testing visibility */
+    width: 48% !important;
+    flex: 1 1 48% !important;
+    height: 140px !important; /* Further reduced height for smaller screens */
+    border: 1px solid red !important; /* For testing visibility */
   }
 
   .our-campus-header {
-      width: 80% !important;
-      height: 100px !important;
-      font-size: 12px !important;
+    width: 90% !important;
+    height: 165px !important;
   }
 }

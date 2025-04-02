@@ -54,11 +54,11 @@ const leadersData = [
       position: "~ Principal",
       description: {
         description1:
-          "Prof. Nisha Sonawane is a dedicated academician and administrator with a strong commerce and management education background. She holds degrees in B.Com, M.Com, PGDBM, and MBS from esteemed institutions, including Ness Wadia College of Commerce and Data Systems Research Foundation (DSRF).",
+          "Prof. Nisha Sonawane is a dedicated academician and administrator with a strong commerce and management education background. She comes from extensive educational background from esteemed institutions, including Ness Wadia College of Commerce and Data Systems Research Foundation (DSRF).",
         description2:
           "With a passion for education and student development, she began her career as an Assistant Professor at DSRF from 2014 to 2016. Since September 2016, she has been serving as the Principal of Dr. RKS Arts & Commerce College, Pune, where she continues to foster academic excellence and holistic student growth.",
         description3:
-          "Beyond academics, Prof. Sonawane is actively involved in extracurricular initiatives, including Soft Skills Development programs to enhance student employability. She has received several accolades, including the Best Ness Girl Principal’s Award (2011-12) and has represented her institutions in state-level football tournaments",
+          "Beyond academics, Prof. Sonawane is actively involved in extracurricular initiatives, including Soft Skills Development programs to enhance student employability. She has received several accolades, including the Best Ness Girl Principal’s Award (2011-12) and has represented her institutions in state-level football tournaments. She has also actively participated in sports such as wrestling, boxing and shot-put at district level. ",
         description4:
           "With her leadership, Dr. RKS Arts & Commerce College continues to uphold its commitment to academic excellence, research, and student empowerment.",
       },
@@ -115,8 +115,8 @@ function LeadersDesk() {
               }}
               alt="Leader"
             />
-           
-           {/*  <div
+
+            {/*  <div
               style={{
                 position: "absolute",
                 // top: "40px",

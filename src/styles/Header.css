@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-start; /* Align to the left by default */
-  gap: 20px; /* Control space between menu items */
+  gap: 5px; /* Control space between menu items */
   margin: 0;
   padding: 0;
   list-style: none;

@@ -1,23 +1,31 @@
+/* eslint-disable react/prop-types */
 // import React from 'react'
 // import myIcon from "../../src/assets/image.svg";
 
 // eslint-disable-next-line react/prop-types
-function CustomCourseCard({ id,imageSrc, title, description, bgColor, tagInfo, onCardClick  }) {
-
+function CustomCourseCard({
+  id,
+  imageSrc,
+  title,
+  description,
+  bgColor,
+  tagInfo,
+  onCardClick,
+  duration,
+}) {
   const handleCardClick = () => {
     const cardDetails = {
       id,
       title,
       description,
       tagInfo,
-      bgColor
+      bgColor,
     };
     onCardClick(cardDetails);
   };
 
-
   return (
-    <div className="container mt-5"  onClick={handleCardClick}>
+    <div className="container mt-5" onClick={handleCardClick}>
       <div
         className="card"
         style={{
@@ -87,7 +95,7 @@ function CustomCourseCard({ id,imageSrc, title, description, bgColor, tagInfo, o
               fontSize: "13PX",
               fontWeight: "400",
               marginBottom: "5px",
-               textAlign: "justify"
+              textAlign: "justify",
             }}
           >
             {description}
@@ -106,9 +114,9 @@ function CustomCourseCard({ id,imageSrc, title, description, bgColor, tagInfo, o
           >
             <i
               className="fa-regular fa-clock"
-              style={{ marginRight: "5px" ,color:'#0D5EF4'}}
+              style={{ marginRight: "5px", color: "#0D5EF4" }}
             ></i>
-            Duration: 4years
+            Duration: {duration}
           </span>
         </div>
       </div>

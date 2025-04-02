@@ -1,4 +1,4 @@
-  /* eslint-disable no-unused-vars */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import modren from "../../assets/modren.svg";
@@ -9,17 +9,23 @@ import educationSectionImage from "../../assets/educationSectionImage.svg";
 import "./EducationSection.css";
 
 const EducationSection = () => {
-
-
-  const handlePlacementClick = () => {
- 
-  };
+  const handlePlacementClick = () => {};
 
   return (
     <Container fluid className="education-section py-5">
       <Row className="justify-content-center">
         <Col lg={5} md={12} className="text-section">
-          <h6 className="text-uppercase text-muted">Why Choose Us</h6>
+          {/* <h6 className="text-uppercase text-muted">Why Choose Us</h6> */}
+          <p className="course-header">
+            <span>
+              <i
+                className="fa fa-book"
+                aria-hidden="true"
+                style={{ fontSize: "16px" }}
+              ></i>{" "}
+              Why Choose Us
+            </span>
+          </p>
           <h1 className="SemiBold">
             Transform Education Your Life, Change the World
           </h1>

@@ -4,6 +4,13 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomCourseDetails from "../customComponent/CustomCourseDetails";
 import { useParams } from "react-router-dom";
+import myIcon from "../assets/juCollege.svg";
+import ba from "../assets/ba.svg";
+import bcom from "../assets/bcom.svg";
+import data from "../assets/data.svg";
+import iti from "../assets/iti.svg";
+import science from "../assets/science.svg";
+
 
 function CoursesDetails() {
   const { courseId } = useParams();
@@ -11,8 +18,9 @@ function CoursesDetails() {
   const courseDetailInfo = [
     {
       id: 1,
+      imgbanner:{myIcon},
       header: {
-        years: 4,
+        years: "1 Year each",
         heading: "Junior College XI and XII Arts Stream",
       },
       description: {
@@ -55,7 +63,8 @@ function CoursesDetails() {
       },
     },
     {
-      id: 0,
+      id: 2,
+      imgbanner:{data},
       header: {
         years: 0,
         heading: "Junior College XI and XII Commerce Stream",
@@ -98,100 +107,55 @@ function CoursesDetails() {
       },
     },
     {
-      id: 2,
-      header: {
-        years: 2,
-        heading: "BSc Data Science",
-      },
-      description: {
-        description1:
-          "The BSc. Data Science program is a 4-year undergraduate degree designed to equip students with analytical, computational, and statistical skills essential for data-driven decision-making. This program focuses on mathematical modelling, artificial intelligence, machine learning, and big data analytics to prepare students for a future in the rapidly growing field of data science.",
-        description2:
-          "With an interdisciplinary approach, the curriculum combines computer science, statistics, and business intelligence to allow students to extract meaningful insights from data. It is an ideal program for individuals strongly inclined toward mathematics, programming, and analytical thinking.",
-        description3:
-          "Graduates of this program are well-equipped to work in industries such as finance, healthcare, technology, e-commerce, and research, where data-driven decision-making is crucial.",
-      },
-      learnt: {
-        pointer1: "Fundamentals of Programming (Python, R, SQL)",
-        pointer2: "Mathematics, Probability, and Statistics for Data Science",
-        pointer3: "Machine Learning and Artificial Intelligence Techniques",
-        pointer4: "Big Data Analytics and Cloud Computing",
-        pointer5: "Data Visualization and Business Intelligence Tools",
-        pointer6: "Predictive Modeling and Statistical Analysis",
-        pointer7: "Real-world Data Science Applications and Case Studies",
-      },
-      subjectOffered:
-        "To learn more about the subjects, just download the file from the link.",
-      Career: {
-        description:
-          "With the increasing importance of data across industries, a degree in Data Science opens doors to numerous career opportunities, including:",
-        learnt: {
-          pointer1:
-            "Data Scientist: Extract insights from data to improve decision-making.",
-          pointer2:
-            "Data Analyst: Interpret and visualize data to identify trends and patterns.",
-          pointer3:
-            "Big Data Engineer: Work with large datasets and optimize storage solutions.",
-          pointer4:
-            "Business Intelligence Analyst: Use data to drive business strategies",
-          pointer5:
-            "AI Researcher: Innovate and improve machine learning algorithms.",
-          pointer6:
-            "Cloud Data Engineer: Implement cloud-based data solutions.",
-        },
-      },
-    },
-    {
       id: 3,
+      imgbanner:{ba},
       header: {
         years: 3,
-        heading: "BSc IT (Information Technology)",
+        heading: "BA Bachelor of Arts",
       },
       description: {
         description1:
-          "The BSc. IT (Information Technology) is a 3-year undergraduate program designed to provide students with a strong foundation in computer science, programming, networking, database management, and cybersecurity. This program is ideal for individuals passionate about technology, software development, and IT solutions.",
+          "The Bachelor of Arts (BA) is a 3-year undergraduate program designed to provide students with a broad and deep understanding of humanities, social sciences, and liberal arts. This program is perfect for individuals passionate about literature, history, philosophy, political science, psychology, and sociology, offering flexibility in subject choices to cater to diverse academic interests.",
         description2:
-          "The curriculum focuses on software engineering, data management, cloud computing, and web technologies, equipping students with the skills required to excel in the IT industry. The program also includes hands-on projects and real-world case studies to ensure practical application of knowledge.",
-        description3:
-          "Graduates of this program can pursue careers in software development, IT management, cybersecurity, cloud computing, and networking, among many others.",
+          "The curriculum fosters critical thinking, research abilities, analytical skills, and effective communication, preparing students for careers in education, media, public administration, social work, law, and creative fields. The interdisciplinary approach of the BA program ensures holistic development and opens up multiple pathways for higher education and career prospects.",
+        description3: "",
       },
       learnt: {
-        pointer1: "Fundamentals of Programming (C, C++, Java, Python)",
-        pointer2: "Database Management Systems (SQL, NoSQL, MongoDB)",
-        pointer3: "Networking and Cybersecurity Principles",
-        pointer4: "Cloud Computing and Virtualization",
-        pointer5: "Web Development and Mobile App Development",
-        pointer6: "Software Engineering and System Analysis",
-        pointer7: "Artificial Intelligence and Data Science Basics",
-        pointer8: "Ethical Hacking and Information Security",
+        pointer1: "History, Culture, and Civilization Studies",
+        pointer2: "Political Science and Public Administration",
+        pointer3: "Psychology and Human Behavior",
+        pointer4: "Sociology and Social Welfare Policies",
+        pointer5: "Linguistics and Literature Analysis",
+        pointer6: "Philosophy, Ethics, and Logical Reasoning",
+        pointer7: "Mass Communication and Media Studies",
+        pointer8: "Research Methodologies in Social Sciences",
       },
       subjectOffered:
         "To learn more about the subjects, just download the file from the link.",
       Career: {
         description:
-          "A degree in BSc. IT opens up a broad spectrum of career opportunities in various industries, including:",
+          "A BA degree offers diverse career opportunities across multiple fields. Some of the key career paths include:",
         learnt: {
           pointer1:
-            "Software Developer: Design and develop applications for web and mobile platforms.",
+            "Civil Services (UPSC, SSC, State PSCs): Work in government administration, policy-making, and governance.",
           pointer2:
-            "Database Administrator: Manage and optimize databases for efficient data storage.",
+            "Teaching & Education: Become a lecturer, teacher, or academic researcher.",
           pointer3:
-            "Network Engineer: Maintain and secure IT network infrastructures.",
+            "Media & Journalism: Pursue careers in content writing, journalism, and publishing.",
           pointer4:
-            "Cybersecurity Analyst: Protect systems from cyber threats and vulnerabilities.",
+            "Law & Public Policy: Advance into legal studies or policy-making roles.",
           pointer5:
-            "Cloud Engineer: Work with cloud-based solutions for businesses.",
+            "Social Work & NGOs: Engage in social advocacy, human rights, and welfare services.",
           pointer6:
-            "IT Support Specialist: Provide technical assistance and troubleshooting solutions.",
+            "Corporate Communications: Work in PR, advertising, and corporate writing.",
           pointer7:
-            "Data Analyst: Interpret and analyze data for business insights.",
-          pointer8:
-            "Web Developer: Design and develop responsive and dynamic websites.",
+            "Creative Arts & Writing: Explore careers in scriptwriting, blogging, and digital media.",
         },
       },
     },
     {
-      id: 5,
+      id: 4,
+      imgbanner:{bcom},
       header: {
         years: 3,
         heading: "BCom Bachelor of Commerce",
@@ -239,98 +203,101 @@ function CoursesDetails() {
       },
     },
     {
-      id: 6,
+      id: 5,
+      imgbanner:{science},
       header: {
-        years: 3,
-        heading: "BA Bachelor of Arts",
+        years: 2,
+        heading: "BSc Data Science",
       },
       description: {
         description1:
-          "The Bachelor of Arts (BA) is a 3-year undergraduate program designed to provide students with a broad and deep understanding of humanities, social sciences, and liberal arts. This program is perfect for individuals passionate about literature, history, philosophy, political science, psychology, and sociology, offering flexibility in subject choices to cater to diverse academic interests.",
+          "The BSc. Data Science program is a 4-year undergraduate degree designed to equip students with analytical, computational, and statistical skills essential for data-driven decision-making. This program focuses on mathematical modelling, artificial intelligence, machine learning, and big data analytics to prepare students for a future in the rapidly growing field of data science.",
         description2:
-          "The curriculum fosters critical thinking, research abilities, analytical skills, and effective communication, preparing students for careers in education, media, public administration, social work, law, and creative fields. The interdisciplinary approach of the BA program ensures holistic development and opens up multiple pathways for higher education and career prospects.",
-        description3: "",
+          "With an interdisciplinary approach, the curriculum combines computer science, statistics, and business intelligence to allow students to extract meaningful insights from data. It is an ideal program for individuals strongly inclined toward mathematics, programming, and analytical thinking.",
+        description3:
+          "Graduates of this program are well-equipped to work in industries such as finance, healthcare, technology, e-commerce, and research, where data-driven decision-making is crucial.",
       },
       learnt: {
-        pointer1: "History, Culture, and Civilization Studies",
-        pointer2: "Political Science and Public Administration",
-        pointer3: "Psychology and Human Behavior",
-        pointer4: "Sociology and Social Welfare Policies",
-        pointer5: "Linguistics and Literature Analysis",
-        pointer6: "Philosophy, Ethics, and Logical Reasoning",
-        pointer7: "Mass Communication and Media Studies",
-        pointer8: "Research Methodologies in Social Sciences",
+        pointer1: "Fundamentals of Programming (Python, R, SQL)",
+        pointer2: "Mathematics, Probability, and Statistics for Data Science",
+        pointer3: "Machine Learning and Artificial Intelligence Techniques",
+        pointer4: "Big Data Analytics and Cloud Computing",
+        pointer5: "Data Visualization and Business Intelligence Tools",
+        pointer6: "Predictive Modeling and Statistical Analysis",
+        pointer7: "Real-world Data Science Applications and Case Studies",
       },
       subjectOffered:
         "To learn more about the subjects, just download the file from the link.",
       Career: {
         description:
-          "A BA degree offers diverse career opportunities across multiple fields. Some of the key career paths include:",
+          "With the increasing importance of data across industries, a degree in Data Science opens doors to numerous career opportunities, including:",
         learnt: {
           pointer1:
-            "Civil Services (UPSC, SSC, State PSCs): Work in government administration, policy-making, and governance.",
+            "Data Scientist: Extract insights from data to improve decision-making.",
           pointer2:
-            "Teaching & Education: Become a lecturer, teacher, or academic researcher.",
+            "Data Analyst: Interpret and visualize data to identify trends and patterns.",
           pointer3:
-            "Media & Journalism: Pursue careers in content writing, journalism, and publishing.",
+            "Big Data Engineer: Work with large datasets and optimize storage solutions.",
           pointer4:
-            "Law & Public Policy: Advance into legal studies or policy-making roles.",
+            "Business Intelligence Analyst: Use data to drive business strategies",
           pointer5:
-            "Social Work & NGOs: Engage in social advocacy, human rights, and welfare services.",
+            "AI Researcher: Innovate and improve machine learning algorithms.",
           pointer6:
-            "Corporate Communications: Work in PR, advertising, and corporate writing.",
-          pointer7:
-            "Creative Arts & Writing: Explore careers in scriptwriting, blogging, and digital media.",
+            "Cloud Data Engineer: Implement cloud-based data solutions.",
         },
       },
     },
     {
-      id: 4,
+      id: 6,
+      imgbanner:{iti},
       header: {
         years: 3,
-        heading: "BSc Bachelor of Science",
+        heading: "BSc IT (Information Technology)",
       },
       description: {
         description1:
-          "The Bachelor of Science (BSc) is a 3-year undergraduate program that provides students with in-depth knowledge of scientific principles, research methodologies, and practical applications in various scientific fields. This program is ideal for biology, chemistry, physics, mathematics, and computer science students, offering a strong foundation for further academic and professional pursuits.",
+          "The BSc. IT (Information Technology) is a 3-year undergraduate program designed to provide students with a strong foundation in computer science, programming, networking, database management, and cybersecurity. This program is ideal for individuals passionate about technology, software development, and IT solutions.",
         description2:
-          "The curriculum integrates theoretical learning with laboratory experiments, field studies, and research projects, ensuring students gain practical exposure to modern scientific advancements and technologies. A BSc degree opens pathways to higher education, research, and careers in healthcare, technology, environmental science, and engineering.",
-        description3: "",
+          "The curriculum focuses on software engineering, data management, cloud computing, and web technologies, equipping students with the skills required to excel in the IT industry. The program also includes hands-on projects and real-world case studies to ensure practical application of knowledge.",
+        description3:
+          "Graduates of this program can pursue careers in software development, IT management, cybersecurity, cloud computing, and networking, among many others.",
       },
       learnt: {
-        pointer1: "Fundamental concepts of Physics, Chemistry, and Biology",
-        pointer2: "Advanced Mathematics and Statistical Analysis",
-        pointer3: "Computer Science and Data Processing",
-        pointer4: "Scientific Research Methods and Laboratory Techniques",
-        pointer5: "Environmental Science and Sustainable Development",
-        pointer6: "Biotechnology and Genetic Studies",
-        pointer7: "Innovations in Material Science and Nanotechnology",
-        pointer8: "Project-Based Learning and Scientific Research",
+        pointer1: "Fundamentals of Programming (C, C++, Java, Python)",
+        pointer2: "Database Management Systems (SQL, NoSQL, MongoDB)",
+        pointer3: "Networking and Cybersecurity Principles",
+        pointer4: "Cloud Computing and Virtualization",
+        pointer5: "Web Development and Mobile App Development",
+        pointer6: "Software Engineering and System Analysis",
+        pointer7: "Artificial Intelligence and Data Science Basics",
+        pointer8: "Ethical Hacking and Information Security",
       },
       subjectOffered:
         "To learn more about the subjects, just download the file from the link.",
       Career: {
         description:
-          "A BSc degree offers vast career opportunities in diverse scientific and technological sectors. Some of the key career paths include:",
+          "A degree in BSc. IT opens up a broad spectrum of career opportunities in various industries, including:",
         learnt: {
           pointer1:
-            "Research Scientist: Conduct research in various scientific domains, including physics, chemistry, and life sciences.",
+            "Software Developer: Design and develop applications for web and mobile platforms.",
           pointer2:
-            "Healthcare & Medical Sciences: Work in biotechnology, microbiology, or pursue further studies in medical fields.",
+            "Database Administrator: Manage and optimize databases for efficient data storage.",
           pointer3:
-            "Environmental Science & Sustainability: Contribute to environmental conservation and sustainable development projects.",
+            "Network Engineer: Maintain and secure IT network infrastructures.",
           pointer4:
-            "Data Science & Analytics: Use statistical methods and programming to analyze complex datasets.",
+            "Cybersecurity Analyst: Protect systems from cyber threats and vulnerabilities.",
           pointer5:
-            "Teaching & Academia: Become a science educator, lecturer, or academic researcher.",
+            "Cloud Engineer: Work with cloud-based solutions for businesses.",
           pointer6:
-            "IT & Software Development: Specialize in computer science, software engineering, or AI.",
+            "IT Support Specialist: Provide technical assistance and troubleshooting solutions.",
           pointer7:
-            "Industrial & Chemical Research: Work in pharmaceuticals, material sciences, and chemical industries.",
+            "Data Analyst: Interpret and analyze data for business insights.",
+          pointer8:
+            "Web Developer: Design and develop responsive and dynamic websites.",
         },
       },
     },
-  ];
+   ];
 
   const [selectedCourseId, setSelectedCourseId] = useState();
 
