@@ -14,7 +14,7 @@ function CustomCourseDetails({ selectedCourse }) {
       <CustomePageHeader header="Course Details" />
 
       <div className="container py-4">
-      /  {selectedCourse && (
+        {selectedCourse && (
           <>
             <div className="card shadow-sm mb-5">
               <div className="card-body text-center">

@@ -10,6 +10,8 @@ import LeadersDesk from "./components/LeadersDesk";
 import CoursesDetails from "./components/CoursesDetails";
 import Infrastructure from "./components/Infrastructure/Infrastructure";
 import Career from "./components/careers/Career";
+import Events from "./components/events/Events";
+
 
 const App = () => {
   return (
@@ -34,7 +36,7 @@ const App = () => {
         path="/career"
         element={
           <Layout>
-            <Career/>
+            <Career />
           </Layout>
         }
       />
@@ -46,14 +48,14 @@ const App = () => {
           </Layout>
         }
       />
-      <Route
+    {/*   <Route
         path="/Student's-Corner"
         element={
           <Layout>
             <StudentWelfare />
           </Layout>
         }
-      />
+      /> */}
       <Route
         path="/core-member-details"
         element={
@@ -62,7 +64,15 @@ const App = () => {
           </Layout>
         }
       />
-      <Route 
+      <Route
+        path="/about/leaders-desk"
+        element={
+          <Layout>
+            <LeadersDesk />
+          </Layout>
+        }
+      />
+      <Route
         path="/course-details/:courseId"
         element={
           <Layout>
@@ -78,6 +88,38 @@ const App = () => {
           </Layout>
         }
       />
+      <Route
+        path="/about/infrastructure"
+        element={
+          <Layout>
+            <Infrastructure />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about/careers"
+        element={
+          <Layout>
+            <Career />
+          </Layout>
+        }
+      />
+     <Route
+        path="/Student's-Corner/welfare"
+        element={
+          <Layout>
+            <StudentWelfare />
+          </Layout>
+        }
+      /> 
+     <Route
+        path="/Student's-Corner/events"
+        element={
+          <Layout>
+            <Events />
+          </Layout>
+        }
+      /> 
     </Routes>
   );
 };

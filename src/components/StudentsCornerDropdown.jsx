@@ -24,7 +24,7 @@ function StudentsCornerDropdown() {
     <li className="nav-item dropdown position-relative" ref={dropdownRef}>
       <div className="d-flex align-items-center">
         {/* Normal nav link */}
-        <Link to="/Student's-Corner" className="nav-link">
+        <Link to="" className="nav-link">
         Student&apos;s Corner
         </Link>
 
