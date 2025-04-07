@@ -29,11 +29,15 @@ function StudentsCornerDropdown() {
         </Link>
 
         {/* Dropdown toggle icon (arrow) */}
-        <button
-          className="btn btn-link p-0 ms-1 dropdown-toggle"
-          style={{ fontSize: "0.8rem", lineHeight: "1", textDecoration: "none" }}
+        
+        <i
+          className="fa fa-angle-down"
+          role="button"
+          tabIndex="0"
+          aria-hidden="true"
           onClick={toggleDropdown}
-        ></button>
+          style={{ color: "#000" }}
+        ></i>
       </div>
 
       {/* Dropdown items */}
