@@ -1,23 +1,16 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Banner.css";
-import enrollNow from "../assets/enroll-now.svg";
-import EnrollNow from "./EnrollNow";
+import mainBanner from "../assets/Website-Banner.svg"
 
 const Banner = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleShowModal = () => setShowModal(true);
-  const handleCloseModal = () => setShowModal(false);
-
   return (
-    <div className="banner">
-      <div className="enroll-now" onClick={handleShowModal}>
-        <a href="#enroll">
-          <img src={enrollNow} alt="Enroll Now" />
-        </a>
-      </div>
-      {showModal && <EnrollNow show={showModal} onClose={handleCloseModal} />}
+    <div className="banner-wrapper">
+      <img
+        src={mainBanner} // or a URL like "https://example.com/banner.jpg"
+        alt="Banner"
+        className="banner-img"
+      />
     </div>
   );
 };

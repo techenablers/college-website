@@ -1,9 +1,8 @@
 /* Ensure full height and remove default margin/padding */
-body, html {
-  height: 100%;
+html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+  overflow-x: hidden;
 }
 
 /* Main container for the entire app */

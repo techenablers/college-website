@@ -54,10 +54,13 @@ function EnrollNow({ show, onClose }) {
 
               <div className="mb-3">
                 <select className="form-select">
-                  <option value="">Select Course</option>
-                  <option value="react">React</option>
-                  <option value="node">Node.js</option>
-                  <option value="express">Express.js</option>
+                  <option value="">Select</option>
+                  <option value="">Junior College XI & XII Arts Stream</option>
+                  <option value="react">Junior College XI & XII Commerce Stream</option>
+                  <option value="node">BA</option>
+                  <option value="express">BCom</option>
+                  <option value="express">BSc Data Science</option>
+                  <option value="express">BSc IT</option>
                 </select>
               </div>
 
