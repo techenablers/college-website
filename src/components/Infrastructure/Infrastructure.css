@@ -16,6 +16,10 @@
     background-color: #0540F2;
 }
 
+.link-out:hover .svg-path {
+    fill: white;
+}
+
 .other-infra {
     background-color: rgb(255, 255, 255);
     display: flex;

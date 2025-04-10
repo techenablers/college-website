@@ -6,7 +6,6 @@ import Administration from "../../assets/Administration.svg";
 import Classroom from "../../assets/Classroom.svg";
 import Playground from "../../assets/Playground.svg";
 import Staffroom from "../../assets/Staffroom.svg";
-import link from "../../assets/link_out.svg";
 
 function Infrastructure() {
   const InfrastructureImg = [
@@ -37,7 +36,7 @@ function Infrastructure() {
   ];
 
   return (
-    <div style={{ position: "relative", top: "30px" }}>
+    <div style={{ position: "relative", top: '52px', marginBottom: '160px'}}>
       {/* About Us Section */}
       <div className="bg-light w-100 py-5 d-flex justify-content-center mt-5">
         <h4 className="text-dark">Infrastructure</h4>
@@ -119,7 +118,12 @@ function Infrastructure() {
                   <h6>{item.heading}</h6>
                   <p>{item.description}</p>
                 </div>
-                <img src={link} className="img-fluid link-out" alt="New" />
+                {/* <img src={link} className="img-fluid link-out" alt="New" /> */}
+                <div class="link-out">
+                  <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="svg-path" d="M14.6123 5.65078V12.6999C14.6123 12.9642 14.5021 13.2065 14.3259 13.3828C14.1276 13.581 13.8853 13.6912 13.621 13.6912C13.0703 13.7132 12.6077 13.2506 12.6297 12.6999L12.6077 8.05189L5.86696 14.7926C5.47045 15.1891 4.85365 15.1891 4.45714 14.7926C4.08266 14.4181 4.06063 13.7793 4.45714 13.3828L11.1978 6.64206L6.57187 6.64206C6.02116 6.66409 5.55856 6.2015 5.58059 5.65078C5.55856 5.10007 6.02116 4.63748 6.57187 4.6595H13.621C14.1717 4.63748 14.6343 5.10007 14.6123 5.65078Z" fill="black"/>
+                  </svg>
+                </div>
               </div>
             </div>
           ))}
