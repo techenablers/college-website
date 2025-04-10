@@ -4,3 +4,15 @@
   background-color: #9FAAB7;
   border-radius: 10px;
 }
+
+.overview-text {
+  font-family: 'Jost';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .card-header  {
+    width: 100% !important;
+  }
+}

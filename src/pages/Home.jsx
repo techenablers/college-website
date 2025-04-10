@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="home-content">
       <Banner />
-    {/*   <Flash />
+      <Flash />
       <Information />
       <Offerings />
       <AboutUniversity />
@@ -24,7 +24,7 @@ const Home = () => {
       <OurCoreMember />
       <ExploreOurCourses />
       <OurOfferContent />
-      <OurFacilities /> */}
+      <OurFacilities />
     </div>
   );
 };
