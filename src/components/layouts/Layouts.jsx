@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
       {showModal && <EnrollNow show={showModal} onClose={handleCloseModal} />}
 
       <div className="content-wrapper">{children}</div>
-      {/* <SchoolFooter /> */}
+      <SchoolFooter />
     </div>
   );
 };

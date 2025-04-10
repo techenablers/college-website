@@ -6,7 +6,7 @@ import FooterOverView from "./FooterOverView";
 function SchoolFooter() {
   return (
     <div
-      className="d-flex flex-column align-items-center"
+      className="d-flex flex-column align-items-center justify-content-center"
       style={{
         width: "100%",
         backgroundColor: "#0B0E2A",
@@ -17,8 +17,8 @@ function SchoolFooter() {
         <ContactInfo />
       </div>
 
-      <div className="w-100" style={{ padding: "10px 30px" }}>
-        <FooterOverView />
+      <div className="w-100" >
+        <FooterOverView />  
       </div>
     </div>
   );

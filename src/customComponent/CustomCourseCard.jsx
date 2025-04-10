@@ -1,8 +1,7 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-// import React from 'react'
-// import myIcon from "../../src/assets/image.svg";
+import React from 'react'
 
-// eslint-disable-next-line react/prop-types
 function CustomCourseCard({
   id,
   imageSrc,
@@ -25,15 +24,18 @@ function CustomCourseCard({
   };
 
   return (
-    <div className="container mt-5" onClick={handleCardClick}>
+    // <div className="container mt-5" >
       <div
         className="card"
         style={{
-          width: "320px",
+          width: "100%",
+          maxWidth: "320px",
           height: "425px",
-          borderRadius: "15PX",
+          borderRadius: "15px",
           border: "none",
+          cursor: "pointer",
         }}
+        onClick={handleCardClick}
       >
         <span
           className="badge position-absolute"
@@ -120,7 +122,7 @@ function CustomCourseCard({
           </span>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 

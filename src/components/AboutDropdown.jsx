@@ -22,7 +22,7 @@ function AboutDropdown() {
 
   return (
     <li className="nav-item dropdown position-relative" ref={dropdownRef}>
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center flex-row">
         {/* Link text navigates normally */}
         <Link to="/about" className="nav-link">
           About

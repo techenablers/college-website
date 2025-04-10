@@ -24,20 +24,20 @@ function OurFacilities() {
   };
 
   return (
-    <div
-      className="d-flex justify-content-center align-items-center our-facility-main"
-      style={{}}
-    >
-      <div className="our-campus-header" onClick={handleFacilities}>
-        <h3 className="mb-4">Our Facilities</h3>
-        <p>
-          Immerse yourself in a conducive learning <br /> environment with our
-          top-notch facilities. State-of-the-art <br /> laboratories, extensive
-          libraries, and modern <br />classrooms create a setting where curiosity and<br />
-          exploration flourish.
-        </p>
-      </div>
-
+    <div className="our-facility-main">
+    {/* Header is outside grid container */}
+    <div className="our-campus-header" onClick={handleFacilities}>
+      <h3 className="mb-4">Our Facilities</h3>
+      <p className="facility-description">
+        Immerse yourself in a conducive learning <br /> environment with our
+        top-notch facilities. State-of-the-art <br /> laboratories, extensive
+        libraries, and modern <br />classrooms create a setting where curiosity and<br />
+        exploration flourish.
+      </p>
+    </div>
+  
+    {/* Images Grid */}
+    <div className="facility-images-wrapper">
       {rectangles.map((rectangle, index) => (
         <div
           className="our-facility-img"
@@ -48,6 +48,8 @@ function OurFacilities() {
         ></div>
       ))}
     </div>
+  </div>
+  
   );
 }
 

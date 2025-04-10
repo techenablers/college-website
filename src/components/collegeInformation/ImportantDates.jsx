@@ -1,53 +1,58 @@
-    import React from 'react'
+/* eslint-disable no-unused-vars */
+import React from "react";
 
 function ImportantDates() {
-
-    const notice = [
-        {
-            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
-            
-        },
-        {
-            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
-            
-        },
-        {
-            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
-            
-        },
-        {
-            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
-            
-        },
-        {
-            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
-            
-        },
-        {
-            info:"Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
-            
-        },
-       ]
+  const notice = [
+    {
+      info: "Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+    },
+    {
+      info: "Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+    },
+    {
+      info: "Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+    },
+    {
+      info: "Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+    },
+    {
+      info: "Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+    },
+    {
+      info: "Synergistically visualize alternative content before cross functional core Rapidiously administra standardized value ",
+    },
+  ];
 
   return (
-    <div style={{ height:'400PX', backgroundColor:'#ffffff',overflowY:'auto', borderRadius: "5px", padding: "25px",scrollbarWidth: "thin",  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)"}} >
-    <div className='d-flex justify-content-between align-items-center'>
+    <div
+      style={{
+        height: "700px",
+        backgroundColor: "#ffffff",
+        overflowY: "auto",
+        borderRadius: "5px",
+        padding: "25px",
+        scrollbarWidth: "thin",
+        boxShadow: "0 4px 15px rgba(0, 0, 0, 0.4)",
+      }}
+    >
+      <div className="d-flex justify-content-between align-items-center">
         <h4>Important Dates</h4>
         <p>See All</p>
-    </div>
-    <hr/>
-    {notice.map((val,indx)=>(
+      </div>
+      <hr />
+      {notice.map((val, indx) => (
         <>
-        <div key={indx} className='d-flex justify-content-center align-items-center'>
-         
+          <div
+            key={indx}
+            className="d-flex justify-content-center align-items-center"
+          >
             <p>{val.info}</p>
-            
-        </div>
-        <hr/>   
+          </div>
+          <hr />
         </>
-    ))}
-</div>
-  )
+      ))}
+    </div>
+  );
 }
 
-export default ImportantDates
+export default ImportantDates;

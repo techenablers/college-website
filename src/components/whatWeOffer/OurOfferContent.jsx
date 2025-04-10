@@ -19,7 +19,6 @@ function OurOfferContent() {
       <div style={{ marginTop: "20px", padding: "10px", color: "white" }}>
         <h1
           style={{
-            fontFamily: "Hind, sans-serif",
             fontSize: "30px",
             fontWeight: "600px",
             color: "#0F2239",

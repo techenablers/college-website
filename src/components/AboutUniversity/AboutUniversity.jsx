@@ -2,7 +2,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./AboutUniversity.css";
-import carousel from "../../assets/corosal.svg";
 import AboutUniversityImage from "../../assets/AboutUniversity.svg";
 
 const AboutUniversity = () => {
@@ -10,60 +9,25 @@ const AboutUniversity = () => {
     <section className="about-university py-5">
       <div className="container">
         <div className="row align-items-center">
-          {/* Image Carousel */}
           <div className="col-md-6">
             <div
-              id="universityCarousel"
-              className="carousel slide"
-              data-bs-ride="carousel"
+              style={{
+                width: "100%",
+                height: "auto",
+                overflow: "hidden",
+                borderRadius: "0.375rem",
+              }}
             >
-              <div className="carousel-inner">
-                <div className="carousel-item active">
-                  <img
-                    src={AboutUniversityImage}
-                    className="d-block w-100 rounded"
-                    alt="House 1"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={carousel}
-                    className="d-block w-100 rounded"
-                    alt="House 2"
-                  />
-                </div>
-                <div className="carousel-item">
-                  <img
-                    src={carousel}
-                    className="d-block w-100 rounded"
-                    alt="House 3"
-                  />
-                </div>
-              </div>
-              <button
-                className="carousel-control-prev"
-                type="button"
-                data-bs-target="#universityCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  className="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button
-                className="carousel-control-next"
-                type="button"
-                data-bs-target="#universityCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  className="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span className="visually-hidden">Next</span>
-              </button>
+              <img
+                src={AboutUniversityImage}
+                alt="About University"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover", // ensures it fills the space nicely
+                  borderRadius: "0.375rem",
+                }}
+              />
             </div>
           </div>
 

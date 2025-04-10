@@ -23,7 +23,7 @@ function QuickLink() {
         className="quick-link-header"
         onClick={isMobile ? toggleLinks : undefined}
       >
-        <h5>Quick Link</h5>
+        <h6>Quick Link</h6>
         {isMobile && (
           <span
             className={`arrow-icon ${isOpen ? "open" : ""}`}
@@ -37,15 +37,14 @@ function QuickLink() {
       {(!isMobile || (isMobile && isOpen)) && <DashDesign />}
 
       {/* Links List */}
-      <ul className={`quick-link-list ${isOpen ? "show" : ""}`}>
+      <ul className={`quick-link-list mt-2 ${isOpen ? "show" : ""}`}>
         {[
-          "Life Coach",
-          "Business Coach",
-          "Life Couch",
-          "Health Couch",
-          "Development",
-          "Web Development",
-          "SEO Optimize",
+          "Junior College XI & XII Arts Stream",
+          "Junior College XI & XII Commerce Stream",
+          "BA (Bachelor of Arts)",
+          "BCom (Bachelor of Commerce)",
+          "BSc Data Science",
+          "BSc IT (Information Technology)",
         ].map((item, index) => (
           <li key={index}>{item}</li>
         ))}

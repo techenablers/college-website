@@ -23,7 +23,7 @@ function GetInTouch() {
         className="get-in-touch-header"
         onClick={isMobile ? toggleContent : undefined}
       >
-        <h5>Get In Touch</h5>
+        <h5>Student’s Corner</h5>
         {isMobile && (
           <span className={`arrow-icon ${isOpen ? "open" : ""}`}>
             ▼
@@ -35,10 +35,15 @@ function GetInTouch() {
       {(!isMobile || (isMobile && isOpen)) && <DashDesign />}
 
       {/* Contact Information */}
-      <p className={`get-in-touch-text ${isOpen ? "show" : ""}`}>
-        Fusce varius, dolor tempor interdum tristique <br />
-        bibendum service life.
-      </p>
+      <ul className={`resources-list mt-2 ${isOpen ? "show" : ""}`}>
+        {[
+          "Student Welfare",
+          "Events",
+          "Apply Now",
+        ].map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }

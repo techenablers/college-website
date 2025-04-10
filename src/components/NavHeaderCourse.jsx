@@ -35,53 +35,46 @@ const courses = [
 
 function NavHeaderCourse() {
   return (
-    <div className="container mt-3">
-      <div
-        className="d-flex flex-wrap justify-content-around"
-        style={{
-          gap: "10px",
-        }}
-      >
+    <div
+      className="container mt-4"
+      style={{
+        maxHeight: "80vh", // You can adjust this height as per your layout
+        overflowY: "auto",
+      }}
+    >
+      <div className="row g-3">
         {courses.map((course, index) => (
-          <div
-            key={index}
-            className="card shadow-sm"
-            style={{
-              width: "320px",
-              minHeight: "90px",
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              padding: "5px",
-            }}
-          >
-            <div className="card-body">
-              <h5
-                className="card-title"
-                style={{
-                  fontSize: "14px",
-                  whiteSpace: "nowrap",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  backgroundColor:"#E0EAFF",
-                  padding:'10px 5px'
-                }}
-              >
-                {course.heading}
-              </h5>
-              <p
-                className="card-text"
-                style={{
-                  fontSize: "12px",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  display: "-webkit-box",
-                  WebkitLineClamp: 2,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                {course.content}
-              </p>
+          <div key={index} className="col-12 col-lg-6">
+            <div className="card h-100 shadow-sm">
+              <div className="card-body d-flex flex-column justify-content-between">
+                <h5
+                  className="card-title"
+                  style={{
+                    fontSize: "14px",
+                    whiteSpace: "nowrap",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    backgroundColor: "#E0EAFF",
+                    padding: "10px 5px",
+                    borderRadius: "4px",
+                  }}
+                >
+                  {course.heading}
+                </h5>
+                <p
+                  className="card-text mt-2"
+                  style={{
+                    fontSize: "12px",
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
+                  {course.content}
+                </p>
+              </div>
             </div>
           </div>
         ))}

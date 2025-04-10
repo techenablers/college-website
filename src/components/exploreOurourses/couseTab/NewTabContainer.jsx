@@ -80,9 +80,10 @@ function NewTabContainer() {
   };
 
   return (
-    <div className="d-flex flex-wrap justify-content-center align-item-center">
-      {coursDetails?.map((val) => (
-        <div key={val.id}>
+    <div className="container mt-4">
+    <div className="row">
+      {coursDetails.map((val) => (
+        <div key={val.id} className="col-12 col-sm-6 col-lg-4 d-flex justify-content-center mb-4">
           <CustomCourseCard
             id={val.id}
             imageSrc={val.imageSrc}
@@ -96,6 +97,7 @@ function NewTabContainer() {
         </div>
       ))}
     </div>
+  </div>
   );
 }
 

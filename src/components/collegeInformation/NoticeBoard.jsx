@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import calander from "../../../src/assets/Group 1000015001.svg";
 import eye from "../../../src/assets/Group 1000015000.svg";

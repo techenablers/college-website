@@ -16,6 +16,11 @@
     cursor: pointer;
 }
 
+.quick-link-list li {
+    white-space: nowrap; /* Keeps each item on one line */
+    font-size: 14px;
+  }
+
 .arrow-icon {
     display: none; /* Hidden by default */
     transition: transform 0.3s ease;

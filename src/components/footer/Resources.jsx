@@ -23,11 +23,9 @@ function Resources() {
         className="resources-header"
         onClick={isMobile ? toggleLinks : undefined}
       >
-        <h5>Resources</h5>
+        <h5>About</h5>
         {isMobile && (
-          <span className={`arrow-icon ${isOpen ? "open" : ""}`}>
-            ▼
-          </span>
+          <span className={`arrow-icon ${isOpen ? "open" : ""}`}>▼</span>
         )}
       </div>
 
@@ -35,15 +33,12 @@ function Resources() {
       {(!isMobile || (isMobile && isOpen)) && <DashDesign />}
 
       {/* Links List */}
-      <ul className={`resources-list ${isOpen ? "show" : ""}`}>
+      <ul className={`resources-list mt-2 ${isOpen ? "show" : ""}`}>
         {[
-          "Community",
-          "Sports",
-          "Video Guides",
-          "Health Couch",
-          "Documentation",
-          "Security",
-          "Template",
+          "History, Vision & Mission",
+          "Leader’s Desk",
+          "Infrastructure",
+          "Careers",
         ].map((item, index) => (
           <li key={index}>{item}</li>
         ))}

@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo1.svg";
 import you from "../../assets/you.svg";
 import sky from "../../assets/sky.svg";
 import linin from "../../assets/in.svg";
@@ -27,14 +27,8 @@ function CollegeInfoInFooter() {
         src={logo}
         className="college-logo"
         alt="college logo"
+        style={{backgroundColor:'#fff', padding:"8px"}}
       />
-
-      <span className="college-description">
-        Continually optimize backward manufactured <br />
-        products whilst communities negotiate life <br />
-        compelling alignments
-      </span>
-
       <div className="social-media-section">
         <h5>Follow Us On:</h5>
         <div className="social-icons">

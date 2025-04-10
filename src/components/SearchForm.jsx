@@ -36,7 +36,7 @@ const SearchForm = () => {
   };
 
   return (
-    <form className="d-flex position-relative" onSubmit={handleSubmit}>
+    <form className="d-flex position-relative ms-3" onSubmit={handleSubmit}>
       <input
         type="text"
         className="form-control me-2"

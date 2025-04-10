@@ -9,17 +9,12 @@ function Information() {
   return (
     <div className="container-fluid p-0">
       <div className="row information-content d-flex justify-content-center mx-0">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-7">
           <NoticeBoard />
         </div>
-        <div className="col-12 col-md-6 d-flex flex-column gap-3">
-          <span style={{ padding: " 0px 40px" }}>
-            <QuickLink />
-          </span>
-          <span style={{ padding: " 0px 40px" }}>
+          <div className="important-date-content col-12 col-md-5 ">
             <ImportantDates />
-          </span>
-        </div>
+          </div>
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ function StudentsCornerDropdown() {
 
   return (
     <li className="nav-item dropdown position-relative" ref={dropdownRef}>
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center flex-row">
         {/* Normal nav link */}
         <Link to="" className="nav-link">
         Student&apos;s Corner

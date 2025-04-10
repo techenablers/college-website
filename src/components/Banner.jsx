@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div className="banner-wrapper">
       <img
-        src={mainBanner} // or a URL like "https://example.com/banner.jpg"
+        src={mainBanner} 
         alt="Banner"
         className="banner-img"
       />

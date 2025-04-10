@@ -13,20 +13,20 @@ function FooterOverView() {
       style={{
         backgroundColor: "#1E2C46",
         width: "100%",
-        padding: "35px 30px",
+        padding: "35px 10px",
       }}
     >
-      <div className="d-flex flex-wrap footer-container" style={{gap:'5px'}}>
-        <div className="col-12 col-md-4 d-flex justify-content-center">
+      <div className="d-flex flex-wrap footer-container">
+        <div className="col-12 col-md-3 d-flex justify-content-center">
           <CollegeInfoInFooter />
         </div>
-        <div className="col-12 col-md-2 d-flex justify-content-center">
+        <div className="col-12 col-md-3  d-flex justify-content-center">
           <QuickLink />
         </div>
         <div className="col-12 col-md-2 d-flex justify-content-center">
           <Resources />
         </div>
-        <div className="col-12 col-md-4 d-flex justify-content-center">
+        <div className="col-12 col-md-2 d-flex justify-content-center">
           <GetInTouch />
         </div>
       </div>
@@ -35,7 +35,7 @@ function FooterOverView() {
         style={{ width: "100%", marginTop: "20px", borderColor: "#ffffff" }}
       />
 
-        <div
+      <div
         className="d-flex justify-content-between align-items-center"
         style={{ color: "#ffffff", padding: "0px 20px" }}
       >
