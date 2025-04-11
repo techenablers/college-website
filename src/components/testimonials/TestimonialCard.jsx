@@ -3,9 +3,7 @@
 import React from "react";
 import "../../styles/TestominalCard.css";
 
-function TestimonialCard({testimonials}) {
- 
-
+function TestimonialCard({ testimonials }) {
   return (
     <div className="d-flex flex-wrap justify-content-center">
       {testimonials.map((val, index) => (
@@ -50,12 +48,11 @@ function TestimonialCard({testimonials}) {
 
               <div className="mt-auto">
                 <span className="text-start d-block">
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-warning"></i>
-                  <i className="fa fa-star text-secondary"></i>{" "}
-                  {/* Empty star */}
+                  <i className="fa fa-star text-warning me-1"></i>
+                  <i className="fa fa-star text-warning me-1"></i>
+                  <i className="fa fa-star text-warning me-1"></i>
+                  <i className="fa fa-star text-warning me-1"></i>
+                  <i className="fa fa-star text-warning me-1"></i>
                 </span>
               </div>
             </div>

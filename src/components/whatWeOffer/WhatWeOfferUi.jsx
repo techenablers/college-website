@@ -4,7 +4,8 @@ import React from "react";
 import "../../../src/styles/WhatWeOfferUi.css";
 import vector from "../../assets/vector.svg";
 
-function WhatWeOfferUi({ img }) {
+
+function WhatWeOfferUi({ img,blurimage }) {
   return (
     <div
       className="container"
@@ -15,7 +16,9 @@ function WhatWeOfferUi({ img }) {
         style={{
           backgroundImage: `url(${vector})`,
         }}
-      ></div>
+      >
+        <img src={blurimage} style={{position:'inherit',top:'10px',left:"2px", width:'35px', height:'35px'}}/>
+      </div>
       <div
         className="scooped-square"
         style={{

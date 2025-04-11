@@ -95,7 +95,7 @@ function TestimonialsContent() {
           style={{
             backgroundColor: "#0540F2",
             color: "white",
-            padding: "10px 15px",
+            padding: "8px 10px",
             display: "inline-flex",
             cursor: "pointer",
             border: "none",
@@ -112,8 +112,8 @@ function TestimonialsContent() {
           style={{
             backgroundColor: "#0540F2",
             color: "white",
-            padding: "10px 15px",
-            border: "none",
+            padding: "8px 10px",
+            border: "none", 
             cursor: "pointer",
             borderRadius: "15px",
           }}
