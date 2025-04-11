@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import science from "../assets/science.svg";
+import "../../src/styles/CourseForm.css"
 
 function CourseForm() {
   return (
     <div
-      className="p-3 border rounded"
-     
+      className="p-3 border rounded custom-bottom-border"
     >
       <div className="text-center mb-3">
         <img src={science} alt="Form Header" className="img-fluid rounded" />
