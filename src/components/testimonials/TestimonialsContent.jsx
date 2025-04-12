@@ -1,9 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TestimonialCard from "./TestimonialCard";
 
 function TestimonialsContent() {
   const [startIndex, setStartIndex] = useState(0);
+  const [cardsPerPage, setCardsPerPage] = useState(3);
 
   const testimonialInformation = [
     {
@@ -47,8 +48,24 @@ function TestimonialsContent() {
       content:
         "I admire the most about our college is the support and guidance which I received from my teacher.",
     },
-
   ];
+
+  const updateCardsPerPage = () => {
+    const width = window.innerWidth;
+    if (width < 576) {
+      setCardsPerPage(1); // mobile
+    } else if (width < 992) {
+      setCardsPerPage(2); // tablet
+    } else {
+      setCardsPerPage(3); // desktop/laptop
+    }
+  };
+
+  useEffect(() => {
+    updateCardsPerPage();
+    window.addEventListener("resize", updateCardsPerPage);
+    return () => window.removeEventListener("resize", updateCardsPerPage);
+  }, []);
 
   const handleNext = () => {
     if (startIndex < testimonialInformation.length - 3) {
@@ -86,9 +103,17 @@ function TestimonialsContent() {
 
       <h5>What Our Students Say</h5>
 
-      <TestimonialCard testimonials={testimonialInformation.slice(startIndex, startIndex + 3)}/>
-      
-      <div className="d-flex justify-content-center pb-4" style={{ gap: "15px" }}>
+      <TestimonialCard
+        testimonials={testimonialInformation.slice(
+          startIndex,
+          startIndex + cardsPerPage
+        )}
+      />
+
+      <div
+        className="d-flex flex-row justify-content-center pb-4"
+        style={{ gap: "15px" }}
+      >
         <button
           onClick={handlePrev}
           disabled={startIndex === 0}
@@ -113,7 +138,7 @@ function TestimonialsContent() {
             backgroundColor: "#0540F2",
             color: "white",
             padding: "8px 10px",
-            border: "none", 
+            border: "none",
             cursor: "pointer",
             borderRadius: "15px",
           }}
