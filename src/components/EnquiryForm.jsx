@@ -44,6 +44,7 @@ const EnquiryForm = () => {
           <div className="row ">
             <div className="col-md-6 mb-3">
               <select className="form-select" id="course">
+                <option value="">Select</option>
                 <option value="">Junior College XI</option>
                 <option value="web">Junior College XII</option>
                 <option value="data">BSc IT</option>
