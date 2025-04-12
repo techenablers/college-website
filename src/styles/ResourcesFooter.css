@@ -29,6 +29,8 @@
 .resources-list {
     padding-left: 20px;
     margin: 0;
+    color: #B3C1D3;
+    cursor: pointer;
 }
 
 /* Desktop View */

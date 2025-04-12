@@ -27,18 +27,14 @@ function CollegeInfoInFooter() {
         src={logo}
         className="college-logo"
         alt="college logo"
-        style={{backgroundColor:'#fff', padding:"8px"}}
+        style={{ backgroundColor: "#fff", padding: "8px" }}
       />
       <div className="social-media-section">
         <h5>Follow Us On:</h5>
         <div className="social-icons">
           {Object.keys(icons).map((key) => (
             <div className="icon-container" key={key}>
-              <img
-                src={icons[key]}
-                alt={key}
-                className="icon-image"
-              />
+              <img src={icons[key]} alt={key} className="icon-image" />
             </div>
           ))}
         </div>

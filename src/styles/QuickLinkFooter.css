@@ -19,6 +19,8 @@
 .quick-link-list li {
     white-space: nowrap; /* Keeps each item on one line */
     font-size: 14px;
+    color: #B3C1D3;
+    cursor: pointer;
   }
 
 .arrow-icon {

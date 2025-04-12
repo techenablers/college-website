@@ -23,7 +23,7 @@ function Resources() {
         className="resources-header"
         onClick={isMobile ? toggleLinks : undefined}
       >
-        <h5>About</h5>
+        <h6>About</h6>
         {isMobile && (
           <span className={`arrow-icon ${isOpen ? "open" : ""}`}>▼</span>
         )}
@@ -40,7 +40,7 @@ function Resources() {
           "Infrastructure",
           "Careers",
         ].map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} style={{marginTop:"2px"}}>{item}</li>
         ))}
       </ul>
     </div>

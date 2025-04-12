@@ -23,7 +23,7 @@ function GetInTouch() {
         className="get-in-touch-header"
         onClick={isMobile ? toggleContent : undefined}
       >
-        <h5>Student’s Corner</h5>
+        <h6>Student’s Corner</h6>
         {isMobile && (
           <span className={`arrow-icon ${isOpen ? "open" : ""}`}>
             ▼
@@ -41,7 +41,7 @@ function GetInTouch() {
           "Events",
           "Apply Now",
         ].map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} style={{marginTop:"2px"}}>{item}</li>
         ))}
       </ul>
     </div>

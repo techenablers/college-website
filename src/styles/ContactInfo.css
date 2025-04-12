@@ -11,9 +11,8 @@
 .contact-item {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center; /* Centers text for better readability on mobile */
-    margin-bottom: 1rem; /* Adds spacing between sections on smaller screens */
+    text-align: left; 
+    margin-bottom: 1rem; 
 }
 
 .divider {

@@ -46,7 +46,7 @@ function QuickLink() {
           "BSc Data Science",
           "BSc IT (Information Technology)",
         ].map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} style={{marginTop:"2px"}}>{item}</li>
         ))}
       </ul>
     </div>
