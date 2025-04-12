@@ -1,23 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import TabContainer from "./TabContainer";
+import CustomePageHeader from "../../customComponent/CustomePageHeader";
 
 function Events() {
   return (
     <div style={{ marginTop: "100px" }}>
       {" "}
-      <div
-        style={{
-          backgroundColor: "#F7F8FD",
-          width: "100%",
-          height: "300px",
-          marginTop: "100px",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <h4 style={{ color: "#000" }}>Events Page</h4>
-      </div>
+      <CustomePageHeader header={"Events"}/>
       <div>
         <TabContainer />
       </div>

@@ -25,11 +25,7 @@ function QuickLink() {
       >
         <h6>Quick Link</h6>
         {isMobile && (
-          <span
-            className={`arrow-icon ${isOpen ? "open" : ""}`}
-          >
-            ▼
-          </span>
+          <span className={`arrow-icon ${isOpen ? "open" : ""}`}>▼</span>
         )}
       </div>
 
@@ -39,14 +35,24 @@ function QuickLink() {
       {/* Links List */}
       <ul className={`quick-link-list mt-2 ${isOpen ? "show" : ""}`}>
         {[
-          "Junior College XI & XII Arts Stream",
-          "Junior College XI & XII Commerce Stream",
-          "BA (Bachelor of Arts)",
-          "BCom (Bachelor of Commerce)",
-          "BSc Data Science",
-          "BSc IT (Information Technology)",
+          { label: "Junior College XI & XII Arts Stream", url: "/junior-arts" },
+          {
+            label: "Junior College XI & XII Commerce Stream",
+            url: "/junior-commerce",  
+          },
+          { label: "BA (Bachelor of Arts)", url: "/ba" },
+          { label: "BCom (Bachelor of Commerce)", url: "/bcom" },
+          { label: "BSc Data Science", url: "/bsc-data-science" },
+          { label: "BSc IT (Information Technology)", url: "/bsc-it" },
         ].map((item, index) => (
-          <li key={index} style={{marginTop:"2px"}}>{item}</li>
+          <li key={index} style={{ marginTop: "2px" }}>
+            <a
+              href={item.url}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {item.label}
+            </a>
+          </li>
         ))}
       </ul>
     </div>

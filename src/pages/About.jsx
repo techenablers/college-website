@@ -10,6 +10,7 @@ import mission3 from "../assets/mission3.svg";
 import vission1 from "../assets/vission1.svg";
 import vission2 from "../assets/vission2.svg";
 import vission3 from "../assets/vission3.svg";
+import CustomePageHeader from "../customComponent/CustomePageHeader";
 
 const About = () => {
   const vissonAndMission = [
@@ -55,18 +56,7 @@ const About = () => {
 
   return (
     <div>
-      <div
-        style={{
-          backgroundColor: "#F7F8FD",
-          width: "100%",
-          height: "300px",
-          marginTop: "100px",
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <h4 style={{ color: "#000" }}>About Us</h4>
-      </div>
+      <CustomePageHeader header={"About"}/>
 
       <div className="container my-4">
         {/* Our Story Section */}

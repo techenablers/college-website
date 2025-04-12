@@ -3,24 +3,12 @@ import React from "react";
 import map from "../assets/map.svg";
 import EnquiryForm from "../components/EnquiryForm";
 import ContactDetails from "../components/ContactDetails";
+import CustomePageHeader from "../customComponent/CustomePageHeader";
 
 const Contact = () => {
   return (
     <div >
-      <div
-        style={{
-          backgroundColor: "#F7F8FD",
-          width: "100%",
-          height: "300px",
-          display: "flex",
-          position: "relative",
-          top: "100px",
-          justifyContent: "center",
-          alignItems: "center"
-        }}
-      >
-        <h4 style={{ color: "#000" }}>Contact Page</h4>
-      </div>
+     <CustomePageHeader header={"Contact Page"}/>
       <div style={{ textAlign: "center", position: "relative", top: "120px"  }}>
         <img
           src={map}

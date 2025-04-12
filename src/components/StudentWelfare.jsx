@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import CustomePageHeader from "../customComponent/CustomePageHeader";
 
 const StudentWelfare = () => {
   return (
@@ -12,21 +13,7 @@ const StudentWelfare = () => {
       className="container-fluid p-0"
     >
       {/* Header Section */}
-      <header
-        className="text-center py-5"
-        style={{ backgroundColor: "#F0F0F5" }}
-      >
-        
-        {/* Main Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Student Welfare
-        </h1>
-
-        {/* Breadcrumb */}
-        <p className="text-gray-600 text-sm md:text-base mt-2">
-          Home &gt; Student Welfare
-        </p>
-      </header>
+      <CustomePageHeader header={"Student Welfare"}/>
 
       {/* Education System Section */}
       <section className="d-flex align-items-center p-5">

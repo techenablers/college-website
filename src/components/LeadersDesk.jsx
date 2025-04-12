@@ -4,11 +4,9 @@ import Ramesh from "../assets/im.svg";
 import image2 from "../assets/image2.svg";
 import image3 from "../assets/image3.svg";
 import inverted from "../assets/inverted.svg";
-import book from "../assets/book.svg";
 import leaderImg from "../assets/leaderImg.svg";
-// import satran from "../assets/SATRAN.svg";
-// import bulb from "../assets/bulb.svg";
-// import setsquare from "../assets/setsquare.svg";
+import CustomePageHeader from "../customComponent/CustomePageHeader";
+
 
 const leadersData = [
   {
@@ -70,23 +68,7 @@ const leadersData = [
 function LeadersDesk() {
   return (
     <div className="" style={{ marginTop: "100px" }}>
-      <div
-        style={{
-          backgroundColor: "#F7F8FD",
-          width: "100%",
-          height: "300px",
-          marginTop: "100px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        {/* <img src={satran} /> */}
-        <img src={book} style={{ position: "inherit", left: "20px" }} />
-        <h4 style={{ color: "#000" }}>Leaders Desk</h4>
-        {/* <img src={bulb} /> */}
-        {/* <img src={setsquare} /> */}
-      </div>
+    <CustomePageHeader header={"Leaders Desk"}/>
 
       {leadersData.map((leader) => (
         <div
