@@ -28,12 +28,12 @@ function OurFacilities() {
     {/* Header is outside grid container */}
     <div className="our-campus-header" onClick={handleFacilities}>
       <h3 className="mb-4">Our Facilities</h3>
-      <p className="facility-description">
+     {/*  <p className="facility-description">
         Immerse yourself in a conducive learning <br /> environment with our
         top-notch facilities. State-of-the-art <br /> laboratories, extensive
         libraries, and modern <br />classrooms create a setting where curiosity and<br />
         exploration flourish.
-      </p>
+      </p> */}
     </div>
   
     {/* Images Grid */}

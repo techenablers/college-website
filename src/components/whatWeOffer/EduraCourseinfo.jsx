@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars */
+  /* eslint-disable no-unused-vars */
 import React from "react";
 import arrow from "../../../src/assets/Vector.svg";
 import WhatWeOfferUi from "./WhatWeOfferUi";
@@ -12,7 +12,7 @@ import bluehat from "../../assets/bluehat.svg";
 
 function EduraCourseinfo() {
   return (
-    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div className="d-flex flex-column flex-md-row justify-content-between align-items-center what-we-offer-container">
       {/* First Section */}
       <span className="d-flex flex-column align-items-center mb-4 mb-md-0 text-center">
         <WhatWeOfferUi img={laptop} blurimage = {Notebook}/>
