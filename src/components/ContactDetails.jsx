@@ -62,7 +62,7 @@ function ContactDetails() {
               flex: "0 0 70%",
               display: "flex",
               flexDirection: "column",
-              paddingTop: "10px",
+              paddingTop: "25px",
             }}
           >
             <h6 style={{marginBottom:'2px'}}>{val.header}</h6>

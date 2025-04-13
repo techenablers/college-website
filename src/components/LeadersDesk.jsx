@@ -78,6 +78,7 @@ function LeadersDesk() {
           } mb-4`}
           style={{
             padding: "30px 0",
+            gap: "20px",
             backgroundColor: leader.id === 2 ? "#F5F5FE" : "transparent",
           }}
         >

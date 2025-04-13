@@ -55,7 +55,7 @@ function  VerticalNavBar() {
     <div className="d-flex justify-content-around">
       <div
         className="d-flex flex-column align-itam-end p-3 bg-light"
-        style={{ width: "400px", position:'relative' }}
+        style={{ width: "250px", position:'relative', left: "10%" }}
       >
         <ul className="nav flex-column">
           {[
