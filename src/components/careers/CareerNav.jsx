@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CustomNavContent from "../../customComponent/CustomNavContent";
+import "../../styles/VerticalNavBar.css";
 
 // Content Components
 const AllPositions = () => (
@@ -30,7 +31,7 @@ const Marketing = () => (
   </div>
 );
 
-function  VerticalNavBar() {
+function VerticalNavBar() {
   const [activeSection, setActiveSection] = useState("All Positions");
 
   // Component Mapping
@@ -55,9 +56,9 @@ function  VerticalNavBar() {
     <div className="d-flex justify-content-around">
       <div
         className="d-flex flex-column align-itam-end p-3 bg-light"
-        style={{ width: "250px", position:'relative', left: "10%" }}
+        style={{ width: "250px", position: "relative", left: "10%" }}
       >
-        <ul className="nav flex-column">
+        <ul className="nav flex-column career-nav">
           {[
             "All Positions",
             "Engineering",
@@ -68,11 +69,18 @@ function  VerticalNavBar() {
             <li key={section} className="nav-item">
               <a
                 href="#"
-                className={`nav-link text-nowrap ${
-                  activeSection === section
-                    ? "text-white bg-primary"
-                    : "text-dark"
-                }`}
+                className="nav-link text-nowrap"
+                style={{
+                  borderLeft:
+                    activeSection === section
+                      ? "4px solid #0540F2"
+                      : "4px solid transparent",
+                  paddingLeft: "12px",
+                  backgroundColor:
+                    activeSection === section ? "#fff" : "transparent",
+                  color: "#000",
+                  fontWeight: activeSection === section ? "500" : "normal",
+                }}
                 onClick={(e) => {
                   e.preventDefault();
                   setActiveSection(section);
@@ -87,8 +95,6 @@ function  VerticalNavBar() {
 
       {/* Content Area */}
       <div className="flex-grow-1">{renderContent()}</div>
-
-      
     </div>
   );
 }
