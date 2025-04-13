@@ -5,7 +5,7 @@ import VerticalNavBar from "./CareerNav";
 
 function Career() {
   return (
-    <div style={{ backgroundColor: "#F7F9FC", marginTop: "150px" }}>
+    <div style={{ backgroundColor: "#F7F9FC", marginTop: "100px" }}>
       <div
         style={{
           background: `url(${groupStd})`,
