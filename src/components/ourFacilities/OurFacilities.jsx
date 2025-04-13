@@ -25,31 +25,28 @@ function OurFacilities() {
 
   return (
     <div className="our-facility-main">
-    {/* Header is outside grid container */}
-    <div className="our-campus-header" onClick={handleFacilities}>
-      <h3 className="mb-4">Our Facilities</h3>
-     {/*  <p className="facility-description">
-        Immerse yourself in a conducive learning <br /> environment with our
-        top-notch facilities. State-of-the-art <br /> laboratories, extensive
-        libraries, and modern <br />classrooms create a setting where curiosity and<br />
-        exploration flourish.
-      </p> */}
+      {/* Header is outside grid container */}
+      <div className="our-campus-header" onClick={handleFacilities}>
+        <h3 className="">Our Facilities</h3>
+        <p className="facility-description">
+          Modern labs, smart classrooms, and rich <br/> libraries — everything you
+          need to <br/> learn, grow, and explore.
+        </p>
+      </div>
+
+      {/* Images Grid */}
+      <div className="facility-images-wrapper">
+        {rectangles.map((rectangle, index) => (
+          <div
+            className="our-facility-img"
+            key={index}
+            style={{
+              backgroundImage: `url(${rectangle.pitcher})`,
+            }}
+          ></div>
+        ))}
+      </div>
     </div>
-  
-    {/* Images Grid */}
-    <div className="facility-images-wrapper">
-      {rectangles.map((rectangle, index) => (
-        <div
-          className="our-facility-img"
-          key={index}
-          style={{
-            backgroundImage: `url(${rectangle.pitcher})`,
-          }}
-        ></div>
-      ))}
-    </div>
-  </div>
-  
   );
 }
 
