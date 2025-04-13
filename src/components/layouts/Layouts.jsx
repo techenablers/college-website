@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../Header";
 import "../../styles/Layout.css";
 import SchoolFooter from "../footer/SchoolFooter";
@@ -9,11 +9,14 @@ import EnrollNow from "../EnrollNow";
 import "../../styles/Banner.css";
 
 const Layout = ({ children }) => {
+  const [showModal, setShowModal] = useState(false);
 
-    const [showModal, setShowModal] = useState(false);
-  
-    const handleShowModal = () => setShowModal(true);
-    const handleCloseModal = () => setShowModal(false);
+  const handleShowModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
+  useEffect (() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
   return (
     <div className="layout-container">
       <Header />
