@@ -35,15 +35,15 @@ function QuickLink() {
       {/* Links List */}
       <ul className={`quick-link-list mt-2 ${isOpen ? "show" : ""}`}>
         {[
-          { label: "Junior College XI & XII Arts Stream", url: "/junior-arts" },
+          { label: "Junior College XI & XII Arts Stream", url: "/course-details/1" },
           {
             label: "Junior College XI & XII Commerce Stream",
-            url: "/junior-commerce",  
+            url: "/course-details/2",  
           },
-          { label: "BA (Bachelor of Arts)", url: "/ba" },
-          { label: "BCom (Bachelor of Commerce)", url: "/bcom" },
-          { label: "BSc Data Science", url: "/bsc-data-science" },
-          { label: "BSc IT (Information Technology)", url: "/bsc-it" },
+          { label: "BA (Bachelor of Arts)", url: "/course-details/3" },
+          { label: "BCom (Bachelor of Commerce)", url: "course-details/4" },
+          { label: "BSc Data Science", url: "/course-details/5" },
+          { label: "BSc IT (Information Technology)", url: "/course-details/6" },
         ].map((item, index) => (
           <li key={index} style={{ marginTop: "2px" }}>
             <a

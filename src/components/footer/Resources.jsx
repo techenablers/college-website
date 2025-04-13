@@ -35,12 +35,22 @@ function Resources() {
       {/* Links List */}
       <ul className={`resources-list mt-2 ${isOpen ? "show" : ""}`}>
         {[
-          "History, Vision & Mission",
-          "Leader’s Desk",
-          "Infrastructure",
-          "Careers",
+          {
+            label: "History, Vision & Mission",
+            url: "/about/history-vision-mission",
+          },
+          { label: "Leader’s Desk", url: "/about/leaders-desk" },
+          { label: "Infrastructure", url: "/about/infrastructure" },
+          { label: "Careers", url: "/about/careers" },
         ].map((item, index) => (
-          <li key={index} style={{marginTop:"2px"}}>{item}</li>
+          <li key={index} style={{ marginTop: "2px" }}>
+            <a
+              href={item.url}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {item.label}
+            </a>
+          </li>
         ))}
       </ul>
     </div>

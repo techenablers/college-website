@@ -36,14 +36,22 @@ function GetInTouch() {
 
       {/* Contact Information */}
       <ul className={`resources-list mt-2 ${isOpen ? "show" : ""}`}>
-        {[
-          "Student Welfare",
-          "Events",
-          "Apply Now",
-        ].map((item, index) => (
-          <li key={index} style={{marginTop:"2px"}}>{item}</li>
-        ))}
-      </ul>
+  {[
+    { label: "Student Welfare", url: "/Student's-Corner/welfare" },
+    { label: "Events", url: "/Student's-Corner/events" },
+    { label: "Apply Now", url: "/apply" },
+  ].map((item, index) => (
+    <li key={index} style={{ marginTop: "2px" }}>
+      <a
+        href={item.url}
+        style={{ textDecoration: "none", color: "inherit" }}
+      >
+        {item.label}
+      </a>
+    </li>
+  ))}
+</ul>
+
     </div>
   );
 }
