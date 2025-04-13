@@ -18,7 +18,7 @@ function CustomePageHeader({ header }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        position: "relative", // important for absolute children
+        position: "relative", 
       }}
     >
       <img

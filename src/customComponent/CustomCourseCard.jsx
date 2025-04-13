@@ -67,7 +67,7 @@ function CustomCourseCard({
               paddingRight: "10px",
               borderRadius: "5px",
             }}
-            className="d-flex justify-content-start align-items-center"
+            className="d-flex flex-row justify-content-start align-items-center"
           >
             <span style={{ marginRight: "8px" }}>
               <i

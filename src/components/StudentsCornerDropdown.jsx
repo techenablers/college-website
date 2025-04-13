@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../styles/AboutDropdown.css"
+
 
 function StudentsCornerDropdown() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -31,7 +33,7 @@ function StudentsCornerDropdown() {
         {/* Dropdown toggle icon (arrow) */}
         
         <i
-          className="fa fa-angle-down"
+          className="fa fa-angle-down mobile-left-space"
           role="button"
           tabIndex="0"
           aria-hidden="true"
