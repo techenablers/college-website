@@ -7,7 +7,6 @@ import inverted from "../assets/inverted.svg";
 import leaderImg from "../assets/leaderImg.svg";
 import CustomePageHeader from "../customComponent/CustomePageHeader";
 
-
 const leadersData = [
   {
     id: 1,
@@ -50,6 +49,8 @@ const leadersData = [
     content: {
       name: "Prof. Nisha Sonawane",
       position: "~ Principal",
+      tagTest:
+        "Education is the most powerful weapon you can use to change the world.” - Nelson Mandela",
       description: {
         description1:
           "Prof. Nisha Sonawane is a dedicated academician and administrator with a strong commerce and management education background. She comes from extensive educational background from esteemed institutions, including Ness Wadia College of Commerce and Data Systems Research Foundation (DSRF).",
@@ -68,7 +69,7 @@ const leadersData = [
 function LeadersDesk() {
   return (
     <div className="" style={{ marginTop: "100px" }}>
-    <CustomePageHeader header={"Leaders Desk"}/>
+      <CustomePageHeader header={"Leaders Desk"} />
 
       {leadersData.map((leader) => (
         <div
@@ -132,13 +133,18 @@ function LeadersDesk() {
           <div className="col-12 col-md-6">
             <h3 style={{ color: "#0540F2" }}>{leader.content.name}</h3>
             <h6 className="text-muted">~ {leader.content.position}</h6>
-            <img
-              src={inverted}
-              alt="Icon"
-              height={60}
-              width={80}
-              className="my-3"
-            />
+            {leader.id === 3 && (
+              <div className="d-flex flex-row ml-2 gap-3">
+                <img
+                  src={inverted}
+                  alt="Icon"
+                  height={60}
+                  width={80}
+                  className="my-3"
+                />
+                <p className="mt-3" style={{fontSize:"14px", fontWeight:"600px"}}>{leader.content.tagTest}</p>
+              </div>
+            )}
 
             {/* Dynamic Description Rendering */}
             {Object.values(leader.content.description).map((desc, index) => (
