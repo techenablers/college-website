@@ -77,7 +77,7 @@ const EducationSection = () => {
 
 export default EducationSection;
 
-const featuresData = [
+/* const featuresData = [
   { img: modren, title: "Accreditation & Affiliations" },
   { img: modren, title: "Modern Campus & Infrastructure" },
   { img: expor, title: "Expert Faculty" },
@@ -115,4 +115,4 @@ const featuresData = [
       <img src={educationSectionImage} />
     </Col>
   </Row>
-</Container>;
+</Container>; */
